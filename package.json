@@ -1,0 +1,13 @@
+{
+  "name": "taiwan-stock-tomorrow-lab",
+  "version": "1.0.0",
+  "description": "A Taiwan stock research dashboard that ranks tomorrow's bullish candidates from official TWSE and TPEx data.",
+  "type": "module",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js"
+  },
+  "dependencies": {
+    "express": "^5.1.0"
+  }
+}

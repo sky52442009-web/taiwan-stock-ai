@@ -1,0 +1,60 @@
+name: Update stock analysis
+
+on:
+  workflow_dispatch:
+  schedule:
+    # 16:30 Asia/Taipei on weekdays, after Taiwan market close data is usually available.
+    - cron: "30 8 * * 1-5"
+
+permissions:
+  contents: write
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: "24"
+          cache: npm
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Generate static analysis data
+        shell: bash
+        run: |
+          mkdir -p public/api
+          node server.js > server.out.log 2> server.err.log &
+          echo $! > server.pid
+
+          for i in {1..12}; do
+            if curl -fsS http://127.0.0.1:3000/api/analysis -o public/api/analysis.json; then
+              break
+            fi
+            sleep 5
+          done
+
+          if [ ! -s public/api/analysis.json ]; then
+            echo "Failed to generate public/api/analysis.json"
+            cat server.out.log || true
+            cat server.err.log || true
+            exit 1
+          fi
+
+          kill "$(cat server.pid)" || true
+
+      - name: Commit updated analysis
+        shell: bash
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add public/api/analysis.json data/learning-state.json
+          git diff --cached --quiet && echo "No analysis changes to commit." && exit 0
+          git commit -m "Update stock analysis"
+          git push
