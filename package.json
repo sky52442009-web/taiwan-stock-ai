@@ -5,7 +5,9 @@
   "type": "module",
   "scripts": {
     "start": "node server.js",
-    "dev": "node server.js"
+    "dev": "node server.js",
+    "build:analysis": "node scripts/generate-static.js",
+    "check": "node --check server.js && node --check public/app.js && node --check scripts/generate-static.js"
   },
   "dependencies": {
     "express": "^5.1.0"

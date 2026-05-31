@@ -8,10 +8,19 @@ on:
 
 permissions:
   contents: write
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: false
 
 jobs:
   update:
     runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
 
     steps:
       - name: Checkout repository
@@ -27,27 +36,9 @@ jobs:
         run: npm ci
 
       - name: Generate static analysis data
-        shell: bash
-        run: |
-          mkdir -p public/api
-          node server.js > server.out.log 2> server.err.log &
-          echo $! > server.pid
-
-          for i in {1..12}; do
-            if curl -fsS http://127.0.0.1:3000/api/analysis -o public/api/analysis.json; then
-              break
-            fi
-            sleep 5
-          done
-
-          if [ ! -s public/api/analysis.json ]; then
-            echo "Failed to generate public/api/analysis.json"
-            cat server.out.log || true
-            cat server.err.log || true
-            exit 1
-          fi
-
-          kill "$(cat server.pid)" || true
+        run: npm run build:analysis
+        env:
+          ANALYSIS_REASON: scheduled
 
       - name: Commit updated analysis
         shell: bash
@@ -62,24 +53,15 @@ jobs:
             git push
           fi
 
-      - name: Publish public folder to gh-pages
-        shell: bash
-        run: |
-          rm -rf /tmp/pages-site
-          mkdir -p /tmp/pages-site
-          cp -R public/. /tmp/pages-site/
+      - name: Configure GitHub Pages
+        uses: actions/configure-pages@v5
 
-          git fetch origin gh-pages:refs/remotes/origin/gh-pages || true
-          if git rev-parse --verify refs/remotes/origin/gh-pages; then
-            git checkout -B gh-pages refs/remotes/origin/gh-pages
-          else
-            git checkout --orphan gh-pages
-          fi
+      - name: Upload static site artifact
+        uses: actions/upload-pages-artifact@v4
+        with:
+          path: public
+          include-hidden-files: true
 
-          git rm -rf . || true
-          cp -R /tmp/pages-site/. .
-          touch .nojekyll
-          git add .
-          git diff --cached --quiet && echo "No Pages changes to publish." && exit 0
-          git commit -m "Publish static site"
-          git push origin gh-pages
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4

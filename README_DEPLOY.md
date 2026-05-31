@@ -21,8 +21,8 @@ git push -u origin main
 ```
 
 3. 打開 GitHub repo 的 `Settings > Pages`。
-4. Source 選 `Deploy from a branch`。
-5. Branch 選 `gh-pages`，資料夾選 `/ (root)`，按 Save。
+4. Source 選 `GitHub Actions`。
+5. 到 `Actions > Update stock analysis > Run workflow` 手動執行第一次部署。
 
 ## 每天自動更新與學習
 
@@ -33,7 +33,7 @@ git push -u origin main
 - 用新的交易日收盤結果驗證舊預測。
 - 更新 `data/learning-state.json` 裡的模型權重。
 - 自動 commit 回 GitHub。
-- 自動發布 `public` 資料夾到 `gh-pages` 分支，讓 GitHub Pages 顯示最新分析。
+- 自動用 GitHub Pages 官方部署流程發布 `public` 資料夾，讓網站顯示最新分析。
 
 也可以在 GitHub 的 `Actions > Update stock analysis > Run workflow` 手動更新。
 

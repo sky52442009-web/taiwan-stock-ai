@@ -45,26 +45,32 @@ const FEATURE_LABELS = {
 
 const DATA_SOURCES = [
   {
+    key: "listedRows",
     label: "TWSE 上市個股日成交資訊",
     url: "https://openapi.twse.com.tw/v1/exchangeReport/STOCK_DAY_ALL"
   },
   {
+    key: "listedAverageRows",
     label: "TWSE 上市個股日收盤價及月平均價",
     url: "https://openapi.twse.com.tw/v1/exchangeReport/STOCK_DAY_AVG_ALL"
   },
   {
+    key: "listedValueRows",
     label: "TWSE 上市個股本益比、殖利率、股價淨值比",
     url: "https://openapi.twse.com.tw/v1/exchangeReport/BWIBBU_ALL"
   },
   {
+    key: "tpexRows",
     label: "TPEx 上櫃股票收盤行情",
     url: "https://www.tpex.org.tw/openapi/v1/tpex_mainboard_daily_close_quotes"
   },
   {
+    key: "tpexValueRows",
     label: "TPEx 上櫃股票本益比、殖利率、股價淨值比",
     url: "https://www.tpex.org.tw/openapi/v1/tpex_mainboard_peratio_analysis"
   },
   {
+    key: "tpexInstitutionRows",
     label: "TPEx 上櫃股票三大法人買賣明細",
     url: "https://www.tpex.org.tw/openapi/v1/tpex_3insti_daily_trading"
   }
@@ -81,6 +87,7 @@ let cache = {
   startedAt: null,
   finishedAt: null
 };
+let refreshPromise = null;
 
 function clamp(value, min, max) {
   return Math.min(max, Math.max(min, value));
@@ -90,10 +97,11 @@ function safeNumber(value) {
   if (value === null || value === undefined) return null;
   const normalized = String(value)
     .replace(/,/g, "")
+    .replace(/%/g, "")
     .replace(/^\+/, "")
     .trim();
 
-  if (!normalized || normalized === "N/A" || normalized === "--" || normalized === "X0.00") {
+  if (!normalized || ["N/A", "--", "---", "-", "X0.00"].includes(normalized)) {
     return null;
   }
 
@@ -103,6 +111,18 @@ function safeNumber(value) {
 
 function rocDateToIso(rocDate) {
   const value = String(rocDate || "").trim();
+  const normalized = value.replace(/[./]/g, "/").replace(/-/g, "/");
+  if (/^\d{3}\/\d{1,2}\/\d{1,2}$/.test(normalized)) {
+    const [year, month, day] = normalized.split("/");
+    return `${Number(year) + 1911}-${month.padStart(2, "0")}-${day.padStart(2, "0")}`;
+  }
+  if (/^\d{4}\/\d{1,2}\/\d{1,2}$/.test(normalized)) {
+    const [year, month, day] = normalized.split("/");
+    return `${year}-${month.padStart(2, "0")}-${day.padStart(2, "0")}`;
+  }
+  if (/^\d{8}$/.test(value)) {
+    return `${value.slice(0, 4)}-${value.slice(4, 6)}-${value.slice(6, 8)}`;
+  }
   if (!/^\d{7}$/.test(value)) return value || null;
   const year = Number(value.slice(0, 3)) + 1911;
   const month = value.slice(3, 5);
@@ -303,10 +323,6 @@ function updateLearningStats(state) {
 }
 
 function recordCurrentPredictions(state, candidates, latestDate) {
-  state.predictions = state.predictions.filter((prediction) => {
-    return prediction.sourceDate !== latestDate || prediction.evaluated;
-  });
-
   const now = new Date().toISOString();
   const sampleIndices = new Set();
   for (let index = 0; index < Math.min(50, candidates.length); index += 1) {
@@ -336,6 +352,28 @@ function recordCurrentPredictions(state, candidates, latestDate) {
     };
   });
 
+  const existingPending = state.predictions.filter((prediction) => {
+    return prediction.sourceDate === latestDate && !prediction.evaluated;
+  });
+  const existingById = new Map(existingPending.map((prediction) => [prediction.id, prediction]));
+  const unchanged = additions.length === existingPending.length && additions.every((addition) => {
+    const existing = existingById.get(addition.id);
+    return existing
+      && existing.rank === addition.rank
+      && existing.close === addition.close
+      && existing.score === addition.score
+      && existing.prediction?.direction === addition.prediction?.direction
+      && existing.prediction?.probability === addition.prediction?.probability;
+  });
+
+  if (unchanged) {
+    updateLearningStats(state);
+    return;
+  }
+
+  state.predictions = state.predictions.filter((prediction) => {
+    return prediction.sourceDate !== latestDate || prediction.evaluated;
+  });
   state.predictions.push(...additions);
   state.predictions = state.predictions.slice(-MAX_STORED_PREDICTIONS);
   updateLearningStats(state);
@@ -357,7 +395,7 @@ function buildLearningSummary(state, events, latestDate) {
   return {
     latestDate,
     enabled: true,
-    stateFile: LEARNING_STATE_FILE,
+    stateStore: "data/learning-state.json",
     learningRate: state.learningRate,
     stats: state.stats,
     pendingPredictions: pending,
@@ -387,7 +425,17 @@ async function fetchJson(source) {
         throw new Error(`${source.label} returned ${response.status}`);
       }
 
-      return response.json();
+      const contentType = response.headers.get("content-type") || "";
+      if (!contentType.includes("application/json")) {
+        throw new Error(`${source.label} returned non-JSON data`);
+      }
+
+      const data = await response.json();
+      if (!Array.isArray(data)) {
+        throw new Error(`${source.label} returned an unexpected payload`);
+      }
+
+      return data;
     } catch (error) {
       lastError = error;
       if (attempt < REQUEST_RETRIES) {
@@ -401,11 +449,49 @@ async function fetchJson(source) {
   throw lastError;
 }
 
+async function fetchAllSources() {
+  const results = await Promise.all(DATA_SOURCES.map(async (source) => {
+    try {
+      const rows = await fetchJson(source);
+      return {
+        source,
+        rows,
+        status: {
+          key: source.key,
+          label: source.label,
+          url: source.url,
+          ok: true,
+          rowCount: rows.length
+        }
+      };
+    } catch (error) {
+      console.warn(`[source] ${source.label}: ${error.message}`);
+      return {
+        source,
+        rows: [],
+        status: {
+          key: source.key,
+          label: source.label,
+          url: source.url,
+          ok: false,
+          rowCount: 0,
+          error: error.message
+        }
+      };
+    }
+  }));
+
+  const rowsByKey = Object.fromEntries(results.map((result) => [result.source.key, result.rows]));
+  const statuses = results.map((result) => result.status);
+
+  return { rowsByKey, statuses };
+}
+
 function mapByCode(rows, codeKey = "Code") {
   const map = new Map();
   for (const row of rows || []) {
-    const code = row?.[codeKey];
-    if (code) map.set(String(code), row);
+    const code = String(row?.[codeKey] || "").trim();
+    if (code) map.set(code, row);
   }
   return map;
 }
@@ -417,6 +503,7 @@ function isCommonStockCode(code) {
 }
 
 function normalizeListed(row, averageRow, valueRow) {
+  const code = String(row.Code || "").trim();
   const close = safeNumber(row.ClosingPrice);
   const change = safeNumber(row.Change);
   const open = safeNumber(row.OpeningPrice);
@@ -425,13 +512,13 @@ function normalizeListed(row, averageRow, valueRow) {
   const volume = safeNumber(row.TradeVolume);
   const tradeValue = safeNumber(row.TradeValue);
 
-  if (!isCommonStockCode(row.Code) || !close || !open || !high || !low || !volume || !tradeValue) {
+  if (!isCommonStockCode(code) || !close || !open || !high || !low || !volume || !tradeValue) {
     return null;
   }
 
   return {
     market: "上市",
-    code: String(row.Code),
+    code,
     name: row.Name,
     date: rocDateToIso(row.Date),
     close,
@@ -452,6 +539,7 @@ function normalizeListed(row, averageRow, valueRow) {
 }
 
 function normalizeTpex(row, valueRow, institutionRow) {
+  const code = String(row.SecuritiesCompanyCode || "").trim();
   const close = safeNumber(row.Close);
   const change = safeNumber(row.Change);
   const open = safeNumber(row.Open);
@@ -460,13 +548,13 @@ function normalizeTpex(row, valueRow, institutionRow) {
   const volume = safeNumber(row.TradingShares);
   const tradeValue = safeNumber(row.TransactionAmount);
 
-  if (!isCommonStockCode(row.SecuritiesCompanyCode) || !close || !open || !high || !low || !volume || !tradeValue) {
+  if (!isCommonStockCode(code) || !close || !open || !high || !low || !volume || !tradeValue) {
     return null;
   }
 
   return {
     market: "上櫃",
-    code: String(row.SecuritiesCompanyCode),
+    code,
     name: row.CompanyName,
     date: rocDateToIso(row.Date),
     close,
@@ -496,9 +584,12 @@ function calculateCandidate(stock, learningState = createDefaultLearningState())
   const liquidityScore = clamp((Math.log10(stock.tradeValue) - 6.7) / 1.25, 0, 1);
   const volumeScore = clamp((Math.log10(stock.volume) - 5.8) / 1.15, 0, 1);
   const valuationScore = calculateValuationScore(stock);
-  const institutionScore = stock.institutionNet && stock.volume
-    ? clamp(stock.institutionNet / stock.volume, -0.18, 0.18) / 0.18
-    : 0;
+  const institutionRatio = Number.isFinite(stock.institutionNet) && stock.volume > 0
+    ? stock.institutionNet / stock.volume
+    : null;
+  const institutionScore = institutionRatio === null
+    ? 0
+    : clamp(institutionRatio, -0.18, 0.18) / 0.18;
   const overheatPenalty = changePct > 7 ? (changePct - 7) * 1.8 : 0;
   const weaknessPenalty = closePosition < 0.35 ? (0.35 - closePosition) * 16 : 0;
 
@@ -526,9 +617,7 @@ function calculateCandidate(stock, learningState = createDefaultLearningState())
     averageGapPct: Number(averageGapPct.toFixed(2)),
     liquidityScore: Number((liquidityScore * 100).toFixed(0)),
     valuationScore: Number((valuationScore * 100).toFixed(0)),
-    institutionRatio: stock.institutionNet && stock.volume
-      ? Number(((stock.institutionNet / stock.volume) * 100).toFixed(2))
-      : null
+    institutionRatio: institutionRatio === null ? null : Number((institutionRatio * 100).toFixed(2))
   };
   const features = extractLearningFeatures(stock, metricSnapshot);
   const learningLogit = scoreFeatures(features, learningState.weights);
@@ -648,9 +737,17 @@ function buildMarketSummary(candidates) {
   };
 }
 
-async function refreshAnalysis(reason = "scheduled") {
-  if (cache.status === "refreshing") return cache.data;
+export async function refreshAnalysis(reason = "scheduled") {
+  if (refreshPromise) return refreshPromise;
 
+  refreshPromise = runRefreshAnalysis(reason).finally(() => {
+    refreshPromise = null;
+  });
+
+  return refreshPromise;
+}
+
+async function runRefreshAnalysis(reason) {
   cache = {
     ...cache,
     status: "refreshing",
@@ -659,14 +756,15 @@ async function refreshAnalysis(reason = "scheduled") {
   };
 
   try {
-    const [
-      listedRows,
-      listedAverageRows,
-      listedValueRows,
-      tpexRows,
-      tpexValueRows,
-      tpexInstitutionRows
-    ] = await Promise.all(DATA_SOURCES.map(fetchJson));
+    const { rowsByKey, statuses: sourceStatuses } = await fetchAllSources();
+    const {
+      listedRows = [],
+      listedAverageRows = [],
+      listedValueRows = [],
+      tpexRows = [],
+      tpexValueRows = [],
+      tpexInstitutionRows = []
+    } = rowsByKey;
 
     const listedAverageByCode = mapByCode(listedAverageRows);
     const listedValueByCode = mapByCode(listedValueRows);
@@ -674,14 +772,24 @@ async function refreshAnalysis(reason = "scheduled") {
     const tpexInstitutionByCode = mapByCode(tpexInstitutionRows, "SecuritiesCompanyCode");
 
     const listedStocks = listedRows
-      .map((row) => normalizeListed(row, listedAverageByCode.get(String(row.Code)), listedValueByCode.get(String(row.Code))))
+      .map((row) => {
+        const code = String(row.Code || "").trim();
+        return normalizeListed(row, listedAverageByCode.get(code), listedValueByCode.get(code));
+      })
       .filter(Boolean);
 
     const tpexStocks = tpexRows
-      .map((row) => normalizeTpex(row, tpexValueByCode.get(String(row.SecuritiesCompanyCode)), tpexInstitutionByCode.get(String(row.SecuritiesCompanyCode))))
+      .map((row) => {
+        const code = String(row.SecuritiesCompanyCode || "").trim();
+        return normalizeTpex(row, tpexValueByCode.get(code), tpexInstitutionByCode.get(code));
+      })
       .filter(Boolean);
 
     const stocks = [...listedStocks, ...tpexStocks];
+    if (!stocks.length) {
+      throw new Error("官方資料來源暫時沒有可用股票行情");
+    }
+
     const latestDate = stocks.reduce((latest, stock) => {
       return stock.date && stock.date > latest ? stock.date : latest;
     }, "");
@@ -695,6 +803,7 @@ async function refreshAnalysis(reason = "scheduled") {
       .filter((stock) => stock.tradeValue >= 12_000_000)
       .map((stock) => calculateCandidate(stock, learningState))
       .sort((a, b) => b.score - a.score);
+    const bullishCandidates = candidates.filter((stock) => stock.prediction.direction === "漲");
 
     if (latestDate) {
       recordCurrentPredictions(learningState, candidates, latestDate);
@@ -706,11 +815,11 @@ async function refreshAnalysis(reason = "scheduled") {
       generatedAtTaipei: toTaipeiTimestamp(),
       reason,
       latestTradingDate: latestDate,
-      topPicks: candidates.slice(0, 3),
+      topPicks: (bullishCandidates.length >= 3 ? bullishCandidates : candidates).slice(0, 3),
       candidates: candidates.slice(0, 80),
       marketSummary: buildMarketSummary(candidates),
       learning: buildLearningSummary(learningState, learningEvents, latestDate),
-      sources: DATA_SOURCES,
+      sources: sourceStatuses,
       model: {
         name: "Adaptive Momentum-Value-Liquidity v2",
         factors: [
@@ -792,17 +901,27 @@ app.post("/api/refresh", async (_request, response) => {
   }
 });
 
-setInterval(() => {
-  if (shouldAutoRefresh()) {
-    refreshAnalysis("auto-window").catch((error) => {
-      console.error("[refresh]", error);
-    });
-  }
-}, REFRESH_INTERVAL_MS);
+export { app };
 
-app.listen(PORT, () => {
-  console.log(`Taiwan stock research site: http://localhost:${PORT}`);
-  refreshAnalysis("startup").catch((error) => {
-    console.error("[startup refresh]", error);
+export function startServer() {
+  const refreshTimer = setInterval(() => {
+    if (shouldAutoRefresh()) {
+      refreshAnalysis("auto-window").catch((error) => {
+        console.error("[refresh]", error);
+      });
+    }
+  }, REFRESH_INTERVAL_MS);
+
+  const server = app.listen(PORT, () => {
+    console.log(`Taiwan stock research site: http://localhost:${PORT}`);
+    refreshAnalysis("startup").catch((error) => {
+      console.error("[startup refresh]", error);
+    });
   });
-});
+
+  return { server, refreshTimer };
+}
+
+if (path.resolve(process.argv[1] || "") === __filename) {
+  startServer();
+}

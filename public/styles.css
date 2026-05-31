@@ -386,7 +386,7 @@ button {
 .chart-wrap canvas {
   display: block;
   width: 100%;
-  height: auto;
+  height: 300px;
 }
 
 .notice {
@@ -601,10 +601,23 @@ tbody tr:last-child td {
   text-decoration: none;
 }
 
+.source-links a.source-warning {
+  border-color: #e0b05a;
+  color: var(--amber);
+  background: #fff6e8;
+}
+
 .empty-state {
   padding: 22px;
   color: var(--muted);
   font-weight: 800;
+}
+
+.empty-row {
+  padding: 22px;
+  color: var(--muted);
+  font-weight: 800;
+  text-align: center;
 }
 
 @media (max-width: 1100px) {

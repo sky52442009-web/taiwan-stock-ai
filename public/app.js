@@ -42,15 +42,17 @@ function formatCompact(value) {
 }
 
 function formatPercent(value) {
-  if (!Number.isFinite(Number(value))) return "--";
-  const sign = value > 0 ? "+" : "";
-  return `${sign}${value.toFixed(2)}%`;
+  const numeric = Number(value);
+  if (!Number.isFinite(numeric)) return "--";
+  const sign = numeric > 0 ? "+" : "";
+  return `${sign}${numeric.toFixed(2)}%`;
 }
 
 function formatSigned(value) {
-  if (!Number.isFinite(Number(value))) return "--";
-  const sign = value > 0 ? "+" : "";
-  return `${sign}${value.toFixed(1)}`;
+  const numeric = Number(value);
+  if (!Number.isFinite(numeric)) return "--";
+  const sign = numeric > 0 ? "+" : "";
+  return `${sign}${numeric.toFixed(1)}`;
 }
 
 function formatMoney(value) {
@@ -63,6 +65,23 @@ function formatMoney(value) {
 function setLoading(isLoading) {
   elements.refreshButton.disabled = isLoading;
   if (isLoading) elements.statusBadge.textContent = "更新中";
+}
+
+function boundedPercent(value) {
+  const numeric = Number(value);
+  if (!Number.isFinite(numeric)) return 0;
+  return Math.min(100, Math.max(0, numeric));
+}
+
+function formatProbability(stock) {
+  const value = stock?.prediction?.probability ?? stock?.confidence;
+  return Number.isFinite(Number(value)) ? `${Number(value).toFixed(1)}%` : "--";
+}
+
+function formatPrediction(stock) {
+  const direction = stock?.prediction?.direction || "--";
+  const value = stock?.prediction?.probability;
+  return Number.isFinite(Number(value)) ? `${direction} ${Number(value).toFixed(1)}%` : direction;
 }
 
 async function loadAnalysis(manual = false) {
@@ -86,6 +105,10 @@ async function loadAnalysis(manual = false) {
 }
 
 async function fetchAnalysis(manual) {
+  if (usesStaticAnalysis()) {
+    return fetchStaticAnalysis();
+  }
+
   const dynamicPath = manual ? "api/refresh" : "api/analysis";
 
   try {
@@ -95,35 +118,58 @@ async function fetchAnalysis(manual) {
         accept: "application/json"
       }
     });
-    const data = await response.json();
-    if (!response.ok) throw new Error(data.detail || data.error || "資料讀取失敗");
-    return data;
+    return readJsonResponse(response, "即時資料讀取失敗");
   } catch (dynamicError) {
-    const staticResponse = await fetch(`api/analysis.json?ts=${Date.now()}`, {
-      headers: {
-        accept: "application/json"
-      }
-    });
-
-    if (!staticResponse.ok) {
+    try {
+      return await fetchStaticAnalysis();
+    } catch {
       throw dynamicError;
     }
-
-    return {
-      ...(await staticResponse.json()),
-      staticMode: true
-    };
   }
 }
 
+function usesStaticAnalysis() {
+  return window.location.hostname.endsWith("github.io")
+    || window.location.protocol === "file:"
+    || window.location.port === "4173";
+}
+
+async function fetchStaticAnalysis() {
+  const staticResponse = await fetch(`api/analysis.json?ts=${Date.now()}`, {
+    headers: {
+      accept: "application/json"
+    }
+  });
+
+  return {
+    ...(await readJsonResponse(staticResponse, "靜態資料讀取失敗")),
+    staticMode: true
+  };
+}
+
+async function readJsonResponse(response, fallbackMessage) {
+  const contentType = response.headers.get("content-type") || "";
+  if (!contentType.includes("application/json")) {
+    throw new Error(`${fallbackMessage} (${response.status})`);
+  }
+
+  const data = await response.json();
+  if (!response.ok) {
+    throw new Error(data.detail || data.error || `${fallbackMessage} (${response.status})`);
+  }
+
+  return data;
+}
+
 function render(data) {
-  renderSummary(data.marketSummary);
-  renderTopPicks(data.topPicks);
-  renderModel(data.model);
+  const candidates = Array.isArray(data.candidates) ? data.candidates : [];
+  renderSummary(data.marketSummary || {});
+  renderTopPicks(Array.isArray(data.topPicks) ? data.topPicks : []);
+  renderModel(data.model || { factors: [], caveat: "" });
   renderLearning(data.learning);
-  renderTable(data.candidates);
-  renderSources(data.sources);
-  renderChart(data.candidates);
+  renderTable(candidates);
+  renderSources(Array.isArray(data.sources) ? data.sources : []);
+  renderChart(candidates);
   elements.updatedAt.textContent = data.generatedAtTaipei || "--";
 }
 
@@ -154,9 +200,9 @@ function renderTopPicks(picks) {
       <div class="confidence">
         <div class="confidence-head">
           <span>AI 上漲機率</span>
-          <strong>${stock.prediction?.probability?.toFixed?.(1) ?? stock.confidence.toFixed(1)}%</strong>
+          <strong>${formatProbability(stock)}</strong>
         </div>
-        <div class="bar"><span style="width:${stock.prediction?.probability ?? stock.confidence}%"></span></div>
+        <div class="bar"><span style="width:${boundedPercent(stock.prediction?.probability ?? stock.confidence)}%"></span></div>
       </div>
 
       <div class="quote-grid">
@@ -234,6 +280,11 @@ function renderTable(candidates) {
     ? candidates
     : candidates.filter((stock) => stock.market === state.market);
 
+  if (!filtered.length) {
+    elements.candidateRows.innerHTML = `<tr><td colspan="9" class="empty-row">目前沒有符合篩選條件的候選股。</td></tr>`;
+    return;
+  }
+
   elements.candidateRows.innerHTML = filtered.slice(0, 40).map((stock, index) => `
     <tr>
       <td>${index + 1}</td>
@@ -245,7 +296,7 @@ function renderTable(candidates) {
       <td>${stock.close.toFixed(2)}</td>
       <td class="${stock.metrics.changePct >= 0 ? "positive" : "negative"}">${formatPercent(stock.metrics.changePct)}</td>
       <td>${formatMoney(stock.tradeValue)}</td>
-      <td>${stock.prediction?.direction ?? "--"} ${stock.prediction?.probability ?? "--"}%</td>
+      <td>${formatPrediction(stock)}</td>
       <td>PE ${stock.pe ?? "--"} / PB ${stock.pb ?? "--"}</td>
       <td><span class="score-chip">${stock.score.toFixed(1)}</span></td>
     </tr>
@@ -254,15 +305,24 @@ function renderTable(candidates) {
 
 function renderSources(sources) {
   elements.sourceLinks.innerHTML = sources.map((source) => `
-    <a href="${source.url}" target="_blank" rel="noreferrer">${escapeHtml(source.label)}</a>
+    <a class="${source.ok === false ? "source-warning" : ""}" href="${escapeHtml(source.url)}" target="_blank" rel="noreferrer">${escapeHtml(source.label)}</a>
   `).join("");
 }
 
 function renderChart(candidates) {
   const canvas = elements.scoreChart;
   const context = canvas.getContext("2d");
-  const width = canvas.width;
-  const height = canvas.height;
+  const dpr = window.devicePixelRatio || 1;
+  const rect = canvas.getBoundingClientRect();
+  const width = Math.max(320, Math.floor(rect.width || 520));
+  const height = 300;
+
+  if (canvas.width !== Math.floor(width * dpr) || canvas.height !== Math.floor(height * dpr)) {
+    canvas.width = Math.floor(width * dpr);
+    canvas.height = Math.floor(height * dpr);
+  }
+
+  context.setTransform(dpr, 0, 0, dpr, 0, 0);
   const padding = { top: 24, right: 22, bottom: 46, left: 46 };
   const chartWidth = width - padding.left - padding.right;
   const chartHeight = height - padding.top - padding.bottom;
@@ -280,6 +340,13 @@ function renderChart(candidates) {
     context.moveTo(padding.left, y);
     context.lineTo(width - padding.right, y);
     context.stroke();
+  }
+
+  if (!top.length) {
+    context.fillStyle = "#64717f";
+    context.font = "700 14px Arial";
+    context.fillText("暫無候選資料", padding.left, padding.top + 22);
+    return;
   }
 
   const barGap = 7;
@@ -342,6 +409,10 @@ elements.filters.forEach((button) => {
     state.market = button.dataset.market;
     if (state.analysis) renderTable(state.analysis.candidates);
   });
+});
+
+window.addEventListener("resize", () => {
+  if (state.analysis) renderChart(Array.isArray(state.analysis.candidates) ? state.analysis.candidates : []);
 });
 
 loadAnalysis();
