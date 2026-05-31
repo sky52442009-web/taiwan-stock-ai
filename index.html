@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="zh-Hant">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>台股明日上漲候選研究</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js" defer></script>
+    <script src="app.js" defer></script>
+  </head>
+  <body>
+    <header class="topbar">
+      <div>
+        <p class="eyebrow">Taiwan Stock Research</p>
+        <h1>台股明日上漲候選</h1>
+      </div>
+      <div class="topbar-actions">
+        <span id="statusBadge" class="status-badge">載入中</span>
+        <button id="refreshButton" class="icon-button" type="button" aria-label="重新整理資料" title="重新整理資料">
+          <i data-lucide="refresh-cw"></i>
+          <span>更新</span>
+        </button>
+      </div>
+    </header>
+
+    <main class="layout">
+      <section class="overview-band" aria-label="市場概況">
+        <div class="metric">
+          <span class="metric-label">研究樣本</span>
+          <strong id="totalStocks">--</strong>
+        </div>
+        <div class="metric">
+          <span class="metric-label">上漲 / 下跌</span>
+          <strong id="breadth">--</strong>
+        </div>
+        <div class="metric">
+          <span class="metric-label">成交金額</span>
+          <strong id="totalTradeValue">--</strong>
+        </div>
+        <div class="metric">
+          <span class="metric-label">平均分數</span>
+          <strong id="averageScore">--</strong>
+        </div>
+      </section>
+
+      <section class="main-grid">
+        <div class="picks-panel">
+          <div class="section-heading">
+            <div>
+              <p class="eyebrow">Top 3</p>
+              <h2>明日候選前三名</h2>
+            </div>
+            <span id="updatedAt" class="timestamp">--</span>
+          </div>
+          <div id="topPicks" class="pick-list" aria-live="polite"></div>
+        </div>
+
+        <aside class="side-panel">
+          <div class="section-heading compact">
+            <div>
+              <p class="eyebrow">Model</p>
+              <h2>量化條件</h2>
+            </div>
+          </div>
+          <ul id="factorList" class="factor-list"></ul>
+          <div class="learning-box">
+            <div class="learning-head">
+              <div>
+                <p class="eyebrow">Learning Loop</p>
+                <h3>錯誤回饋自動學習</h3>
+              </div>
+              <span id="learningBadge" class="learning-badge">等待驗證</span>
+            </div>
+            <div class="learning-grid">
+              <div>
+                <span>累積命中率</span>
+                <strong id="learningAccuracy">--</strong>
+              </div>
+              <div>
+                <span>已驗證</span>
+                <strong id="learningEvaluated">--</strong>
+              </div>
+              <div>
+                <span>近 30 筆</span>
+                <strong id="learningRecent">--</strong>
+              </div>
+              <div>
+                <span>待驗證</span>
+                <strong id="learningPending">--</strong>
+              </div>
+            </div>
+            <div id="learningWeights" class="weight-list"></div>
+            <div id="learningEvents" class="event-list"></div>
+          </div>
+          <div class="chart-wrap">
+            <canvas id="scoreChart" width="520" height="300" aria-label="候選股分數分布"></canvas>
+          </div>
+          <p id="modelCaveat" class="notice"></p>
+        </aside>
+      </section>
+
+      <section class="table-section">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">Watchlist</p>
+            <h2>候選清單</h2>
+          </div>
+          <div class="filters" role="group" aria-label="市場篩選">
+            <button class="filter active" type="button" data-market="all">全部</button>
+            <button class="filter" type="button" data-market="上市">上市</button>
+            <button class="filter" type="button" data-market="上櫃">上櫃</button>
+          </div>
+        </div>
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr>
+                <th>排名</th>
+                <th>股票</th>
+                <th>市場</th>
+                <th>收盤</th>
+                <th>日漲跌</th>
+                <th>成交金額</th>
+                <th>AI預測</th>
+                <th>估值</th>
+                <th>分數</th>
+              </tr>
+            </thead>
+            <tbody id="candidateRows"></tbody>
+          </table>
+        </div>
+      </section>
+
+      <section class="sources-band">
+        <div>
+          <p class="eyebrow">Sources</p>
+          <h2>資料來源</h2>
+        </div>
+        <div id="sourceLinks" class="source-links"></div>
+      </section>
+    </main>
+  </body>
+</html>
