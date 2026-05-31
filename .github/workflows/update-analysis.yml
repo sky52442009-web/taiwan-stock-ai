@@ -55,6 +55,31 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add public/api/analysis.json data/learning-state.json
-          git diff --cached --quiet && echo "No analysis changes to commit." && exit 0
-          git commit -m "Update stock analysis"
-          git push
+          if git diff --cached --quiet; then
+            echo "No analysis changes to commit."
+          else
+            git commit -m "Update stock analysis"
+            git push
+          fi
+
+      - name: Publish public folder to gh-pages
+        shell: bash
+        run: |
+          rm -rf /tmp/pages-site
+          mkdir -p /tmp/pages-site
+          cp -R public/. /tmp/pages-site/
+
+          git fetch origin gh-pages:refs/remotes/origin/gh-pages || true
+          if git rev-parse --verify refs/remotes/origin/gh-pages; then
+            git checkout -B gh-pages refs/remotes/origin/gh-pages
+          else
+            git checkout --orphan gh-pages
+          fi
+
+          git rm -rf . || true
+          cp -R /tmp/pages-site/. .
+          touch .nojekyll
+          git add .
+          git diff --cached --quiet && echo "No Pages changes to publish." && exit 0
+          git commit -m "Publish static site"
+          git push origin gh-pages
