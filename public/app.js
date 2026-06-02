@@ -22,6 +22,7 @@ const elements = {
   learningWeights: document.querySelector("#learningWeights"),
   learningEvents: document.querySelector("#learningEvents"),
   candidateRows: document.querySelector("#candidateRows"),
+  largeCapRows: document.querySelector("#largeCapRows"),
   sourceLinks: document.querySelector("#sourceLinks"),
   scoreChart: document.querySelector("#scoreChart"),
   filters: document.querySelectorAll(".filter")
@@ -60,6 +61,14 @@ function formatMoney(value) {
   if (value >= 100_000_000) return `${(value / 100_000_000).toFixed(1)} 億`;
   if (value >= 10_000) return `${(value / 10_000).toFixed(0)} 萬`;
   return formatNumber(value);
+}
+
+function formatMarketCap(value) {
+  const numeric = Number(value);
+  if (!Number.isFinite(numeric)) return "--";
+  if (numeric >= 1_000_000_000_000) return `${(numeric / 1_000_000_000_000).toFixed(2)} 兆`;
+  if (numeric >= 100_000_000) return `${(numeric / 100_000_000).toFixed(0)} 億`;
+  return formatMoney(numeric);
 }
 
 function setLoading(isLoading) {
@@ -168,6 +177,7 @@ function render(data) {
   renderModel(data.model || { factors: [], caveat: "" });
   renderLearning(data.learning);
   renderTable(candidates);
+  renderLargeCaps(Array.isArray(data.largeCaps) ? data.largeCaps : []);
   renderSources(Array.isArray(data.sources) ? data.sources : []);
   renderChart(candidates);
   elements.updatedAt.textContent = data.generatedAtTaipei || "--";
@@ -285,7 +295,7 @@ function renderTable(candidates) {
     return;
   }
 
-  elements.candidateRows.innerHTML = filtered.slice(0, 40).map((stock, index) => `
+  elements.candidateRows.innerHTML = filtered.slice(0, 50).map((stock, index) => `
     <tr>
       <td>${index + 1}</td>
       <td class="stock-cell">
@@ -298,6 +308,29 @@ function renderTable(candidates) {
       <td>${formatMoney(stock.tradeValue)}</td>
       <td>${formatPrediction(stock)}</td>
       <td>PE ${stock.pe ?? "--"} / PB ${stock.pb ?? "--"}</td>
+      <td><span class="score-chip">${stock.score.toFixed(1)}</span></td>
+    </tr>
+  `).join("");
+}
+
+function renderLargeCaps(stocks) {
+  if (!stocks.length) {
+    elements.largeCapRows.innerHTML = `<tr><td colspan="8" class="empty-row">目前沒有可用的市值資料。</td></tr>`;
+    return;
+  }
+
+  elements.largeCapRows.innerHTML = stocks.slice(0, 50).map((stock, index) => `
+    <tr>
+      <td>${index + 1}</td>
+      <td class="stock-cell">
+        <strong>${escapeHtml(stock.name)}</strong>
+        <span>${escapeHtml(stock.code)}</span>
+      </td>
+      <td>${escapeHtml(stock.market)}</td>
+      <td>${formatMarketCap(stock.marketCap)}</td>
+      <td>${stock.close.toFixed(2)}</td>
+      <td class="${stock.metrics.changePct >= 0 ? "positive" : "negative"}">${formatPercent(stock.metrics.changePct)}</td>
+      <td>${formatPrediction(stock)}</td>
       <td><span class="score-chip">${stock.score.toFixed(1)}</span></td>
     </tr>
   `).join("");

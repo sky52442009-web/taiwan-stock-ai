@@ -60,6 +60,11 @@ const DATA_SOURCES = [
     url: "https://openapi.twse.com.tw/v1/exchangeReport/BWIBBU_ALL"
   },
   {
+    key: "listedProfileRows",
+    label: "TWSE 上市公司基本資料",
+    url: "https://openapi.twse.com.tw/v1/opendata/t187ap03_L"
+  },
+  {
     key: "tpexRows",
     label: "TPEx 上櫃股票收盤行情",
     url: "https://www.tpex.org.tw/openapi/v1/tpex_mainboard_daily_close_quotes"
@@ -73,6 +78,11 @@ const DATA_SOURCES = [
     key: "tpexInstitutionRows",
     label: "TPEx 上櫃股票三大法人買賣明細",
     url: "https://www.tpex.org.tw/openapi/v1/tpex_3insti_daily_trading"
+  },
+  {
+    key: "tpexMarketValueRows",
+    label: "TPEx 上櫃歷史個股市值排行",
+    url: "https://www.tpex.org.tw/openapi/v1/tpex_daily_market_value"
   }
 ];
 
@@ -128,6 +138,42 @@ function rocDateToIso(rocDate) {
   const month = value.slice(3, 5);
   const day = value.slice(5, 7);
   return `${year}-${month}-${day}`;
+}
+
+function parseParValue(value) {
+  const match = String(value || "").replace(/,/g, "").match(/(\d+(?:\.\d+)?)/);
+  if (!match) return null;
+  const parsed = Number(match[1]);
+  return Number.isFinite(parsed) && parsed > 0 ? parsed : null;
+}
+
+function calculateListedCapital(profileRow, close) {
+  const paidCapital = safeNumber(profileRow?.["實收資本額"]);
+  const parValue = parseParValue(profileRow?.["普通股每股面額"]) || 10;
+
+  if (!paidCapital || !parValue || !close) {
+    return {
+      sharesOutstanding: null,
+      marketCap: null
+    };
+  }
+
+  const sharesOutstanding = paidCapital / parValue;
+
+  return {
+    sharesOutstanding: Math.round(sharesOutstanding),
+    marketCap: Math.round(sharesOutstanding * close)
+  };
+}
+
+function calculateTpexCapital(marketValueRow) {
+  const sharesOutstanding = safeNumber(marketValueRow?.Capitals);
+  const marketValueMillions = safeNumber(marketValueRow?.MarketValue);
+
+  return {
+    sharesOutstanding,
+    marketCap: marketValueMillions ? Math.round(marketValueMillions * 1_000_000) : null
+  };
 }
 
 function toTaipeiTimestamp(date = new Date()) {
@@ -502,7 +548,7 @@ function isCommonStockCode(code) {
   return /^\d{4}$/.test(value) && numericCode >= 1100 && !value.startsWith("91");
 }
 
-function normalizeListed(row, averageRow, valueRow) {
+function normalizeListed(row, averageRow, valueRow, profileRow) {
   const code = String(row.Code || "").trim();
   const close = safeNumber(row.ClosingPrice);
   const change = safeNumber(row.Change);
@@ -515,6 +561,8 @@ function normalizeListed(row, averageRow, valueRow) {
   if (!isCommonStockCode(code) || !close || !open || !high || !low || !volume || !tradeValue) {
     return null;
   }
+
+  const capital = calculateListedCapital(profileRow, close);
 
   return {
     market: "上市",
@@ -534,11 +582,13 @@ function normalizeListed(row, averageRow, valueRow) {
     dividendYield: safeNumber(valueRow?.DividendYield),
     pb: safeNumber(valueRow?.PBratio),
     institutionNet: null,
-    nextLimitUp: null
+    nextLimitUp: null,
+    sharesOutstanding: capital.sharesOutstanding,
+    marketCap: capital.marketCap
   };
 }
 
-function normalizeTpex(row, valueRow, institutionRow) {
+function normalizeTpex(row, valueRow, institutionRow, marketValueRow) {
   const code = String(row.SecuritiesCompanyCode || "").trim();
   const close = safeNumber(row.Close);
   const change = safeNumber(row.Change);
@@ -551,6 +601,8 @@ function normalizeTpex(row, valueRow, institutionRow) {
   if (!isCommonStockCode(code) || !close || !open || !high || !low || !volume || !tradeValue) {
     return null;
   }
+
+  const capital = calculateTpexCapital(marketValueRow);
 
   return {
     market: "上櫃",
@@ -570,7 +622,9 @@ function normalizeTpex(row, valueRow, institutionRow) {
     dividendYield: safeNumber(valueRow?.YieldRatio),
     pb: safeNumber(valueRow?.PriceBookRatio),
     institutionNet: safeNumber(institutionRow?.TotalDifference),
-    nextLimitUp: safeNumber(row.NextLimitUp)
+    nextLimitUp: safeNumber(row.NextLimitUp),
+    sharesOutstanding: capital.sharesOutstanding,
+    marketCap: capital.marketCap
   };
 }
 
@@ -761,27 +815,41 @@ async function runRefreshAnalysis(reason) {
       listedRows = [],
       listedAverageRows = [],
       listedValueRows = [],
+      listedProfileRows = [],
       tpexRows = [],
       tpexValueRows = [],
-      tpexInstitutionRows = []
+      tpexInstitutionRows = [],
+      tpexMarketValueRows = []
     } = rowsByKey;
 
     const listedAverageByCode = mapByCode(listedAverageRows);
     const listedValueByCode = mapByCode(listedValueRows);
+    const listedProfileByCode = mapByCode(listedProfileRows, "公司代號");
     const tpexValueByCode = mapByCode(tpexValueRows, "SecuritiesCompanyCode");
     const tpexInstitutionByCode = mapByCode(tpexInstitutionRows, "SecuritiesCompanyCode");
+    const tpexMarketValueByCode = mapByCode(tpexMarketValueRows, "SecuritiesCompanyCode");
 
     const listedStocks = listedRows
       .map((row) => {
         const code = String(row.Code || "").trim();
-        return normalizeListed(row, listedAverageByCode.get(code), listedValueByCode.get(code));
+        return normalizeListed(
+          row,
+          listedAverageByCode.get(code),
+          listedValueByCode.get(code),
+          listedProfileByCode.get(code)
+        );
       })
       .filter(Boolean);
 
     const tpexStocks = tpexRows
       .map((row) => {
         const code = String(row.SecuritiesCompanyCode || "").trim();
-        return normalizeTpex(row, tpexValueByCode.get(code), tpexInstitutionByCode.get(code));
+        return normalizeTpex(
+          row,
+          tpexValueByCode.get(code),
+          tpexInstitutionByCode.get(code),
+          tpexMarketValueByCode.get(code)
+        );
       })
       .filter(Boolean);
 
@@ -798,12 +866,16 @@ async function runRefreshAnalysis(reason) {
       ? evaluatePendingPredictions(learningState, stocks, latestDate)
       : [];
 
-    const candidates = stocks
+    const analyzedStocks = stocks.map((stock) => calculateCandidate(stock, learningState));
+    const candidates = analyzedStocks
       .filter((stock) => stock.close >= 8)
       .filter((stock) => stock.tradeValue >= 12_000_000)
-      .map((stock) => calculateCandidate(stock, learningState))
       .sort((a, b) => b.score - a.score);
     const bullishCandidates = candidates.filter((stock) => stock.prediction.direction === "漲");
+    const largeCaps = analyzedStocks
+      .filter((stock) => Number.isFinite(stock.marketCap) && stock.marketCap > 0)
+      .sort((a, b) => b.marketCap - a.marketCap)
+      .slice(0, 50);
 
     if (latestDate) {
       recordCurrentPredictions(learningState, candidates, latestDate);
@@ -817,6 +889,7 @@ async function runRefreshAnalysis(reason) {
       latestTradingDate: latestDate,
       topPicks: (bullishCandidates.length >= 3 ? bullishCandidates : candidates).slice(0, 3),
       candidates: candidates.slice(0, 80),
+      largeCaps,
       marketSummary: buildMarketSummary(candidates),
       learning: buildLearningSummary(learningState, learningEvents, latestDate),
       sources: sourceStatuses,

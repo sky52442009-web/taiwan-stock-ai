@@ -104,7 +104,7 @@
         <div class="section-heading">
           <div>
             <p class="eyebrow">Watchlist</p>
-            <h2>候選清單</h2>
+            <h2>AI 候選前 50</h2>
           </div>
           <div class="filters" role="group" aria-label="市場篩選">
             <button class="filter active" type="button" data-market="all">全部</button>
@@ -128,6 +128,32 @@
               </tr>
             </thead>
             <tbody id="candidateRows"></tbody>
+          </table>
+        </div>
+      </section>
+
+      <section class="table-section">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">Large Cap</p>
+            <h2>市值前 50 大</h2>
+          </div>
+        </div>
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr>
+                <th>排名</th>
+                <th>股票</th>
+                <th>市場</th>
+                <th>市值</th>
+                <th>收盤</th>
+                <th>日漲跌</th>
+                <th>AI預測</th>
+                <th>分數</th>
+              </tr>
+            </thead>
+            <tbody id="largeCapRows"></tbody>
           </table>
         </div>
       </section>
