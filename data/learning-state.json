@@ -2,17 +2,17 @@
   "version": 2,
   "learningRate": 0.08,
   "weights": {
-    "bias": -0.87767,
-    "changePct": -0.02909,
-    "intradayPct": -0.22055,
-    "closePosition": -0.42854,
-    "averageGapPct": 0.23815,
-    "liquidityScore": -0.81515,
-    "valuationScore": -0.32319,
-    "institutionRatio": -0.04899,
-    "overheat": -0.24585,
-    "peRisk": -0.39912,
-    "pbRisk": -0.03204
+    "bias": 0.13129,
+    "changePct": 0.21033,
+    "intradayPct": -0.05672,
+    "closePosition": -0.35499,
+    "averageGapPct": 0.14537,
+    "liquidityScore": 0.24101,
+    "valuationScore": -0.09223,
+    "institutionRatio": -0.03988,
+    "overheat": -0.20863,
+    "peRisk": -0.02984,
+    "pbRisk": 0.30086
   },
   "predictions": [
     {
@@ -6290,8 +6290,9 @@
         "peRisk": 0,
         "pbRisk": 0
       },
-      "evaluated": false,
-      "createdAt": "2026-06-02T20:20:17.858Z"
+      "evaluated": true,
+      "createdAt": "2026-06-02T20:20:17.858Z",
+      "evaluatedDate": "2026-06-03"
     },
     {
       "id": "2026-06-02:3322",
@@ -6328,8 +6329,9 @@
         "peRisk": 0,
         "pbRisk": 0
       },
-      "evaluated": false,
-      "createdAt": "2026-06-02T20:20:17.858Z"
+      "evaluated": true,
+      "createdAt": "2026-06-02T20:20:17.858Z",
+      "evaluatedDate": "2026-06-03"
     },
     {
       "id": "2026-06-02:5864",
@@ -6366,8 +6368,9 @@
         "peRisk": 0,
         "pbRisk": 0
       },
-      "evaluated": false,
-      "createdAt": "2026-06-02T20:20:17.858Z"
+      "evaluated": true,
+      "createdAt": "2026-06-02T20:20:17.858Z",
+      "evaluatedDate": "2026-06-03"
     },
     {
       "id": "2026-06-02:3624",
@@ -6404,8 +6407,9 @@
         "peRisk": 0.39899999999999997,
         "pbRisk": 0.0012499999999999734
       },
-      "evaluated": false,
-      "createdAt": "2026-06-02T20:20:17.858Z"
+      "evaluated": true,
+      "createdAt": "2026-06-02T20:20:17.858Z",
+      "evaluatedDate": "2026-06-03"
     },
     {
       "id": "2026-06-02:6016",
@@ -6442,8 +6446,9 @@
         "peRisk": 0,
         "pbRisk": 0
       },
-      "evaluated": false,
-      "createdAt": "2026-06-02T20:20:17.858Z"
+      "evaluated": true,
+      "createdAt": "2026-06-02T20:20:17.858Z",
+      "evaluatedDate": "2026-06-03"
     },
     {
       "id": "2026-06-02:1569",
@@ -6480,8 +6485,9 @@
         "peRisk": 0,
         "pbRisk": 0
       },
-      "evaluated": false,
-      "createdAt": "2026-06-02T20:20:17.858Z"
+      "evaluated": true,
+      "createdAt": "2026-06-02T20:20:17.858Z",
+      "evaluatedDate": "2026-06-03"
     },
     {
       "id": "2026-06-02:6506",
@@ -6518,8 +6524,9 @@
         "peRisk": 0,
         "pbRisk": 0
       },
-      "evaluated": false,
-      "createdAt": "2026-06-02T20:20:17.858Z"
+      "evaluated": true,
+      "createdAt": "2026-06-02T20:20:17.858Z",
+      "evaluatedDate": "2026-06-03"
     },
     {
       "id": "2026-06-02:6021",
@@ -6556,8 +6563,9 @@
         "peRisk": 0,
         "pbRisk": 0
       },
-      "evaluated": false,
-      "createdAt": "2026-06-02T20:20:17.858Z"
+      "evaluated": true,
+      "createdAt": "2026-06-02T20:20:17.858Z",
+      "evaluatedDate": "2026-06-03"
     },
     {
       "id": "2026-06-02:8032",
@@ -6594,8 +6602,9 @@
         "peRisk": 0,
         "pbRisk": 0
       },
-      "evaluated": false,
-      "createdAt": "2026-06-02T20:20:17.858Z"
+      "evaluated": true,
+      "createdAt": "2026-06-02T20:20:17.858Z",
+      "evaluatedDate": "2026-06-03"
     },
     {
       "id": "2026-06-02:2887",
@@ -6632,8 +6641,9 @@
         "peRisk": 0,
         "pbRisk": 0
       },
-      "evaluated": false,
-      "createdAt": "2026-06-02T20:20:17.858Z"
+      "evaluated": true,
+      "createdAt": "2026-06-02T20:20:17.858Z",
+      "evaluatedDate": "2026-06-03"
     },
     {
       "id": "2026-06-02:3293",
@@ -6670,8 +6680,9 @@
         "peRisk": 0,
         "pbRisk": 1
       },
-      "evaluated": false,
-      "createdAt": "2026-06-02T20:20:17.858Z"
+      "evaluated": true,
+      "createdAt": "2026-06-02T20:20:17.858Z",
+      "evaluatedDate": "2026-06-03"
     },
     {
       "id": "2026-06-02:9802",
@@ -6708,8 +6719,9 @@
         "peRisk": 0,
         "pbRisk": 0
       },
-      "evaluated": false,
-      "createdAt": "2026-06-02T20:20:17.858Z"
+      "evaluated": true,
+      "createdAt": "2026-06-02T20:20:17.858Z",
+      "evaluatedDate": "2026-06-03"
     },
     {
       "id": "2026-06-02:5488",
@@ -6746,8 +6758,9 @@
         "peRisk": 0.7361666666666667,
         "pbRisk": 0
       },
-      "evaluated": false,
-      "createdAt": "2026-06-02T20:20:17.858Z"
+      "evaluated": true,
+      "createdAt": "2026-06-02T20:20:17.858Z",
+      "evaluatedDate": "2026-06-03"
     },
     {
       "id": "2026-06-02:5478",
@@ -6784,8 +6797,9 @@
         "peRisk": 0,
         "pbRisk": 0
       },
-      "evaluated": false,
-      "createdAt": "2026-06-02T20:20:17.858Z"
+      "evaluated": true,
+      "createdAt": "2026-06-02T20:20:17.858Z",
+      "evaluatedDate": "2026-06-03"
     },
     {
       "id": "2026-06-02:8044",
@@ -6822,8 +6836,9 @@
         "peRisk": 0,
         "pbRisk": 0
       },
-      "evaluated": false,
-      "createdAt": "2026-06-02T20:20:17.858Z"
+      "evaluated": true,
+      "createdAt": "2026-06-02T20:20:17.858Z",
+      "evaluatedDate": "2026-06-03"
     },
     {
       "id": "2026-06-02:1301",
@@ -6860,8 +6875,9 @@
         "peRisk": 0,
         "pbRisk": 0
       },
-      "evaluated": false,
-      "createdAt": "2026-06-02T20:20:17.858Z"
+      "evaluated": true,
+      "createdAt": "2026-06-02T20:20:17.858Z",
+      "evaluatedDate": "2026-06-03"
     },
     {
       "id": "2026-06-02:3357",
@@ -6898,8 +6914,9 @@
         "peRisk": 0,
         "pbRisk": 0
       },
-      "evaluated": false,
-      "createdAt": "2026-06-02T20:20:17.858Z"
+      "evaluated": true,
+      "createdAt": "2026-06-02T20:20:17.858Z",
+      "evaluatedDate": "2026-06-03"
     },
     {
       "id": "2026-06-02:1312",
@@ -6936,8 +6953,9 @@
         "peRisk": 0,
         "pbRisk": 0
       },
-      "evaluated": false,
-      "createdAt": "2026-06-02T20:20:17.858Z"
+      "evaluated": true,
+      "createdAt": "2026-06-02T20:20:17.858Z",
+      "evaluatedDate": "2026-06-03"
     },
     {
       "id": "2026-06-02:2530",
@@ -6974,8 +6992,9 @@
         "peRisk": 0,
         "pbRisk": 0
       },
-      "evaluated": false,
-      "createdAt": "2026-06-02T20:20:17.858Z"
+      "evaluated": true,
+      "createdAt": "2026-06-02T20:20:17.858Z",
+      "evaluatedDate": "2026-06-03"
     },
     {
       "id": "2026-06-02:4763",
@@ -7012,8 +7031,9 @@
         "peRisk": 0,
         "pbRisk": 0
       },
-      "evaluated": false,
-      "createdAt": "2026-06-02T20:20:17.858Z"
+      "evaluated": true,
+      "createdAt": "2026-06-02T20:20:17.858Z",
+      "evaluatedDate": "2026-06-03"
     },
     {
       "id": "2026-06-02:2101",
@@ -7050,8 +7070,9 @@
         "peRisk": 0,
         "pbRisk": 0
       },
-      "evaluated": false,
-      "createdAt": "2026-06-02T20:20:17.858Z"
+      "evaluated": true,
+      "createdAt": "2026-06-02T20:20:17.858Z",
+      "evaluatedDate": "2026-06-03"
     },
     {
       "id": "2026-06-02:2603",
@@ -7088,8 +7109,9 @@
         "peRisk": 0,
         "pbRisk": 0
       },
-      "evaluated": false,
-      "createdAt": "2026-06-02T20:20:17.858Z"
+      "evaluated": true,
+      "createdAt": "2026-06-02T20:20:17.858Z",
+      "evaluatedDate": "2026-06-03"
     },
     {
       "id": "2026-06-02:2606",
@@ -7126,8 +7148,9 @@
         "peRisk": 0,
         "pbRisk": 0
       },
-      "evaluated": false,
-      "createdAt": "2026-06-02T20:20:17.858Z"
+      "evaluated": true,
+      "createdAt": "2026-06-02T20:20:17.858Z",
+      "evaluatedDate": "2026-06-03"
     },
     {
       "id": "2026-06-02:6026",
@@ -7164,8 +7187,9 @@
         "peRisk": 0,
         "pbRisk": 0
       },
-      "evaluated": false,
-      "createdAt": "2026-06-02T20:20:17.858Z"
+      "evaluated": true,
+      "createdAt": "2026-06-02T20:20:17.858Z",
+      "evaluatedDate": "2026-06-03"
     },
     {
       "id": "2026-06-02:1304",
@@ -7202,8 +7226,9 @@
         "peRisk": 0,
         "pbRisk": 0
       },
-      "evaluated": false,
-      "createdAt": "2026-06-02T20:20:17.858Z"
+      "evaluated": true,
+      "createdAt": "2026-06-02T20:20:17.858Z",
+      "evaluatedDate": "2026-06-03"
     },
     {
       "id": "2026-06-02:3305",
@@ -7240,8 +7265,9 @@
         "peRisk": 0.20299999999999999,
         "pbRisk": 0
       },
-      "evaluated": false,
-      "createdAt": "2026-06-02T20:20:17.858Z"
+      "evaluated": true,
+      "createdAt": "2026-06-02T20:20:17.858Z",
+      "evaluatedDate": "2026-06-03"
     },
     {
       "id": "2026-06-02:2912",
@@ -7278,8 +7304,9 @@
         "peRisk": 0,
         "pbRisk": 0.13624999999999998
       },
-      "evaluated": false,
-      "createdAt": "2026-06-02T20:20:17.858Z"
+      "evaluated": true,
+      "createdAt": "2026-06-02T20:20:17.858Z",
+      "evaluatedDate": "2026-06-03"
     },
     {
       "id": "2026-06-02:2618",
@@ -7316,8 +7343,9 @@
         "peRisk": 0,
         "pbRisk": 0
       },
-      "evaluated": false,
-      "createdAt": "2026-06-02T20:20:17.858Z"
+      "evaluated": true,
+      "createdAt": "2026-06-02T20:20:17.858Z",
+      "evaluatedDate": "2026-06-03"
     },
     {
       "id": "2026-06-02:5258",
@@ -7354,8 +7382,9 @@
         "peRisk": 0,
         "pbRisk": 0
       },
-      "evaluated": false,
-      "createdAt": "2026-06-02T20:20:17.858Z"
+      "evaluated": true,
+      "createdAt": "2026-06-02T20:20:17.858Z",
+      "evaluatedDate": "2026-06-03"
     },
     {
       "id": "2026-06-02:8034",
@@ -7392,8 +7421,9 @@
         "peRisk": 0,
         "pbRisk": 0
       },
-      "evaluated": false,
-      "createdAt": "2026-06-02T20:20:17.858Z"
+      "evaluated": true,
+      "createdAt": "2026-06-02T20:20:17.858Z",
+      "evaluatedDate": "2026-06-03"
     },
     {
       "id": "2026-06-02:6901",
@@ -7430,8 +7460,9 @@
         "peRisk": 0,
         "pbRisk": 0
       },
-      "evaluated": false,
-      "createdAt": "2026-06-02T20:20:17.858Z"
+      "evaluated": true,
+      "createdAt": "2026-06-02T20:20:17.858Z",
+      "evaluatedDate": "2026-06-03"
     },
     {
       "id": "2026-06-02:2427",
@@ -7468,8 +7499,9 @@
         "peRisk": 0,
         "pbRisk": 0
       },
-      "evaluated": false,
-      "createdAt": "2026-06-02T20:20:17.858Z"
+      "evaluated": true,
+      "createdAt": "2026-06-02T20:20:17.858Z",
+      "evaluatedDate": "2026-06-03"
     },
     {
       "id": "2026-06-02:6235",
@@ -7506,8 +7538,9 @@
         "peRisk": 0,
         "pbRisk": 0
       },
-      "evaluated": false,
-      "createdAt": "2026-06-02T20:20:17.858Z"
+      "evaluated": true,
+      "createdAt": "2026-06-02T20:20:17.858Z",
+      "evaluatedDate": "2026-06-03"
     },
     {
       "id": "2026-06-02:6558",
@@ -7544,8 +7577,9 @@
         "peRisk": 0,
         "pbRisk": 0
       },
-      "evaluated": false,
-      "createdAt": "2026-06-02T20:20:17.858Z"
+      "evaluated": true,
+      "createdAt": "2026-06-02T20:20:17.858Z",
+      "evaluatedDate": "2026-06-03"
     },
     {
       "id": "2026-06-02:6697",
@@ -7582,8 +7616,9 @@
         "peRisk": 0,
         "pbRisk": 0
       },
-      "evaluated": false,
-      "createdAt": "2026-06-02T20:20:17.858Z"
+      "evaluated": true,
+      "createdAt": "2026-06-02T20:20:17.858Z",
+      "evaluatedDate": "2026-06-03"
     },
     {
       "id": "2026-06-02:6541",
@@ -7620,8 +7655,9 @@
         "peRisk": 0,
         "pbRisk": 0
       },
-      "evaluated": false,
-      "createdAt": "2026-06-02T20:20:17.858Z"
+      "evaluated": true,
+      "createdAt": "2026-06-02T20:20:17.858Z",
+      "evaluatedDate": "2026-06-03"
     },
     {
       "id": "2026-06-02:1307",
@@ -7658,8 +7694,9 @@
         "peRisk": 0,
         "pbRisk": 0
       },
-      "evaluated": false,
-      "createdAt": "2026-06-02T20:20:17.858Z"
+      "evaluated": true,
+      "createdAt": "2026-06-02T20:20:17.858Z",
+      "evaluatedDate": "2026-06-03"
     },
     {
       "id": "2026-06-02:2611",
@@ -7696,8 +7733,9 @@
         "peRisk": 0,
         "pbRisk": 0
       },
-      "evaluated": false,
-      "createdAt": "2026-06-02T20:20:17.858Z"
+      "evaluated": true,
+      "createdAt": "2026-06-02T20:20:17.858Z",
+      "evaluatedDate": "2026-06-03"
     },
     {
       "id": "2026-06-02:2886",
@@ -7734,8 +7772,9 @@
         "peRisk": 0,
         "pbRisk": 0
       },
-      "evaluated": false,
-      "createdAt": "2026-06-02T20:20:17.858Z"
+      "evaluated": true,
+      "createdAt": "2026-06-02T20:20:17.858Z",
+      "evaluatedDate": "2026-06-03"
     },
     {
       "id": "2026-06-02:2613",
@@ -7772,8 +7811,9 @@
         "peRisk": 0,
         "pbRisk": 0
       },
-      "evaluated": false,
-      "createdAt": "2026-06-02T20:20:17.858Z"
+      "evaluated": true,
+      "createdAt": "2026-06-02T20:20:17.858Z",
+      "evaluatedDate": "2026-06-03"
     },
     {
       "id": "2026-06-02:4967",
@@ -7810,8 +7850,9 @@
         "peRisk": 0,
         "pbRisk": 0
       },
-      "evaluated": false,
-      "createdAt": "2026-06-02T20:20:17.858Z"
+      "evaluated": true,
+      "createdAt": "2026-06-02T20:20:17.858Z",
+      "evaluatedDate": "2026-06-03"
     },
     {
       "id": "2026-06-02:2392",
@@ -7848,8 +7889,9 @@
         "peRisk": 0,
         "pbRisk": 0
       },
-      "evaluated": false,
-      "createdAt": "2026-06-02T20:20:17.858Z"
+      "evaluated": true,
+      "createdAt": "2026-06-02T20:20:17.858Z",
+      "evaluatedDate": "2026-06-03"
     },
     {
       "id": "2026-06-02:2027",
@@ -7886,8 +7928,9 @@
         "peRisk": 0,
         "pbRisk": 0
       },
-      "evaluated": false,
-      "createdAt": "2026-06-02T20:20:17.858Z"
+      "evaluated": true,
+      "createdAt": "2026-06-02T20:20:17.858Z",
+      "evaluatedDate": "2026-06-03"
     },
     {
       "id": "2026-06-02:8935",
@@ -7924,8 +7967,9 @@
         "peRisk": 0,
         "pbRisk": 0
       },
-      "evaluated": false,
-      "createdAt": "2026-06-02T20:20:17.858Z"
+      "evaluated": true,
+      "createdAt": "2026-06-02T20:20:17.858Z",
+      "evaluatedDate": "2026-06-03"
     },
     {
       "id": "2026-06-02:2385",
@@ -7962,8 +8006,9 @@
         "peRisk": 0,
         "pbRisk": 0
       },
-      "evaluated": false,
-      "createdAt": "2026-06-02T20:20:17.858Z"
+      "evaluated": true,
+      "createdAt": "2026-06-02T20:20:17.858Z",
+      "evaluatedDate": "2026-06-03"
     },
     {
       "id": "2026-06-02:3317",
@@ -8000,8 +8045,9 @@
         "peRisk": 0.1611666666666667,
         "pbRisk": 0
       },
-      "evaluated": false,
-      "createdAt": "2026-06-02T20:20:17.858Z"
+      "evaluated": true,
+      "createdAt": "2026-06-02T20:20:17.858Z",
+      "evaluatedDate": "2026-06-03"
     },
     {
       "id": "2026-06-02:8114",
@@ -8038,8 +8084,9 @@
         "peRisk": 0,
         "pbRisk": 0
       },
-      "evaluated": false,
-      "createdAt": "2026-06-02T20:20:17.858Z"
+      "evaluated": true,
+      "createdAt": "2026-06-02T20:20:17.858Z",
+      "evaluatedDate": "2026-06-03"
     },
     {
       "id": "2026-06-02:2637",
@@ -8076,8 +8123,9 @@
         "peRisk": 0,
         "pbRisk": 0
       },
-      "evaluated": false,
-      "createdAt": "2026-06-02T20:20:17.858Z"
+      "evaluated": true,
+      "createdAt": "2026-06-02T20:20:17.858Z",
+      "evaluatedDate": "2026-06-03"
     },
     {
       "id": "2026-06-02:6757",
@@ -8114,8 +8162,9 @@
         "peRisk": 0,
         "pbRisk": 0
       },
-      "evaluated": false,
-      "createdAt": "2026-06-02T20:20:17.858Z"
+      "evaluated": true,
+      "createdAt": "2026-06-02T20:20:17.858Z",
+      "evaluatedDate": "2026-06-03"
     },
     {
       "id": "2026-06-02:4933",
@@ -8152,8 +8201,9 @@
         "peRisk": 0,
         "pbRisk": 0
       },
-      "evaluated": false,
-      "createdAt": "2026-06-02T20:20:17.858Z"
+      "evaluated": true,
+      "createdAt": "2026-06-02T20:20:17.858Z",
+      "evaluatedDate": "2026-06-03"
     },
     {
       "id": "2026-06-02:6658",
@@ -8190,8 +8240,9 @@
         "peRisk": 0.7416666666666667,
         "pbRisk": 0.18374999999999997
       },
-      "evaluated": false,
-      "createdAt": "2026-06-02T20:20:17.858Z"
+      "evaluated": true,
+      "createdAt": "2026-06-02T20:20:17.858Z",
+      "evaluatedDate": "2026-06-03"
     },
     {
       "id": "2026-06-02:8358",
@@ -8228,8 +8279,9 @@
         "peRisk": 1,
         "pbRisk": 1
       },
-      "evaluated": false,
-      "createdAt": "2026-06-02T20:20:17.858Z"
+      "evaluated": true,
+      "createdAt": "2026-06-02T20:20:17.858Z",
+      "evaluatedDate": "2026-06-03"
     },
     {
       "id": "2026-06-02:2061",
@@ -8266,8 +8318,9 @@
         "peRisk": 0,
         "pbRisk": 0
       },
-      "evaluated": false,
-      "createdAt": "2026-06-02T20:20:17.858Z"
+      "evaluated": true,
+      "createdAt": "2026-06-02T20:20:17.858Z",
+      "evaluatedDate": "2026-06-03"
     },
     {
       "id": "2026-06-02:3191",
@@ -8304,8 +8357,9 @@
         "peRisk": 1,
         "pbRisk": 0.008750000000000036
       },
-      "evaluated": false,
-      "createdAt": "2026-06-02T20:20:17.858Z"
+      "evaluated": true,
+      "createdAt": "2026-06-02T20:20:17.858Z",
+      "evaluatedDate": "2026-06-03"
     },
     {
       "id": "2026-06-02:5274",
@@ -8342,8 +8396,9 @@
         "peRisk": 1,
         "pbRisk": 1
       },
-      "evaluated": false,
-      "createdAt": "2026-06-02T20:20:17.858Z"
+      "evaluated": true,
+      "createdAt": "2026-06-02T20:20:17.858Z",
+      "evaluatedDate": "2026-06-03"
     },
     {
       "id": "2026-06-02:6922",
@@ -8380,8 +8435,9 @@
         "peRisk": 0,
         "pbRisk": 0.17374999999999996
       },
-      "evaluated": false,
-      "createdAt": "2026-06-02T20:20:17.858Z"
+      "evaluated": true,
+      "createdAt": "2026-06-02T20:20:17.858Z",
+      "evaluatedDate": "2026-06-03"
     },
     {
       "id": "2026-06-02:6224",
@@ -8418,8 +8474,9 @@
         "peRisk": 1,
         "pbRisk": 0
       },
-      "evaluated": false,
-      "createdAt": "2026-06-02T20:20:17.858Z"
+      "evaluated": true,
+      "createdAt": "2026-06-02T20:20:17.858Z",
+      "evaluatedDate": "2026-06-03"
     },
     {
       "id": "2026-06-02:6654",
@@ -8456,8 +8513,9 @@
         "peRisk": 1,
         "pbRisk": 0.25625
       },
-      "evaluated": false,
-      "createdAt": "2026-06-02T20:20:17.858Z"
+      "evaluated": true,
+      "createdAt": "2026-06-02T20:20:17.858Z",
+      "evaluatedDate": "2026-06-03"
     },
     {
       "id": "2026-06-02:7740",
@@ -8494,8 +8552,9 @@
         "peRisk": 0,
         "pbRisk": 0.2875
       },
-      "evaluated": false,
-      "createdAt": "2026-06-02T20:20:17.858Z"
+      "evaluated": true,
+      "createdAt": "2026-06-02T20:20:17.858Z",
+      "evaluatedDate": "2026-06-03"
     },
     {
       "id": "2026-06-02:5291",
@@ -8532,8 +8591,9 @@
         "peRisk": 1,
         "pbRisk": 0
       },
-      "evaluated": false,
-      "createdAt": "2026-06-02T20:20:17.858Z"
+      "evaluated": true,
+      "createdAt": "2026-06-02T20:20:17.858Z",
+      "evaluatedDate": "2026-06-03"
     },
     {
       "id": "2026-06-02:8234",
@@ -8570,8 +8630,9 @@
         "peRisk": 0,
         "pbRisk": 0
       },
-      "evaluated": false,
-      "createdAt": "2026-06-02T20:20:17.858Z"
+      "evaluated": true,
+      "createdAt": "2026-06-02T20:20:17.858Z",
+      "evaluatedDate": "2026-06-03"
     },
     {
       "id": "2026-06-02:6664",
@@ -8608,8 +8669,9 @@
         "peRisk": 0,
         "pbRisk": 0.30374999999999996
       },
-      "evaluated": false,
-      "createdAt": "2026-06-02T20:20:17.858Z"
+      "evaluated": true,
+      "createdAt": "2026-06-02T20:20:17.858Z",
+      "evaluatedDate": "2026-06-03"
     },
     {
       "id": "2026-06-02:8111",
@@ -8646,8 +8708,9 @@
         "peRisk": 1,
         "pbRisk": 0.16125
       },
-      "evaluated": false,
-      "createdAt": "2026-06-02T20:20:17.858Z"
+      "evaluated": true,
+      "createdAt": "2026-06-02T20:20:17.858Z",
+      "evaluatedDate": "2026-06-03"
     },
     {
       "id": "2026-06-02:6861",
@@ -8684,8 +8747,9 @@
         "peRisk": 0.7581666666666665,
         "pbRisk": 0.8300000000000001
       },
-      "evaluated": false,
-      "createdAt": "2026-06-02T20:20:17.858Z"
+      "evaluated": true,
+      "createdAt": "2026-06-02T20:20:17.858Z",
+      "evaluatedDate": "2026-06-03"
     },
     {
       "id": "2026-06-02:6190",
@@ -8722,8 +8786,9 @@
         "peRisk": 0.18366666666666673,
         "pbRisk": 0.01749999999999996
       },
-      "evaluated": false,
-      "createdAt": "2026-06-02T20:20:17.858Z"
+      "evaluated": true,
+      "createdAt": "2026-06-02T20:20:17.858Z",
+      "evaluatedDate": "2026-06-03"
     },
     {
       "id": "2026-06-02:7769",
@@ -8760,8 +8825,9 @@
         "peRisk": 0.9794999999999999,
         "pbRisk": 1
       },
-      "evaluated": false,
-      "createdAt": "2026-06-02T20:20:17.858Z"
+      "evaluated": true,
+      "createdAt": "2026-06-02T20:20:17.858Z",
+      "evaluatedDate": "2026-06-03"
     },
     {
       "id": "2026-06-02:4979",
@@ -8798,8 +8864,9 @@
         "peRisk": 1,
         "pbRisk": 1
       },
-      "evaluated": false,
-      "createdAt": "2026-06-02T20:20:17.858Z"
+      "evaluated": true,
+      "createdAt": "2026-06-02T20:20:17.858Z",
+      "evaluatedDate": "2026-06-03"
     },
     {
       "id": "2026-06-02:6829",
@@ -8836,8 +8903,9 @@
         "peRisk": 0.3116666666666667,
         "pbRisk": 0.31625000000000003
       },
-      "evaluated": false,
-      "createdAt": "2026-06-02T20:20:17.858Z"
+      "evaluated": true,
+      "createdAt": "2026-06-02T20:20:17.858Z",
+      "evaluatedDate": "2026-06-03"
     },
     {
       "id": "2026-06-02:3580",
@@ -8874,8 +8942,9 @@
         "peRisk": 0.7083333333333334,
         "pbRisk": 0.015000000000000013
       },
-      "evaluated": false,
-      "createdAt": "2026-06-02T20:20:17.858Z"
+      "evaluated": true,
+      "createdAt": "2026-06-02T20:20:17.858Z",
+      "evaluatedDate": "2026-06-03"
     },
     {
       "id": "2026-06-02:7772",
@@ -8912,8 +8981,9 @@
         "peRisk": 1,
         "pbRisk": 0.13875000000000004
       },
-      "evaluated": false,
-      "createdAt": "2026-06-02T20:20:17.858Z"
+      "evaluated": true,
+      "createdAt": "2026-06-02T20:20:17.858Z",
+      "evaluatedDate": "2026-06-03"
     },
     {
       "id": "2026-06-02:3581",
@@ -8950,8 +9020,9 @@
         "peRisk": 1,
         "pbRisk": 1
       },
-      "evaluated": false,
-      "createdAt": "2026-06-02T20:20:17.858Z"
+      "evaluated": true,
+      "createdAt": "2026-06-02T20:20:17.858Z",
+      "evaluatedDate": "2026-06-03"
     },
     {
       "id": "2026-06-02:7728",
@@ -8988,8 +9059,9 @@
         "peRisk": 1,
         "pbRisk": 1
       },
-      "evaluated": false,
-      "createdAt": "2026-06-02T20:20:17.858Z"
+      "evaluated": true,
+      "createdAt": "2026-06-02T20:20:17.858Z",
+      "evaluatedDate": "2026-06-03"
     },
     {
       "id": "2026-06-02:3693",
@@ -9026,8 +9098,9 @@
         "peRisk": 0.5741666666666667,
         "pbRisk": 0.10750000000000004
       },
-      "evaluated": false,
-      "createdAt": "2026-06-02T20:20:17.858Z"
+      "evaluated": true,
+      "createdAt": "2026-06-02T20:20:17.858Z",
+      "evaluatedDate": "2026-06-03"
     },
     {
       "id": "2026-06-02:7734",
@@ -9064,8 +9137,9 @@
         "peRisk": 0.7875,
         "pbRisk": 1
       },
-      "evaluated": false,
-      "createdAt": "2026-06-02T20:20:17.858Z"
+      "evaluated": true,
+      "createdAt": "2026-06-02T20:20:17.858Z",
+      "evaluatedDate": "2026-06-03"
     },
     {
       "id": "2026-06-02:3081",
@@ -9102,8 +9176,9 @@
         "peRisk": 1,
         "pbRisk": 1
       },
-      "evaluated": false,
-      "createdAt": "2026-06-02T20:20:17.858Z"
+      "evaluated": true,
+      "createdAt": "2026-06-02T20:20:17.858Z",
+      "evaluatedDate": "2026-06-03"
     },
     {
       "id": "2026-06-02:4542",
@@ -9140,8 +9215,9 @@
         "peRisk": 1,
         "pbRisk": 0.685
       },
-      "evaluated": false,
-      "createdAt": "2026-06-02T20:20:17.858Z"
+      "evaluated": true,
+      "createdAt": "2026-06-02T20:20:17.858Z",
+      "evaluatedDate": "2026-06-03"
     },
     {
       "id": "2026-06-02:7751",
@@ -9178,8 +9254,9 @@
         "peRisk": 0.6455000000000001,
         "pbRisk": 1
       },
-      "evaluated": false,
-      "createdAt": "2026-06-02T20:20:17.858Z"
+      "evaluated": true,
+      "createdAt": "2026-06-02T20:20:17.858Z",
+      "evaluatedDate": "2026-06-03"
     },
     {
       "id": "2026-06-02:3163",
@@ -9216,8 +9293,9 @@
         "peRisk": 1,
         "pbRisk": 1
       },
-      "evaluated": false,
-      "createdAt": "2026-06-02T20:20:17.858Z"
+      "evaluated": true,
+      "createdAt": "2026-06-02T20:20:17.858Z",
+      "evaluatedDate": "2026-06-03"
     },
     {
       "id": "2026-06-02:6584",
@@ -9254,8 +9332,9 @@
         "peRisk": 0.8521666666666666,
         "pbRisk": 1
       },
-      "evaluated": false,
-      "createdAt": "2026-06-02T20:20:17.858Z"
+      "evaluated": true,
+      "createdAt": "2026-06-02T20:20:17.858Z",
+      "evaluatedDate": "2026-06-03"
     },
     {
       "id": "2026-06-02:4971",
@@ -9292,8 +9371,3049 @@
         "peRisk": 1,
         "pbRisk": 1
       },
+      "evaluated": true,
+      "createdAt": "2026-06-02T20:20:17.858Z",
+      "evaluatedDate": "2026-06-03"
+    },
+    {
+      "id": "2026-06-03:2887",
+      "rank": 1,
+      "sourceDate": "2026-06-03",
+      "code": "2887",
+      "name": "台新新光金",
+      "market": "上市",
+      "close": 26.1,
+      "score": 90.9,
+      "prediction": {
+        "direction": "漲",
+        "probability": 85,
+        "learningAdjustment": 0.1
+      },
+      "metrics": {
+        "changePct": 6.1,
+        "intradayPct": 6.75,
+        "closePosition": 100,
+        "averageGapPct": 2.96,
+        "liquidityScore": 100,
+        "valuationScore": 100,
+        "institutionRatio": null
+      },
+      "features": {
+        "changePct": 0.61,
+        "intradayPct": 0.84375,
+        "closePosition": 1,
+        "averageGapPct": 0.19733333333333333,
+        "liquidityScore": 1,
+        "valuationScore": 1,
+        "institutionRatio": 0,
+        "overheat": 0.016666666666666607,
+        "peRisk": 0,
+        "pbRisk": 0
+      },
       "evaluated": false,
-      "createdAt": "2026-06-02T20:20:17.858Z"
+      "createdAt": "2026-06-03T20:32:16.693Z"
+    },
+    {
+      "id": "2026-06-03:8936",
+      "rank": 2,
+      "sourceDate": "2026-06-03",
+      "code": "8936",
+      "name": "國統",
+      "market": "上櫃",
+      "close": 54.7,
+      "score": 90.7,
+      "prediction": {
+        "direction": "漲",
+        "probability": 84.6,
+        "learningAdjustment": 0
+      },
+      "metrics": {
+        "changePct": 4.19,
+        "intradayPct": 4.19,
+        "closePosition": 96,
+        "averageGapPct": 2.15,
+        "liquidityScore": 100,
+        "valuationScore": 100,
+        "institutionRatio": 31.83
+      },
+      "features": {
+        "changePct": 0.41900000000000004,
+        "intradayPct": 0.52375,
+        "closePosition": 0.92,
+        "averageGapPct": 0.14333333333333334,
+        "liquidityScore": 1,
+        "valuationScore": 1,
+        "institutionRatio": 1,
+        "overheat": 0,
+        "peRisk": 0,
+        "pbRisk": 0
+      },
+      "evaluated": false,
+      "createdAt": "2026-06-03T20:32:16.693Z"
+    },
+    {
+      "id": "2026-06-03:5009",
+      "rank": 3,
+      "sourceDate": "2026-06-03",
+      "code": "5009",
+      "name": "榮剛",
+      "market": "上櫃",
+      "close": 38,
+      "score": 90.1,
+      "prediction": {
+        "direction": "漲",
+        "probability": 84.8,
+        "learningAdjustment": 0.3
+      },
+      "metrics": {
+        "changePct": 5.7,
+        "intradayPct": 5.26,
+        "closePosition": 81,
+        "averageGapPct": 0.9,
+        "liquidityScore": 100,
+        "valuationScore": 100,
+        "institutionRatio": 31.2
+      },
+      "features": {
+        "changePct": 0.5700000000000001,
+        "intradayPct": 0.6575,
+        "closePosition": 0.62,
+        "averageGapPct": 0.060000000000000005,
+        "liquidityScore": 1,
+        "valuationScore": 1,
+        "institutionRatio": 1,
+        "overheat": 0,
+        "peRisk": 0,
+        "pbRisk": 0
+      },
+      "evaluated": false,
+      "createdAt": "2026-06-03T20:32:16.693Z"
+    },
+    {
+      "id": "2026-06-03:5871",
+      "rank": 4,
+      "sourceDate": "2026-06-03",
+      "code": "5871",
+      "name": "中租-KY",
+      "market": "上市",
+      "close": 114.5,
+      "score": 88.9,
+      "prediction": {
+        "direction": "漲",
+        "probability": 83.7,
+        "learningAdjustment": 0.2
+      },
+      "metrics": {
+        "changePct": 5.53,
+        "intradayPct": 5.53,
+        "closePosition": 93,
+        "averageGapPct": 2.69,
+        "liquidityScore": 100,
+        "valuationScore": 100,
+        "institutionRatio": null
+      },
+      "features": {
+        "changePct": 0.553,
+        "intradayPct": 0.69125,
+        "closePosition": 0.86,
+        "averageGapPct": 0.17933333333333332,
+        "liquidityScore": 1,
+        "valuationScore": 1,
+        "institutionRatio": 0,
+        "overheat": 0,
+        "peRisk": 0,
+        "pbRisk": 0
+      },
+      "evaluated": false,
+      "createdAt": "2026-06-03T20:32:16.693Z"
+    },
+    {
+      "id": "2026-06-03:5536",
+      "rank": 5,
+      "sourceDate": "2026-06-03",
+      "code": "5536",
+      "name": "聖暉*",
+      "market": "上櫃",
+      "close": 1055,
+      "score": 87.2,
+      "prediction": {
+        "direction": "漲",
+        "probability": 84.6,
+        "learningAdjustment": 1.4
+      },
+      "metrics": {
+        "changePct": 5.71,
+        "intradayPct": 4.98,
+        "closePosition": 85,
+        "averageGapPct": 2.49,
+        "liquidityScore": 100,
+        "valuationScore": 30,
+        "institutionRatio": 27.78
+      },
+      "features": {
+        "changePct": 0.571,
+        "intradayPct": 0.6225,
+        "closePosition": 0.7,
+        "averageGapPct": 0.166,
+        "liquidityScore": 1,
+        "valuationScore": -0.4,
+        "institutionRatio": 1,
+        "overheat": 0,
+        "peRisk": 0,
+        "pbRisk": 0.74875
+      },
+      "evaluated": false,
+      "createdAt": "2026-06-03T20:32:16.693Z"
+    },
+    {
+      "id": "2026-06-03:1710",
+      "rank": 6,
+      "sourceDate": "2026-06-03",
+      "code": "1710",
+      "name": "東聯",
+      "market": "上市",
+      "close": 14.55,
+      "score": 87.1,
+      "prediction": {
+        "direction": "漲",
+        "probability": 82.7,
+        "learningAdjustment": 0.4
+      },
+      "metrics": {
+        "changePct": 6.59,
+        "intradayPct": 5.43,
+        "closePosition": 94,
+        "averageGapPct": 3.19,
+        "liquidityScore": 100,
+        "valuationScore": 68,
+        "institutionRatio": null
+      },
+      "features": {
+        "changePct": 0.659,
+        "intradayPct": 0.67875,
+        "closePosition": 0.88,
+        "averageGapPct": 0.21266666666666667,
+        "liquidityScore": 1,
+        "valuationScore": 0.36,
+        "institutionRatio": 0,
+        "overheat": 0.09833333333333331,
+        "peRisk": 0,
+        "pbRisk": 0
+      },
+      "evaluated": false,
+      "createdAt": "2026-06-03T20:32:16.693Z"
+    },
+    {
+      "id": "2026-06-03:6005",
+      "rank": 7,
+      "sourceDate": "2026-06-03",
+      "code": "6005",
+      "name": "群益證",
+      "market": "上市",
+      "close": 41.25,
+      "score": 86.8,
+      "prediction": {
+        "direction": "漲",
+        "probability": 81.6,
+        "learningAdjustment": 0
+      },
+      "metrics": {
+        "changePct": 4.17,
+        "intradayPct": 4.3,
+        "closePosition": 100,
+        "averageGapPct": 2.05,
+        "liquidityScore": 100,
+        "valuationScore": 100,
+        "institutionRatio": null
+      },
+      "features": {
+        "changePct": 0.417,
+        "intradayPct": 0.5375,
+        "closePosition": 1,
+        "averageGapPct": 0.13666666666666666,
+        "liquidityScore": 1,
+        "valuationScore": 1,
+        "institutionRatio": 0,
+        "overheat": 0,
+        "peRisk": 0,
+        "pbRisk": 0
+      },
+      "evaluated": false,
+      "createdAt": "2026-06-03T20:32:16.693Z"
+    },
+    {
+      "id": "2026-06-03:1229",
+      "rank": 8,
+      "sourceDate": "2026-06-03",
+      "code": "1229",
+      "name": "聯華",
+      "market": "上市",
+      "close": 43.2,
+      "score": 86.6,
+      "prediction": {
+        "direction": "漲",
+        "probability": 82.4,
+        "learningAdjustment": 0.4
+      },
+      "metrics": {
+        "changePct": 6.93,
+        "intradayPct": 6.93,
+        "closePosition": 82,
+        "averageGapPct": 3.35,
+        "liquidityScore": 100,
+        "valuationScore": 100,
+        "institutionRatio": null
+      },
+      "features": {
+        "changePct": 0.693,
+        "intradayPct": 0.86625,
+        "closePosition": 0.64,
+        "averageGapPct": 0.22333333333333333,
+        "liquidityScore": 1,
+        "valuationScore": 1,
+        "institutionRatio": 0,
+        "overheat": 0.15499999999999994,
+        "peRisk": 0,
+        "pbRisk": 0
+      },
+      "evaluated": false,
+      "createdAt": "2026-06-03T20:32:16.693Z"
+    },
+    {
+      "id": "2026-06-03:3518",
+      "rank": 9,
+      "sourceDate": "2026-06-03",
+      "code": "3518",
+      "name": "柏騰",
+      "market": "上市",
+      "close": 33.75,
+      "score": 86.6,
+      "prediction": {
+        "direction": "漲",
+        "probability": 81.5,
+        "learningAdjustment": 0
+      },
+      "metrics": {
+        "changePct": 5.8,
+        "intradayPct": 5.3,
+        "closePosition": 98,
+        "averageGapPct": 2.8,
+        "liquidityScore": 87,
+        "valuationScore": 88,
+        "institutionRatio": null
+      },
+      "features": {
+        "changePct": 0.58,
+        "intradayPct": 0.6625,
+        "closePosition": 0.96,
+        "averageGapPct": 0.18666666666666665,
+        "liquidityScore": 0.74,
+        "valuationScore": 0.76,
+        "institutionRatio": 0,
+        "overheat": 0,
+        "peRisk": 0,
+        "pbRisk": 0
+      },
+      "evaluated": false,
+      "createdAt": "2026-06-03T20:32:16.693Z"
+    },
+    {
+      "id": "2026-06-03:2379",
+      "rank": 10,
+      "sourceDate": "2026-06-03",
+      "code": "2379",
+      "name": "瑞昱",
+      "market": "上市",
+      "close": 653,
+      "score": 86.5,
+      "prediction": {
+        "direction": "漲",
+        "probability": 82.8,
+        "learningAdjustment": 0.7
+      },
+      "metrics": {
+        "changePct": 7.22,
+        "intradayPct": 6.7,
+        "closePosition": 100,
+        "averageGapPct": 3.49,
+        "liquidityScore": 100,
+        "valuationScore": 62,
+        "institutionRatio": null
+      },
+      "features": {
+        "changePct": 0.722,
+        "intradayPct": 0.8375,
+        "closePosition": 1,
+        "averageGapPct": 0.2326666666666667,
+        "liquidityScore": 1,
+        "valuationScore": 0.24,
+        "institutionRatio": 0,
+        "overheat": 0.20333333333333328,
+        "peRisk": 0,
+        "pbRisk": 0.43125
+      },
+      "evaluated": false,
+      "createdAt": "2026-06-03T20:32:16.693Z"
+    },
+    {
+      "id": "2026-06-03:2459",
+      "rank": 11,
+      "sourceDate": "2026-06-03",
+      "code": "2459",
+      "name": "敦吉",
+      "market": "上市",
+      "close": 70.9,
+      "score": 86,
+      "prediction": {
+        "direction": "漲",
+        "probability": 80.7,
+        "learningAdjustment": -0.1
+      },
+      "metrics": {
+        "changePct": 5.35,
+        "intradayPct": 5.82,
+        "closePosition": 100,
+        "averageGapPct": 2.6,
+        "liquidityScore": 89,
+        "valuationScore": 100,
+        "institutionRatio": null
+      },
+      "features": {
+        "changePct": 0.5349999999999999,
+        "intradayPct": 0.7275,
+        "closePosition": 1,
+        "averageGapPct": 0.17333333333333334,
+        "liquidityScore": 0.78,
+        "valuationScore": 1,
+        "institutionRatio": 0,
+        "overheat": 0,
+        "peRisk": 0,
+        "pbRisk": 0
+      },
+      "evaluated": false,
+      "createdAt": "2026-06-03T20:32:16.693Z"
+    },
+    {
+      "id": "2026-06-03:4938",
+      "rank": 12,
+      "sourceDate": "2026-06-03",
+      "code": "4938",
+      "name": "和碩",
+      "market": "上市",
+      "close": 97.8,
+      "score": 85.5,
+      "prediction": {
+        "direction": "漲",
+        "probability": 81.6,
+        "learningAdjustment": 0.5
+      },
+      "metrics": {
+        "changePct": 7.24,
+        "intradayPct": 6.3,
+        "closePosition": 80,
+        "averageGapPct": 3.49,
+        "liquidityScore": 100,
+        "valuationScore": 100,
+        "institutionRatio": null
+      },
+      "features": {
+        "changePct": 0.724,
+        "intradayPct": 0.7875,
+        "closePosition": 0.6,
+        "averageGapPct": 0.2326666666666667,
+        "liquidityScore": 1,
+        "valuationScore": 1,
+        "institutionRatio": 0,
+        "overheat": 0.2066666666666667,
+        "peRisk": 0,
+        "pbRisk": 0
+      },
+      "evaluated": false,
+      "createdAt": "2026-06-03T20:32:16.693Z"
+    },
+    {
+      "id": "2026-06-03:8431",
+      "rank": 13,
+      "sourceDate": "2026-06-03",
+      "code": "8431",
+      "name": "匯鑽科",
+      "market": "上櫃",
+      "close": 57.2,
+      "score": 85.5,
+      "prediction": {
+        "direction": "漲",
+        "probability": 81.4,
+        "learningAdjustment": 0.4
+      },
+      "metrics": {
+        "changePct": 6.12,
+        "intradayPct": 4.76,
+        "closePosition": 86,
+        "averageGapPct": 3.04,
+        "liquidityScore": 87,
+        "valuationScore": 50,
+        "institutionRatio": 12.85
+      },
+      "features": {
+        "changePct": 0.612,
+        "intradayPct": 0.595,
+        "closePosition": 0.72,
+        "averageGapPct": 0.20266666666666666,
+        "liquidityScore": 0.74,
+        "valuationScore": 0,
+        "institutionRatio": 0.7138888888888889,
+        "overheat": 0.020000000000000018,
+        "peRisk": 0,
+        "pbRisk": 0
+      },
+      "evaluated": false,
+      "createdAt": "2026-06-03T20:32:16.693Z"
+    },
+    {
+      "id": "2026-06-03:2347",
+      "rank": 14,
+      "sourceDate": "2026-06-03",
+      "code": "2347",
+      "name": "聯強",
+      "market": "上市",
+      "close": 91.5,
+      "score": 85.4,
+      "prediction": {
+        "direction": "漲",
+        "probability": 82.1,
+        "learningAdjustment": 0.8
+      },
+      "metrics": {
+        "changePct": 5.78,
+        "intradayPct": 5.9,
+        "closePosition": 67,
+        "averageGapPct": 2.81,
+        "liquidityScore": 100,
+        "valuationScore": 100,
+        "institutionRatio": null
+      },
+      "features": {
+        "changePct": 0.5780000000000001,
+        "intradayPct": 0.7375,
+        "closePosition": 0.34,
+        "averageGapPct": 0.18733333333333332,
+        "liquidityScore": 1,
+        "valuationScore": 1,
+        "institutionRatio": 0,
+        "overheat": 0,
+        "peRisk": 0,
+        "pbRisk": 0
+      },
+      "evaluated": false,
+      "createdAt": "2026-06-03T20:32:16.693Z"
+    },
+    {
+      "id": "2026-06-03:3526",
+      "rank": 15,
+      "sourceDate": "2026-06-03",
+      "code": "3526",
+      "name": "凡甲",
+      "market": "上櫃",
+      "close": 390,
+      "score": 85.4,
+      "prediction": {
+        "direction": "漲",
+        "probability": 82.6,
+        "learningAdjustment": 1
+      },
+      "metrics": {
+        "changePct": 5.26,
+        "intradayPct": 4.42,
+        "closePosition": 75,
+        "averageGapPct": 1.45,
+        "liquidityScore": 100,
+        "valuationScore": 62,
+        "institutionRatio": 17.91
+      },
+      "features": {
+        "changePct": 0.526,
+        "intradayPct": 0.5525,
+        "closePosition": 0.5,
+        "averageGapPct": 0.09666666666666666,
+        "liquidityScore": 1,
+        "valuationScore": 0.24,
+        "institutionRatio": 0.995,
+        "overheat": 0,
+        "peRisk": 0,
+        "pbRisk": 0.39375000000000004
+      },
+      "evaluated": false,
+      "createdAt": "2026-06-03T20:32:16.693Z"
+    },
+    {
+      "id": "2026-06-03:6957",
+      "rank": 16,
+      "sourceDate": "2026-06-03",
+      "code": "6957",
+      "name": "裕慶-KY",
+      "market": "上市",
+      "close": 181,
+      "score": 85.1,
+      "prediction": {
+        "direction": "漲",
+        "probability": 80.4,
+        "learningAdjustment": 0.1
+      },
+      "metrics": {
+        "changePct": 5.54,
+        "intradayPct": 4.02,
+        "closePosition": 100,
+        "averageGapPct": 2.7,
+        "liquidityScore": 90,
+        "valuationScore": 82,
+        "institutionRatio": null
+      },
+      "features": {
+        "changePct": 0.554,
+        "intradayPct": 0.5025,
+        "closePosition": 1,
+        "averageGapPct": 0.18000000000000002,
+        "liquidityScore": 0.8,
+        "valuationScore": 0.64,
+        "institutionRatio": 0,
+        "overheat": 0,
+        "peRisk": 0,
+        "pbRisk": 0.04500000000000004
+      },
+      "evaluated": false,
+      "createdAt": "2026-06-03T20:32:16.693Z"
+    },
+    {
+      "id": "2026-06-03:6182",
+      "rank": 17,
+      "sourceDate": "2026-06-03",
+      "code": "6182",
+      "name": "合晶",
+      "market": "上櫃",
+      "close": 96.9,
+      "score": 85.1,
+      "prediction": {
+        "direction": "漲",
+        "probability": 80.6,
+        "learningAdjustment": 0.2
+      },
+      "metrics": {
+        "changePct": 7.55,
+        "intradayPct": 4.98,
+        "closePosition": 100,
+        "averageGapPct": 1.34,
+        "liquidityScore": 100,
+        "valuationScore": 28,
+        "institutionRatio": 32.66
+      },
+      "features": {
+        "changePct": 0.755,
+        "intradayPct": 0.6225,
+        "closePosition": 1,
+        "averageGapPct": 0.08933333333333333,
+        "liquidityScore": 1,
+        "valuationScore": -0.44,
+        "institutionRatio": 1,
+        "overheat": 0.2583333333333333,
+        "peRisk": 1,
+        "pbRisk": 0
+      },
+      "evaluated": false,
+      "createdAt": "2026-06-03T20:32:16.693Z"
+    },
+    {
+      "id": "2026-06-03:6526",
+      "rank": 18,
+      "sourceDate": "2026-06-03",
+      "code": "6526",
+      "name": "達發",
+      "market": "上市",
+      "close": 714,
+      "score": 84.9,
+      "prediction": {
+        "direction": "漲",
+        "probability": 81.9,
+        "learningAdjustment": 0.9
+      },
+      "metrics": {
+        "changePct": 6.09,
+        "intradayPct": 4.39,
+        "closePosition": 97,
+        "averageGapPct": 2.96,
+        "liquidityScore": 100,
+        "valuationScore": 30,
+        "institutionRatio": null
+      },
+      "features": {
+        "changePct": 0.609,
+        "intradayPct": 0.54875,
+        "closePosition": 0.94,
+        "averageGapPct": 0.19733333333333333,
+        "liquidityScore": 1,
+        "valuationScore": -0.4,
+        "institutionRatio": 0,
+        "overheat": 0.014999999999999977,
+        "peRisk": 0.09983333333333337,
+        "pbRisk": 0.33375
+      },
+      "evaluated": false,
+      "createdAt": "2026-06-03T20:32:16.693Z"
+    },
+    {
+      "id": "2026-06-03:1319",
+      "rank": 19,
+      "sourceDate": "2026-06-03",
+      "code": "1319",
+      "name": "東陽",
+      "market": "上市",
+      "close": 92.1,
+      "score": 84.7,
+      "prediction": {
+        "direction": "漲",
+        "probability": 81.4,
+        "learningAdjustment": 0.7
+      },
+      "metrics": {
+        "changePct": 5.26,
+        "intradayPct": 4.9,
+        "closePosition": 70,
+        "averageGapPct": 2.56,
+        "liquidityScore": 100,
+        "valuationScore": 100,
+        "institutionRatio": null
+      },
+      "features": {
+        "changePct": 0.526,
+        "intradayPct": 0.6125,
+        "closePosition": 0.4,
+        "averageGapPct": 0.17066666666666666,
+        "liquidityScore": 1,
+        "valuationScore": 1,
+        "institutionRatio": 0,
+        "overheat": 0,
+        "peRisk": 0,
+        "pbRisk": 0
+      },
+      "evaluated": false,
+      "createdAt": "2026-06-03T20:32:16.693Z"
+    },
+    {
+      "id": "2026-06-03:9941",
+      "rank": 20,
+      "sourceDate": "2026-06-03",
+      "code": "9941",
+      "name": "裕融",
+      "market": "上市",
+      "close": 77,
+      "score": 84.4,
+      "prediction": {
+        "direction": "漲",
+        "probability": 80.6,
+        "learningAdjustment": 0.5
+      },
+      "metrics": {
+        "changePct": 4.62,
+        "intradayPct": 4.34,
+        "closePosition": 79,
+        "averageGapPct": 2.26,
+        "liquidityScore": 100,
+        "valuationScore": 100,
+        "institutionRatio": null
+      },
+      "features": {
+        "changePct": 0.462,
+        "intradayPct": 0.5425,
+        "closePosition": 0.58,
+        "averageGapPct": 0.15066666666666664,
+        "liquidityScore": 1,
+        "valuationScore": 1,
+        "institutionRatio": 0,
+        "overheat": 0,
+        "peRisk": 0,
+        "pbRisk": 0
+      },
+      "evaluated": false,
+      "createdAt": "2026-06-03T20:32:16.693Z"
+    },
+    {
+      "id": "2026-06-03:3615",
+      "rank": 21,
+      "sourceDate": "2026-06-03",
+      "code": "3615",
+      "name": "安可",
+      "market": "上櫃",
+      "close": 54.3,
+      "score": 84.4,
+      "prediction": {
+        "direction": "漲",
+        "probability": 80.6,
+        "learningAdjustment": 0.5
+      },
+      "metrics": {
+        "changePct": 7.95,
+        "intradayPct": 9.04,
+        "closePosition": 90,
+        "averageGapPct": 4.5,
+        "liquidityScore": 100,
+        "valuationScore": 46,
+        "institutionRatio": 9.87
+      },
+      "features": {
+        "changePct": 0.795,
+        "intradayPct": 1,
+        "closePosition": 0.8,
+        "averageGapPct": 0.3,
+        "liquidityScore": 1,
+        "valuationScore": -0.08,
+        "institutionRatio": 0.5483333333333333,
+        "overheat": 0.325,
+        "peRisk": 0.29533333333333334,
+        "pbRisk": 0
+      },
+      "evaluated": false,
+      "createdAt": "2026-06-03T20:32:16.693Z"
+    },
+    {
+      "id": "2026-06-03:3515",
+      "rank": 22,
+      "sourceDate": "2026-06-03",
+      "code": "3515",
+      "name": "華擎",
+      "market": "上市",
+      "close": 273.5,
+      "score": 84.2,
+      "prediction": {
+        "direction": "漲",
+        "probability": 79.6,
+        "learningAdjustment": 0.1
+      },
+      "metrics": {
+        "changePct": 7.89,
+        "intradayPct": 7.25,
+        "closePosition": 100,
+        "averageGapPct": 3.8,
+        "liquidityScore": 100,
+        "valuationScore": 82,
+        "institutionRatio": null
+      },
+      "features": {
+        "changePct": 0.7889999999999999,
+        "intradayPct": 0.90625,
+        "closePosition": 1,
+        "averageGapPct": 0.2533333333333333,
+        "liquidityScore": 1,
+        "valuationScore": 0.64,
+        "institutionRatio": 0,
+        "overheat": 0.31499999999999995,
+        "peRisk": 0,
+        "pbRisk": 0
+      },
+      "evaluated": false,
+      "createdAt": "2026-06-03T20:32:16.693Z"
+    },
+    {
+      "id": "2026-06-03:2106",
+      "rank": 23,
+      "sourceDate": "2026-06-03",
+      "code": "2106",
+      "name": "建大",
+      "market": "上市",
+      "close": 18.1,
+      "score": 84,
+      "prediction": {
+        "direction": "漲",
+        "probability": 79.7,
+        "learningAdjustment": 0.2
+      },
+      "metrics": {
+        "changePct": 6.16,
+        "intradayPct": 5.54,
+        "closePosition": 90,
+        "averageGapPct": 3.02,
+        "liquidityScore": 84,
+        "valuationScore": 58,
+        "institutionRatio": null
+      },
+      "features": {
+        "changePct": 0.616,
+        "intradayPct": 0.6925,
+        "closePosition": 0.8,
+        "averageGapPct": 0.20133333333333334,
+        "liquidityScore": 0.68,
+        "valuationScore": 0.16,
+        "institutionRatio": 0,
+        "overheat": 0.02666666666666669,
+        "peRisk": 1,
+        "pbRisk": 0
+      },
+      "evaluated": false,
+      "createdAt": "2026-06-03T20:32:16.693Z"
+    },
+    {
+      "id": "2026-06-03:6244",
+      "rank": 24,
+      "sourceDate": "2026-06-03",
+      "code": "6244",
+      "name": "茂迪",
+      "market": "上櫃",
+      "close": 31.25,
+      "score": 83.8,
+      "prediction": {
+        "direction": "漲",
+        "probability": 80.5,
+        "learningAdjustment": 0.7
+      },
+      "metrics": {
+        "changePct": 5.22,
+        "intradayPct": 5.22,
+        "closePosition": 78,
+        "averageGapPct": 0.64,
+        "liquidityScore": 100,
+        "valuationScore": 28,
+        "institutionRatio": 45.21
+      },
+      "features": {
+        "changePct": 0.522,
+        "intradayPct": 0.6525,
+        "closePosition": 0.56,
+        "averageGapPct": 0.042666666666666665,
+        "liquidityScore": 1,
+        "valuationScore": -0.44,
+        "institutionRatio": 1,
+        "overheat": 0,
+        "peRisk": 1,
+        "pbRisk": 0
+      },
+      "evaluated": false,
+      "createdAt": "2026-06-03T20:32:16.693Z"
+    },
+    {
+      "id": "2026-06-03:2883",
+      "rank": 25,
+      "sourceDate": "2026-06-03",
+      "code": "2883",
+      "name": "凱基金",
+      "market": "上市",
+      "close": 23.4,
+      "score": 83.7,
+      "prediction": {
+        "direction": "漲",
+        "probability": 78.9,
+        "learningAdjustment": 0
+      },
+      "metrics": {
+        "changePct": 3.31,
+        "intradayPct": 3.77,
+        "closePosition": 96,
+        "averageGapPct": 1.65,
+        "liquidityScore": 100,
+        "valuationScore": 100,
+        "institutionRatio": null
+      },
+      "features": {
+        "changePct": 0.331,
+        "intradayPct": 0.47125,
+        "closePosition": 0.92,
+        "averageGapPct": 0.11,
+        "liquidityScore": 1,
+        "valuationScore": 1,
+        "institutionRatio": 0,
+        "overheat": 0,
+        "peRisk": 0,
+        "pbRisk": 0
+      },
+      "evaluated": false,
+      "createdAt": "2026-06-03T20:32:16.693Z"
+    },
+    {
+      "id": "2026-06-03:5388",
+      "rank": 26,
+      "sourceDate": "2026-06-03",
+      "code": "5388",
+      "name": "中磊",
+      "market": "上市",
+      "close": 93.3,
+      "score": 83.7,
+      "prediction": {
+        "direction": "漲",
+        "probability": 79,
+        "learningAdjustment": 0.1
+      },
+      "metrics": {
+        "changePct": 3.55,
+        "intradayPct": 3.67,
+        "closePosition": 98,
+        "averageGapPct": 1.74,
+        "liquidityScore": 100,
+        "valuationScore": 88,
+        "institutionRatio": null
+      },
+      "features": {
+        "changePct": 0.355,
+        "intradayPct": 0.45875,
+        "closePosition": 0.96,
+        "averageGapPct": 0.116,
+        "liquidityScore": 1,
+        "valuationScore": 0.76,
+        "institutionRatio": 0,
+        "overheat": 0,
+        "peRisk": 0,
+        "pbRisk": 0
+      },
+      "evaluated": false,
+      "createdAt": "2026-06-03T20:32:16.693Z"
+    },
+    {
+      "id": "2026-06-03:6129",
+      "rank": 27,
+      "sourceDate": "2026-06-03",
+      "code": "6129",
+      "name": "普誠",
+      "market": "上櫃",
+      "close": 17.55,
+      "score": 83.7,
+      "prediction": {
+        "direction": "漲",
+        "probability": 79.4,
+        "learningAdjustment": 0.2
+      },
+      "metrics": {
+        "changePct": 7.01,
+        "intradayPct": 7.01,
+        "closePosition": 76,
+        "averageGapPct": 2.21,
+        "liquidityScore": 76,
+        "valuationScore": 68,
+        "institutionRatio": 18.18
+      },
+      "features": {
+        "changePct": 0.701,
+        "intradayPct": 0.87625,
+        "closePosition": 0.52,
+        "averageGapPct": 0.14733333333333334,
+        "liquidityScore": 0.52,
+        "valuationScore": 0.36,
+        "institutionRatio": 1,
+        "overheat": 0.1683333333333333,
+        "peRisk": 0,
+        "pbRisk": 0
+      },
+      "evaluated": false,
+      "createdAt": "2026-06-03T20:32:16.693Z"
+    },
+    {
+      "id": "2026-06-03:2327",
+      "rank": 28,
+      "sourceDate": "2026-06-03",
+      "code": "2327",
+      "name": "國巨*",
+      "market": "上市",
+      "close": 846,
+      "score": 83.6,
+      "prediction": {
+        "direction": "漲",
+        "probability": 81.6,
+        "learningAdjustment": 1.2
+      },
+      "metrics": {
+        "changePct": 7.09,
+        "intradayPct": 9.73,
+        "closePosition": 99,
+        "averageGapPct": 3.42,
+        "liquidityScore": 100,
+        "valuationScore": 8,
+        "institutionRatio": null
+      },
+      "features": {
+        "changePct": 0.709,
+        "intradayPct": 1,
+        "closePosition": 0.98,
+        "averageGapPct": 0.228,
+        "liquidityScore": 1,
+        "valuationScore": -0.84,
+        "institutionRatio": 0,
+        "overheat": 0.18166666666666664,
+        "peRisk": 0.5268333333333334,
+        "pbRisk": 0.80375
+      },
+      "evaluated": false,
+      "createdAt": "2026-06-03T20:32:16.693Z"
+    },
+    {
+      "id": "2026-06-03:2103",
+      "rank": 29,
+      "sourceDate": "2026-06-03",
+      "code": "2103",
+      "name": "台橡",
+      "market": "上市",
+      "close": 20.25,
+      "score": 83.5,
+      "prediction": {
+        "direction": "漲",
+        "probability": 79.1,
+        "learningAdjustment": 0.2
+      },
+      "metrics": {
+        "changePct": 4.11,
+        "intradayPct": 3.58,
+        "closePosition": 100,
+        "averageGapPct": 2.02,
+        "liquidityScore": 100,
+        "valuationScore": 68,
+        "institutionRatio": null
+      },
+      "features": {
+        "changePct": 0.41100000000000003,
+        "intradayPct": 0.4475,
+        "closePosition": 1,
+        "averageGapPct": 0.13466666666666666,
+        "liquidityScore": 1,
+        "valuationScore": 0.36,
+        "institutionRatio": 0,
+        "overheat": 0,
+        "peRisk": 0,
+        "pbRisk": 0
+      },
+      "evaluated": false,
+      "createdAt": "2026-06-03T20:32:16.693Z"
+    },
+    {
+      "id": "2026-06-03:3006",
+      "rank": 30,
+      "sourceDate": "2026-06-03",
+      "code": "3006",
+      "name": "晶豪科",
+      "market": "上市",
+      "close": 267.5,
+      "score": 83.2,
+      "prediction": {
+        "direction": "漲",
+        "probability": 80.8,
+        "learningAdjustment": 1
+      },
+      "metrics": {
+        "changePct": 7,
+        "intradayPct": 5.31,
+        "closePosition": 80,
+        "averageGapPct": 3.38,
+        "liquidityScore": 100,
+        "valuationScore": 50,
+        "institutionRatio": null
+      },
+      "features": {
+        "changePct": 0.7,
+        "intradayPct": 0.66375,
+        "closePosition": 0.6,
+        "averageGapPct": 0.22533333333333333,
+        "liquidityScore": 1,
+        "valuationScore": 0,
+        "institutionRatio": 0,
+        "overheat": 0.16666666666666666,
+        "peRisk": 0,
+        "pbRisk": 0.22875
+      },
+      "evaluated": false,
+      "createdAt": "2026-06-03T20:32:16.693Z"
+    },
+    {
+      "id": "2026-06-03:1402",
+      "rank": 31,
+      "sourceDate": "2026-06-03",
+      "code": "1402",
+      "name": "遠東新",
+      "market": "上市",
+      "close": 26.25,
+      "score": 83.1,
+      "prediction": {
+        "direction": "漲",
+        "probability": 80,
+        "learningAdjustment": 0.7
+      },
+      "metrics": {
+        "changePct": 4.79,
+        "intradayPct": 4.58,
+        "closePosition": 68,
+        "averageGapPct": 2.34,
+        "liquidityScore": 100,
+        "valuationScore": 100,
+        "institutionRatio": null
+      },
+      "features": {
+        "changePct": 0.479,
+        "intradayPct": 0.5725,
+        "closePosition": 0.36,
+        "averageGapPct": 0.156,
+        "liquidityScore": 1,
+        "valuationScore": 1,
+        "institutionRatio": 0,
+        "overheat": 0,
+        "peRisk": 0,
+        "pbRisk": 0
+      },
+      "evaluated": false,
+      "createdAt": "2026-06-03T20:32:16.693Z"
+    },
+    {
+      "id": "2026-06-03:6274",
+      "rank": 32,
+      "sourceDate": "2026-06-03",
+      "code": "6274",
+      "name": "台燿",
+      "market": "上櫃",
+      "close": 1695,
+      "score": 83.1,
+      "prediction": {
+        "direction": "漲",
+        "probability": 82.4,
+        "learningAdjustment": 1.8
+      },
+      "metrics": {
+        "changePct": 6.6,
+        "intradayPct": 5.61,
+        "closePosition": 76,
+        "averageGapPct": 1.81,
+        "liquidityScore": 100,
+        "valuationScore": 8,
+        "institutionRatio": 13.9
+      },
+      "features": {
+        "changePct": 0.6599999999999999,
+        "intradayPct": 0.70125,
+        "closePosition": 0.52,
+        "averageGapPct": 0.12066666666666667,
+        "liquidityScore": 1,
+        "valuationScore": -0.84,
+        "institutionRatio": 0.7722222222222223,
+        "overheat": 0.09999999999999994,
+        "peRisk": 1,
+        "pbRisk": 1
+      },
+      "evaluated": false,
+      "createdAt": "2026-06-03T20:32:16.693Z"
+    },
+    {
+      "id": "2026-06-03:4967",
+      "rank": 33,
+      "sourceDate": "2026-06-03",
+      "code": "4967",
+      "name": "十銓",
+      "market": "上市",
+      "close": 304.5,
+      "score": 82.9,
+      "prediction": {
+        "direction": "漲",
+        "probability": 80.1,
+        "learningAdjustment": 0.8
+      },
+      "metrics": {
+        "changePct": 5.36,
+        "intradayPct": 3.22,
+        "closePosition": 73,
+        "averageGapPct": 2.61,
+        "liquidityScore": 100,
+        "valuationScore": 82,
+        "institutionRatio": null
+      },
+      "features": {
+        "changePct": 0.536,
+        "intradayPct": 0.4025,
+        "closePosition": 0.46,
+        "averageGapPct": 0.174,
+        "liquidityScore": 1,
+        "valuationScore": 0.64,
+        "institutionRatio": 0,
+        "overheat": 0,
+        "peRisk": 0,
+        "pbRisk": 0
+      },
+      "evaluated": false,
+      "createdAt": "2026-06-03T20:32:16.693Z"
+    },
+    {
+      "id": "2026-06-03:2880",
+      "rank": 34,
+      "sourceDate": "2026-06-03",
+      "code": "2880",
+      "name": "華南金",
+      "market": "上市",
+      "close": 34.05,
+      "score": 82.7,
+      "prediction": {
+        "direction": "漲",
+        "probability": 78.8,
+        "learningAdjustment": 0.3
+      },
+      "metrics": {
+        "changePct": 3.65,
+        "intradayPct": 4.77,
+        "closePosition": 82,
+        "averageGapPct": 1.79,
+        "liquidityScore": 100,
+        "valuationScore": 100,
+        "institutionRatio": null
+      },
+      "features": {
+        "changePct": 0.365,
+        "intradayPct": 0.59625,
+        "closePosition": 0.64,
+        "averageGapPct": 0.11933333333333333,
+        "liquidityScore": 1,
+        "valuationScore": 1,
+        "institutionRatio": 0,
+        "overheat": 0,
+        "peRisk": 0,
+        "pbRisk": 0
+      },
+      "evaluated": false,
+      "createdAt": "2026-06-03T20:32:16.693Z"
+    },
+    {
+      "id": "2026-06-03:6768",
+      "rank": 35,
+      "sourceDate": "2026-06-03",
+      "code": "6768",
+      "name": "志強-KY",
+      "market": "上市",
+      "close": 94,
+      "score": 82.6,
+      "prediction": {
+        "direction": "漲",
+        "probability": 78.4,
+        "learningAdjustment": 0.2
+      },
+      "metrics": {
+        "changePct": 8.05,
+        "intradayPct": 7.67,
+        "closePosition": 90,
+        "averageGapPct": 3.87,
+        "liquidityScore": 100,
+        "valuationScore": 100,
+        "institutionRatio": null
+      },
+      "features": {
+        "changePct": 0.805,
+        "intradayPct": 0.95875,
+        "closePosition": 0.8,
+        "averageGapPct": 0.258,
+        "liquidityScore": 1,
+        "valuationScore": 1,
+        "institutionRatio": 0,
+        "overheat": 0.3416666666666668,
+        "peRisk": 0,
+        "pbRisk": 0
+      },
+      "evaluated": false,
+      "createdAt": "2026-06-03T20:32:16.693Z"
+    },
+    {
+      "id": "2026-06-03:5876",
+      "rank": 36,
+      "sourceDate": "2026-06-03",
+      "code": "5876",
+      "name": "上海商銀",
+      "market": "上市",
+      "close": 41,
+      "score": 82.5,
+      "prediction": {
+        "direction": "漲",
+        "probability": 77.6,
+        "learningAdjustment": -0.1
+      },
+      "metrics": {
+        "changePct": 3.02,
+        "intradayPct": 3.02,
+        "closePosition": 100,
+        "averageGapPct": 1.49,
+        "liquidityScore": 100,
+        "valuationScore": 100,
+        "institutionRatio": null
+      },
+      "features": {
+        "changePct": 0.302,
+        "intradayPct": 0.3775,
+        "closePosition": 1,
+        "averageGapPct": 0.09933333333333333,
+        "liquidityScore": 1,
+        "valuationScore": 1,
+        "institutionRatio": 0,
+        "overheat": 0,
+        "peRisk": 0,
+        "pbRisk": 0
+      },
+      "evaluated": false,
+      "createdAt": "2026-06-03T20:32:16.693Z"
+    },
+    {
+      "id": "2026-06-03:2603",
+      "rank": 37,
+      "sourceDate": "2026-06-03",
+      "code": "2603",
+      "name": "長榮",
+      "market": "上市",
+      "close": 231,
+      "score": 82.3,
+      "prediction": {
+        "direction": "漲",
+        "probability": 77.4,
+        "learningAdjustment": 0
+      },
+      "metrics": {
+        "changePct": 3.13,
+        "intradayPct": 2.67,
+        "closePosition": 100,
+        "averageGapPct": 1.54,
+        "liquidityScore": 100,
+        "valuationScore": 100,
+        "institutionRatio": null
+      },
+      "features": {
+        "changePct": 0.313,
+        "intradayPct": 0.33375,
+        "closePosition": 1,
+        "averageGapPct": 0.10266666666666667,
+        "liquidityScore": 1,
+        "valuationScore": 1,
+        "institutionRatio": 0,
+        "overheat": 0,
+        "peRisk": 0,
+        "pbRisk": 0
+      },
+      "evaluated": false,
+      "createdAt": "2026-06-03T20:32:16.693Z"
+    },
+    {
+      "id": "2026-06-03:4147",
+      "rank": 38,
+      "sourceDate": "2026-06-03",
+      "code": "4147",
+      "name": "中裕",
+      "market": "上櫃",
+      "close": 55.8,
+      "score": 82,
+      "prediction": {
+        "direction": "漲",
+        "probability": 78.8,
+        "learningAdjustment": 0.6
+      },
+      "metrics": {
+        "changePct": 5.88,
+        "intradayPct": 5.48,
+        "closePosition": 90,
+        "averageGapPct": 1.79,
+        "liquidityScore": 100,
+        "valuationScore": 50,
+        "institutionRatio": -4.45
+      },
+      "features": {
+        "changePct": 0.588,
+        "intradayPct": 0.685,
+        "closePosition": 0.8,
+        "averageGapPct": 0.11933333333333333,
+        "liquidityScore": 1,
+        "valuationScore": 0,
+        "institutionRatio": -0.24722222222222223,
+        "overheat": 0,
+        "peRisk": 0,
+        "pbRisk": 0
+      },
+      "evaluated": false,
+      "createdAt": "2026-06-03T20:32:16.693Z"
+    },
+    {
+      "id": "2026-06-03:8038",
+      "rank": 39,
+      "sourceDate": "2026-06-03",
+      "code": "8038",
+      "name": "長園科",
+      "market": "上櫃",
+      "close": 42.55,
+      "score": 82,
+      "prediction": {
+        "direction": "漲",
+        "probability": 77.3,
+        "learningAdjustment": 0
+      },
+      "metrics": {
+        "changePct": 4.55,
+        "intradayPct": 5.58,
+        "closePosition": 92,
+        "averageGapPct": 1.53,
+        "liquidityScore": 68,
+        "valuationScore": 50,
+        "institutionRatio": 28.91
+      },
+      "features": {
+        "changePct": 0.45499999999999996,
+        "intradayPct": 0.6975,
+        "closePosition": 0.84,
+        "averageGapPct": 0.10200000000000001,
+        "liquidityScore": 0.36,
+        "valuationScore": 0,
+        "institutionRatio": 1,
+        "overheat": 0,
+        "peRisk": 0,
+        "pbRisk": 0.19374999999999998
+      },
+      "evaluated": false,
+      "createdAt": "2026-06-03T20:32:16.693Z"
+    },
+    {
+      "id": "2026-06-03:2382",
+      "rank": 40,
+      "sourceDate": "2026-06-03",
+      "code": "2382",
+      "name": "廣達",
+      "market": "上市",
+      "close": 400.5,
+      "score": 81.9,
+      "prediction": {
+        "direction": "漲",
+        "probability": 79.9,
+        "learningAdjustment": 1.1
+      },
+      "metrics": {
+        "changePct": 7.52,
+        "intradayPct": 6.8,
+        "closePosition": 78,
+        "averageGapPct": 3.62,
+        "liquidityScore": 100,
+        "valuationScore": 62,
+        "institutionRatio": null
+      },
+      "features": {
+        "changePct": 0.752,
+        "intradayPct": 0.85,
+        "closePosition": 0.56,
+        "averageGapPct": 0.24133333333333334,
+        "liquidityScore": 1,
+        "valuationScore": 0.24,
+        "institutionRatio": 0,
+        "overheat": 0.25333333333333324,
+        "peRisk": 0,
+        "pbRisk": 0.43000000000000005
+      },
+      "evaluated": false,
+      "createdAt": "2026-06-03T20:32:16.693Z"
+    },
+    {
+      "id": "2026-06-03:2891",
+      "rank": 41,
+      "sourceDate": "2026-06-03",
+      "code": "2891",
+      "name": "中信金",
+      "market": "上市",
+      "close": 64.1,
+      "score": 81.8,
+      "prediction": {
+        "direction": "漲",
+        "probability": 77.5,
+        "learningAdjustment": 0.2
+      },
+      "metrics": {
+        "changePct": 3.22,
+        "intradayPct": 3.39,
+        "closePosition": 88,
+        "averageGapPct": 1.58,
+        "liquidityScore": 100,
+        "valuationScore": 100,
+        "institutionRatio": null
+      },
+      "features": {
+        "changePct": 0.322,
+        "intradayPct": 0.42375,
+        "closePosition": 0.76,
+        "averageGapPct": 0.10533333333333333,
+        "liquidityScore": 1,
+        "valuationScore": 1,
+        "institutionRatio": 0,
+        "overheat": 0,
+        "peRisk": 0,
+        "pbRisk": 0
+      },
+      "evaluated": false,
+      "createdAt": "2026-06-03T20:32:16.693Z"
+    },
+    {
+      "id": "2026-06-03:3380",
+      "rank": 42,
+      "sourceDate": "2026-06-03",
+      "code": "3380",
+      "name": "明泰",
+      "market": "上市",
+      "close": 40.2,
+      "score": 81.7,
+      "prediction": {
+        "direction": "漲",
+        "probability": 77.6,
+        "learningAdjustment": 0.3
+      },
+      "metrics": {
+        "changePct": 3.61,
+        "intradayPct": 3.47,
+        "closePosition": 95,
+        "averageGapPct": 1.77,
+        "liquidityScore": 100,
+        "valuationScore": 68,
+        "institutionRatio": null
+      },
+      "features": {
+        "changePct": 0.361,
+        "intradayPct": 0.43375,
+        "closePosition": 0.9,
+        "averageGapPct": 0.11800000000000001,
+        "liquidityScore": 1,
+        "valuationScore": 0.36,
+        "institutionRatio": 0,
+        "overheat": 0,
+        "peRisk": 0,
+        "pbRisk": 0
+      },
+      "evaluated": false,
+      "createdAt": "2026-06-03T20:32:16.693Z"
+    },
+    {
+      "id": "2026-06-03:3264",
+      "rank": 43,
+      "sourceDate": "2026-06-03",
+      "code": "3264",
+      "name": "欣銓",
+      "market": "上櫃",
+      "close": 229.5,
+      "score": 81.7,
+      "prediction": {
+        "direction": "漲",
+        "probability": 79.4,
+        "learningAdjustment": 1
+      },
+      "metrics": {
+        "changePct": 6.99,
+        "intradayPct": 3.38,
+        "closePosition": 70,
+        "averageGapPct": 0.02,
+        "liquidityScore": 100,
+        "valuationScore": 50,
+        "institutionRatio": 41.12
+      },
+      "features": {
+        "changePct": 0.6990000000000001,
+        "intradayPct": 0.4225,
+        "closePosition": 0.4,
+        "averageGapPct": 0.0013333333333333333,
+        "liquidityScore": 1,
+        "valuationScore": 0,
+        "institutionRatio": 1,
+        "overheat": 0.16500000000000004,
+        "peRisk": 0.009666666666666638,
+        "pbRisk": 0.17125
+      },
+      "evaluated": false,
+      "createdAt": "2026-06-03T20:32:16.693Z"
+    },
+    {
+      "id": "2026-06-03:2377",
+      "rank": 44,
+      "sourceDate": "2026-06-03",
+      "code": "2377",
+      "name": "微星",
+      "market": "上市",
+      "close": 149,
+      "score": 81.6,
+      "prediction": {
+        "direction": "漲",
+        "probability": 79,
+        "learningAdjustment": 0.9
+      },
+      "metrics": {
+        "changePct": 5.3,
+        "intradayPct": 2.76,
+        "closePosition": 67,
+        "averageGapPct": 2.58,
+        "liquidityScore": 100,
+        "valuationScore": 88,
+        "institutionRatio": null
+      },
+      "features": {
+        "changePct": 0.53,
+        "intradayPct": 0.345,
+        "closePosition": 0.34,
+        "averageGapPct": 0.17200000000000001,
+        "liquidityScore": 1,
+        "valuationScore": 0.76,
+        "institutionRatio": 0,
+        "overheat": 0,
+        "peRisk": 0,
+        "pbRisk": 0
+      },
+      "evaluated": false,
+      "createdAt": "2026-06-03T20:32:16.693Z"
+    },
+    {
+      "id": "2026-06-03:2104",
+      "rank": 45,
+      "sourceDate": "2026-06-03",
+      "code": "2104",
+      "name": "國際中橡",
+      "market": "上市",
+      "close": 10.9,
+      "score": 81.5,
+      "prediction": {
+        "direction": "漲",
+        "probability": 76.9,
+        "learningAdjustment": 0
+      },
+      "metrics": {
+        "changePct": 3.81,
+        "intradayPct": 3.32,
+        "closePosition": 100,
+        "averageGapPct": 1.87,
+        "liquidityScore": 90,
+        "valuationScore": 68,
+        "institutionRatio": null
+      },
+      "features": {
+        "changePct": 0.381,
+        "intradayPct": 0.415,
+        "closePosition": 1,
+        "averageGapPct": 0.12466666666666668,
+        "liquidityScore": 0.8,
+        "valuationScore": 0.36,
+        "institutionRatio": 0,
+        "overheat": 0,
+        "peRisk": 0,
+        "pbRisk": 0
+      },
+      "evaluated": false,
+      "createdAt": "2026-06-03T20:32:16.693Z"
+    },
+    {
+      "id": "2026-06-03:2881",
+      "rank": 46,
+      "sourceDate": "2026-06-03",
+      "code": "2881",
+      "name": "富邦金",
+      "market": "上市",
+      "close": 113.5,
+      "score": 81.4,
+      "prediction": {
+        "direction": "漲",
+        "probability": 76.4,
+        "learningAdjustment": -0.1
+      },
+      "metrics": {
+        "changePct": 2.71,
+        "intradayPct": 2.71,
+        "closePosition": 100,
+        "averageGapPct": 1.34,
+        "liquidityScore": 100,
+        "valuationScore": 100,
+        "institutionRatio": null
+      },
+      "features": {
+        "changePct": 0.271,
+        "intradayPct": 0.33875,
+        "closePosition": 1,
+        "averageGapPct": 0.08933333333333333,
+        "liquidityScore": 1,
+        "valuationScore": 1,
+        "institutionRatio": 0,
+        "overheat": 0,
+        "peRisk": 0,
+        "pbRisk": 0
+      },
+      "evaluated": false,
+      "createdAt": "2026-06-03T20:32:16.693Z"
+    },
+    {
+      "id": "2026-06-03:3028",
+      "rank": 47,
+      "sourceDate": "2026-06-03",
+      "code": "3028",
+      "name": "增你強",
+      "market": "上市",
+      "close": 84,
+      "score": 81.4,
+      "prediction": {
+        "direction": "漲",
+        "probability": 76.9,
+        "learningAdjustment": 0.1
+      },
+      "metrics": {
+        "changePct": 3.58,
+        "intradayPct": 2.69,
+        "closePosition": 100,
+        "averageGapPct": 1.76,
+        "liquidityScore": 100,
+        "valuationScore": 82,
+        "institutionRatio": null
+      },
+      "features": {
+        "changePct": 0.358,
+        "intradayPct": 0.33625,
+        "closePosition": 1,
+        "averageGapPct": 0.11733333333333333,
+        "liquidityScore": 1,
+        "valuationScore": 0.64,
+        "institutionRatio": 0,
+        "overheat": 0,
+        "peRisk": 0,
+        "pbRisk": 0
+      },
+      "evaluated": false,
+      "createdAt": "2026-06-03T20:32:16.693Z"
+    },
+    {
+      "id": "2026-06-03:4541",
+      "rank": 48,
+      "sourceDate": "2026-06-03",
+      "code": "4541",
+      "name": "晟田",
+      "market": "上櫃",
+      "close": 47.3,
+      "score": 81.3,
+      "prediction": {
+        "direction": "漲",
+        "probability": 76.9,
+        "learningAdjustment": 0.1
+      },
+      "metrics": {
+        "changePct": 3.16,
+        "intradayPct": 2.83,
+        "closePosition": 85,
+        "averageGapPct": 0.92,
+        "liquidityScore": 95,
+        "valuationScore": 88,
+        "institutionRatio": 21.21
+      },
+      "features": {
+        "changePct": 0.316,
+        "intradayPct": 0.35375,
+        "closePosition": 0.7,
+        "averageGapPct": 0.06133333333333334,
+        "liquidityScore": 0.9,
+        "valuationScore": 0.76,
+        "institutionRatio": 1,
+        "overheat": 0,
+        "peRisk": 0,
+        "pbRisk": 0
+      },
+      "evaluated": false,
+      "createdAt": "2026-06-03T20:32:16.693Z"
+    },
+    {
+      "id": "2026-06-03:3209",
+      "rank": 49,
+      "sourceDate": "2026-06-03",
+      "code": "3209",
+      "name": "全科",
+      "market": "上市",
+      "close": 77.8,
+      "score": 81.2,
+      "prediction": {
+        "direction": "漲",
+        "probability": 76.6,
+        "learningAdjustment": 0.1
+      },
+      "metrics": {
+        "changePct": 3.32,
+        "intradayPct": 3.32,
+        "closePosition": 100,
+        "averageGapPct": 1.63,
+        "liquidityScore": 100,
+        "valuationScore": 82,
+        "institutionRatio": null
+      },
+      "features": {
+        "changePct": 0.33199999999999996,
+        "intradayPct": 0.415,
+        "closePosition": 1,
+        "averageGapPct": 0.10866666666666666,
+        "liquidityScore": 1,
+        "valuationScore": 0.64,
+        "institutionRatio": 0,
+        "overheat": 0,
+        "peRisk": 0,
+        "pbRisk": 0
+      },
+      "evaluated": false,
+      "createdAt": "2026-06-03T20:32:16.693Z"
+    },
+    {
+      "id": "2026-06-03:7728",
+      "rank": 50,
+      "sourceDate": "2026-06-03",
+      "code": "7728",
+      "name": "光焱科技",
+      "market": "上櫃",
+      "close": 763,
+      "score": 81.2,
+      "prediction": {
+        "direction": "漲",
+        "probability": 79.8,
+        "learningAdjustment": 1.4
+      },
+      "metrics": {
+        "changePct": 6.71,
+        "intradayPct": 7.92,
+        "closePosition": 97,
+        "averageGapPct": 2.88,
+        "liquidityScore": 96,
+        "valuationScore": 8,
+        "institutionRatio": 2.68
+      },
+      "features": {
+        "changePct": 0.671,
+        "intradayPct": 0.99,
+        "closePosition": 0.94,
+        "averageGapPct": 0.192,
+        "liquidityScore": 0.92,
+        "valuationScore": -0.84,
+        "institutionRatio": 0.1488888888888889,
+        "overheat": 0.11833333333333333,
+        "peRisk": 1,
+        "pbRisk": 1
+      },
+      "evaluated": false,
+      "createdAt": "2026-06-03T20:32:16.693Z"
+    },
+    {
+      "id": "2026-06-03:6640",
+      "rank": 1182,
+      "sourceDate": "2026-06-03",
+      "code": "6640",
+      "name": "均華",
+      "market": "上櫃",
+      "close": 1265,
+      "score": 25.7,
+      "prediction": {
+        "direction": "跌",
+        "probability": 19.2,
+        "learningAdjustment": 3.2
+      },
+      "metrics": {
+        "changePct": -1.56,
+        "intradayPct": -4.89,
+        "closePosition": 0,
+        "averageGapPct": -1.5,
+        "liquidityScore": 100,
+        "valuationScore": 8,
+        "institutionRatio": -36.33
+      },
+      "features": {
+        "changePct": -0.156,
+        "intradayPct": -0.61125,
+        "closePosition": -1,
+        "averageGapPct": -0.1,
+        "liquidityScore": 1,
+        "valuationScore": -0.84,
+        "institutionRatio": -1,
+        "overheat": 0,
+        "peRisk": 0.7261666666666665,
+        "pbRisk": 0.8812500000000001
+      },
+      "evaluated": false,
+      "createdAt": "2026-06-03T20:32:16.693Z"
+    },
+    {
+      "id": "2026-06-03:7751",
+      "rank": 1183,
+      "sourceDate": "2026-06-03",
+      "code": "7751",
+      "name": "竑騰",
+      "market": "上櫃",
+      "close": 1575,
+      "score": 25.5,
+      "prediction": {
+        "direction": "跌",
+        "probability": 17.9,
+        "learningAdjustment": 2.7
+      },
+      "metrics": {
+        "changePct": -5.69,
+        "intradayPct": -6.53,
+        "closePosition": 19,
+        "averageGapPct": -1.3,
+        "liquidityScore": 100,
+        "valuationScore": 8,
+        "institutionRatio": -18.57
+      },
+      "features": {
+        "changePct": -0.5690000000000001,
+        "intradayPct": -0.81625,
+        "closePosition": -0.62,
+        "averageGapPct": -0.08666666666666667,
+        "liquidityScore": 1,
+        "valuationScore": -0.84,
+        "institutionRatio": -1,
+        "overheat": 0,
+        "peRisk": 0.5756666666666668,
+        "pbRisk": 1
+      },
+      "evaluated": false,
+      "createdAt": "2026-06-03T20:32:16.693Z"
+    },
+    {
+      "id": "2026-06-03:6446",
+      "rank": 1184,
+      "sourceDate": "2026-06-03",
+      "code": "6446",
+      "name": "藥華藥",
+      "market": "上市",
+      "close": 902,
+      "score": 25.2,
+      "prediction": {
+        "direction": "跌",
+        "probability": 17.4,
+        "learningAdjustment": 2.6
+      },
+      "metrics": {
+        "changePct": -6.24,
+        "intradayPct": -6.24,
+        "closePosition": 3,
+        "averageGapPct": -3.22,
+        "liquidityScore": 100,
+        "valuationScore": 8,
+        "institutionRatio": null
+      },
+      "features": {
+        "changePct": -0.624,
+        "intradayPct": -0.78,
+        "closePosition": -0.94,
+        "averageGapPct": -0.21466666666666667,
+        "liquidityScore": 1,
+        "valuationScore": -0.84,
+        "institutionRatio": 0,
+        "overheat": 0,
+        "peRisk": 0.35916666666666663,
+        "pbRisk": 0.7175
+      },
+      "evaluated": false,
+      "createdAt": "2026-06-03T20:32:16.693Z"
+    },
+    {
+      "id": "2026-06-03:3016",
+      "rank": 1185,
+      "sourceDate": "2026-06-03",
+      "code": "3016",
+      "name": "嘉晶",
+      "market": "上市",
+      "close": 118.5,
+      "score": 24.7,
+      "prediction": {
+        "direction": "跌",
+        "probability": 16.4,
+        "learningAdjustment": 2.3
+      },
+      "metrics": {
+        "changePct": -5.95,
+        "intradayPct": -4.82,
+        "closePosition": 0,
+        "averageGapPct": -3.07,
+        "liquidityScore": 100,
+        "valuationScore": 8,
+        "institutionRatio": null
+      },
+      "features": {
+        "changePct": -0.595,
+        "intradayPct": -0.6025,
+        "closePosition": -1,
+        "averageGapPct": -0.20466666666666666,
+        "liquidityScore": 1,
+        "valuationScore": -0.84,
+        "institutionRatio": 0,
+        "overheat": 0,
+        "peRisk": 1,
+        "pbRisk": 0.37250000000000005
+      },
+      "evaluated": false,
+      "createdAt": "2026-06-03T20:32:16.693Z"
+    },
+    {
+      "id": "2026-06-03:6150",
+      "rank": 1186,
+      "sourceDate": "2026-06-03",
+      "code": "6150",
+      "name": "撼訊",
+      "market": "上櫃",
+      "close": 72.1,
+      "score": 24.7,
+      "prediction": {
+        "direction": "跌",
+        "probability": 15.1,
+        "learningAdjustment": 1.6
+      },
+      "metrics": {
+        "changePct": -5.13,
+        "intradayPct": -13.76,
+        "closePosition": 1,
+        "averageGapPct": -7.29,
+        "liquidityScore": 100,
+        "valuationScore": 88,
+        "institutionRatio": -6.54
+      },
+      "features": {
+        "changePct": -0.513,
+        "intradayPct": -1,
+        "closePosition": -0.98,
+        "averageGapPct": -0.486,
+        "liquidityScore": 1,
+        "valuationScore": 0.76,
+        "institutionRatio": -0.36333333333333334,
+        "overheat": 0,
+        "peRisk": 0,
+        "pbRisk": 0
+      },
+      "evaluated": false,
+      "createdAt": "2026-06-03T20:32:16.693Z"
+    },
+    {
+      "id": "2026-06-03:6204",
+      "rank": 1187,
+      "sourceDate": "2026-06-03",
+      "code": "6204",
+      "name": "艾華",
+      "market": "上櫃",
+      "close": 103.5,
+      "score": 24.6,
+      "prediction": {
+        "direction": "跌",
+        "probability": 16.8,
+        "learningAdjustment": 2.5
+      },
+      "metrics": {
+        "changePct": -0.96,
+        "intradayPct": -5.48,
+        "closePosition": 5,
+        "averageGapPct": -5,
+        "liquidityScore": 100,
+        "valuationScore": 8,
+        "institutionRatio": -20.77
+      },
+      "features": {
+        "changePct": -0.096,
+        "intradayPct": -0.685,
+        "closePosition": -0.9,
+        "averageGapPct": -0.3333333333333333,
+        "liquidityScore": 1,
+        "valuationScore": -0.84,
+        "institutionRatio": -1,
+        "overheat": 0,
+        "peRisk": 1,
+        "pbRisk": 0.33125000000000004
+      },
+      "evaluated": false,
+      "createdAt": "2026-06-03T20:32:16.693Z"
+    },
+    {
+      "id": "2026-06-03:4510",
+      "rank": 1188,
+      "sourceDate": "2026-06-03",
+      "code": "4510",
+      "name": "高鋒",
+      "market": "上櫃",
+      "close": 50.6,
+      "score": 24.5,
+      "prediction": {
+        "direction": "跌",
+        "probability": 15.6,
+        "learningAdjustment": 2
+      },
+      "metrics": {
+        "changePct": -5.6,
+        "intradayPct": -5.6,
+        "closePosition": 3,
+        "averageGapPct": -1.65,
+        "liquidityScore": 100,
+        "valuationScore": 50,
+        "institutionRatio": -27.08
+      },
+      "features": {
+        "changePct": -0.5599999999999999,
+        "intradayPct": -0.7,
+        "closePosition": -0.94,
+        "averageGapPct": -0.11,
+        "liquidityScore": 1,
+        "valuationScore": 0,
+        "institutionRatio": -1,
+        "overheat": 0,
+        "peRisk": 0,
+        "pbRisk": 0
+      },
+      "evaluated": false,
+      "createdAt": "2026-06-03T20:32:16.693Z"
+    },
+    {
+      "id": "2026-06-03:6147",
+      "rank": 1189,
+      "sourceDate": "2026-06-03",
+      "code": "6147",
+      "name": "頎邦",
+      "market": "上櫃",
+      "close": 275,
+      "score": 24.4,
+      "prediction": {
+        "direction": "跌",
+        "probability": 16,
+        "learningAdjustment": 2.2
+      },
+      "metrics": {
+        "changePct": -2.14,
+        "intradayPct": -6.78,
+        "closePosition": 0,
+        "averageGapPct": -5.6,
+        "liquidityScore": 100,
+        "valuationScore": 28,
+        "institutionRatio": -15.05
+      },
+      "features": {
+        "changePct": -0.21400000000000002,
+        "intradayPct": -0.8475,
+        "closePosition": -1,
+        "averageGapPct": -0.3733333333333333,
+        "liquidityScore": 1,
+        "valuationScore": -0.44,
+        "institutionRatio": -0.8361111111111111,
+        "overheat": 0,
+        "peRisk": 0.7568333333333332,
+        "pbRisk": 0.04625000000000001
+      },
+      "evaluated": false,
+      "createdAt": "2026-06-03T20:32:16.693Z"
+    },
+    {
+      "id": "2026-06-03:6127",
+      "rank": 1190,
+      "sourceDate": "2026-06-03",
+      "code": "6127",
+      "name": "九豪",
+      "market": "上櫃",
+      "close": 74.6,
+      "score": 23.9,
+      "prediction": {
+        "direction": "跌",
+        "probability": 15.5,
+        "learningAdjustment": 2.2
+      },
+      "metrics": {
+        "changePct": -8.35,
+        "intradayPct": -6.52,
+        "closePosition": 3,
+        "averageGapPct": -3.23,
+        "liquidityScore": 100,
+        "valuationScore": 30,
+        "institutionRatio": -12.02
+      },
+      "features": {
+        "changePct": -0.835,
+        "intradayPct": -0.815,
+        "closePosition": -0.94,
+        "averageGapPct": -0.21533333333333332,
+        "liquidityScore": 1,
+        "valuationScore": -0.4,
+        "institutionRatio": -0.6677777777777778,
+        "overheat": 0,
+        "peRisk": 0,
+        "pbRisk": 0.36624999999999996
+      },
+      "evaluated": false,
+      "createdAt": "2026-06-03T20:32:16.693Z"
+    },
+    {
+      "id": "2026-06-03:6823",
+      "rank": 1191,
+      "sourceDate": "2026-06-03",
+      "code": "6823",
+      "name": "濾能",
+      "market": "上櫃",
+      "close": 72.6,
+      "score": 23.9,
+      "prediction": {
+        "direction": "跌",
+        "probability": 13.9,
+        "learningAdjustment": 1.3
+      },
+      "metrics": {
+        "changePct": -1.76,
+        "intradayPct": -2.94,
+        "closePosition": 0,
+        "averageGapPct": -0.91,
+        "liquidityScore": 33,
+        "valuationScore": 50,
+        "institutionRatio": -22.56
+      },
+      "features": {
+        "changePct": -0.176,
+        "intradayPct": -0.3675,
+        "closePosition": -1,
+        "averageGapPct": -0.06066666666666667,
+        "liquidityScore": -0.34,
+        "valuationScore": 0,
+        "institutionRatio": -1,
+        "overheat": 0,
+        "peRisk": 0,
+        "pbRisk": 0
+      },
+      "evaluated": false,
+      "createdAt": "2026-06-03T20:32:16.693Z"
+    },
+    {
+      "id": "2026-06-03:5328",
+      "rank": 1192,
+      "sourceDate": "2026-06-03",
+      "code": "5328",
+      "name": "華容",
+      "market": "上櫃",
+      "close": 38.05,
+      "score": 23.8,
+      "prediction": {
+        "direction": "跌",
+        "probability": 15.1,
+        "learningAdjustment": 2
+      },
+      "metrics": {
+        "changePct": -5.35,
+        "intradayPct": -3.91,
+        "closePosition": 3,
+        "averageGapPct": -1.45,
+        "liquidityScore": 100,
+        "valuationScore": 28,
+        "institutionRatio": -24.67
+      },
+      "features": {
+        "changePct": -0.5349999999999999,
+        "intradayPct": -0.48875,
+        "closePosition": -0.94,
+        "averageGapPct": -0.09666666666666666,
+        "liquidityScore": 1,
+        "valuationScore": -0.44,
+        "institutionRatio": -1,
+        "overheat": 0,
+        "peRisk": 0.8260000000000001,
+        "pbRisk": 0
+      },
+      "evaluated": false,
+      "createdAt": "2026-06-03T20:32:16.693Z"
+    },
+    {
+      "id": "2026-06-03:4549",
+      "rank": 1193,
+      "sourceDate": "2026-06-03",
+      "code": "4549",
+      "name": "桓達",
+      "market": "上櫃",
+      "close": 125.5,
+      "score": 23.7,
+      "prediction": {
+        "direction": "跌",
+        "probability": 15.3,
+        "learningAdjustment": 2.1
+      },
+      "metrics": {
+        "changePct": -3.46,
+        "intradayPct": -5.64,
+        "closePosition": 0,
+        "averageGapPct": -2.67,
+        "liquidityScore": 100,
+        "valuationScore": 50,
+        "institutionRatio": -15.61
+      },
+      "features": {
+        "changePct": -0.346,
+        "intradayPct": -0.705,
+        "closePosition": -1,
+        "averageGapPct": -0.178,
+        "liquidityScore": 1,
+        "valuationScore": 0,
+        "institutionRatio": -0.8672222222222222,
+        "overheat": 0,
+        "peRisk": 0.10249999999999998,
+        "pbRisk": 0
+      },
+      "evaluated": false,
+      "createdAt": "2026-06-03T20:32:16.693Z"
+    },
+    {
+      "id": "2026-06-03:8109",
+      "rank": 1194,
+      "sourceDate": "2026-06-03",
+      "code": "8109",
+      "name": "博大",
+      "market": "上櫃",
+      "close": 118,
+      "score": 23.6,
+      "prediction": {
+        "direction": "跌",
+        "probability": 14.2,
+        "learningAdjustment": 1.6
+      },
+      "metrics": {
+        "changePct": -4.07,
+        "intradayPct": -3.67,
+        "closePosition": 0,
+        "averageGapPct": -1.52,
+        "liquidityScore": 77,
+        "valuationScore": 82,
+        "institutionRatio": -26.44
+      },
+      "features": {
+        "changePct": -0.40700000000000003,
+        "intradayPct": -0.45875,
+        "closePosition": -1,
+        "averageGapPct": -0.10133333333333333,
+        "liquidityScore": 0.54,
+        "valuationScore": 0.64,
+        "institutionRatio": -1,
+        "overheat": 0,
+        "peRisk": 0,
+        "pbRisk": 0
+      },
+      "evaluated": false,
+      "createdAt": "2026-06-03T20:32:16.693Z"
+    },
+    {
+      "id": "2026-06-03:6449",
+      "rank": 1195,
+      "sourceDate": "2026-06-03",
+      "code": "6449",
+      "name": "鈺邦",
+      "market": "上市",
+      "close": 372,
+      "score": 23.3,
+      "prediction": {
+        "direction": "跌",
+        "probability": 14.4,
+        "learningAdjustment": 1.8
+      },
+      "metrics": {
+        "changePct": -9.49,
+        "intradayPct": -7.46,
+        "closePosition": 6,
+        "averageGapPct": -4.98,
+        "liquidityScore": 100,
+        "valuationScore": 28,
+        "institutionRatio": null
+      },
+      "features": {
+        "changePct": -0.9490000000000001,
+        "intradayPct": -0.9325,
+        "closePosition": -0.88,
+        "averageGapPct": -0.332,
+        "liquidityScore": 1,
+        "valuationScore": -0.44,
+        "institutionRatio": 0,
+        "overheat": 0,
+        "peRisk": 0.2228333333333333,
+        "pbRisk": 0.24375000000000002
+      },
+      "evaluated": false,
+      "createdAt": "2026-06-03T20:32:16.693Z"
+    },
+    {
+      "id": "2026-06-03:3441",
+      "rank": 1196,
+      "sourceDate": "2026-06-03",
+      "code": "3441",
+      "name": "聯一光",
+      "market": "上櫃",
+      "close": 52.2,
+      "score": 23.3,
+      "prediction": {
+        "direction": "跌",
+        "probability": 14.8,
+        "learningAdjustment": 2
+      },
+      "metrics": {
+        "changePct": -4.57,
+        "intradayPct": -4.57,
+        "closePosition": 3,
+        "averageGapPct": -2.76,
+        "liquidityScore": 100,
+        "valuationScore": 28,
+        "institutionRatio": -10.57
+      },
+      "features": {
+        "changePct": -0.457,
+        "intradayPct": -0.57125,
+        "closePosition": -0.94,
+        "averageGapPct": -0.184,
+        "liquidityScore": 1,
+        "valuationScore": -0.44,
+        "institutionRatio": -0.5872222222222222,
+        "overheat": 0,
+        "peRisk": 0.17983333333333332,
+        "pbRisk": 0
+      },
+      "evaluated": false,
+      "createdAt": "2026-06-03T20:32:16.693Z"
+    },
+    {
+      "id": "2026-06-03:6217",
+      "rank": 1197,
+      "sourceDate": "2026-06-03",
+      "code": "6217",
+      "name": "中探針",
+      "market": "上櫃",
+      "close": 292,
+      "score": 23.3,
+      "prediction": {
+        "direction": "跌",
+        "probability": 16.6,
+        "learningAdjustment": 2.9
+      },
+      "metrics": {
+        "changePct": -4.26,
+        "intradayPct": -9.32,
+        "closePosition": 1,
+        "averageGapPct": -4.84,
+        "liquidityScore": 100,
+        "valuationScore": 30,
+        "institutionRatio": -13.16
+      },
+      "features": {
+        "changePct": -0.426,
+        "intradayPct": -1,
+        "closePosition": -0.98,
+        "averageGapPct": -0.32266666666666666,
+        "liquidityScore": 1,
+        "valuationScore": -0.4,
+        "institutionRatio": -0.7311111111111112,
+        "overheat": 0,
+        "peRisk": 0,
+        "pbRisk": 0.90875
+      },
+      "evaluated": false,
+      "createdAt": "2026-06-03T20:32:16.693Z"
+    },
+    {
+      "id": "2026-06-03:6906",
+      "rank": 1198,
+      "sourceDate": "2026-06-03",
+      "code": "6906",
+      "name": "現觀科",
+      "market": "上市",
+      "close": 101,
+      "score": 23.2,
+      "prediction": {
+        "direction": "跌",
+        "probability": 13.6,
+        "learningAdjustment": 1.4
+      },
+      "metrics": {
+        "changePct": -3.81,
+        "intradayPct": -3.35,
+        "closePosition": 0,
+        "averageGapPct": -1.94,
+        "liquidityScore": 49,
+        "valuationScore": 28,
+        "institutionRatio": null
+      },
+      "features": {
+        "changePct": -0.381,
+        "intradayPct": -0.41875,
+        "closePosition": -1,
+        "averageGapPct": -0.12933333333333333,
+        "liquidityScore": -0.02,
+        "valuationScore": -0.44,
+        "institutionRatio": 0,
+        "overheat": 0,
+        "peRisk": 0.2668333333333333,
+        "pbRisk": 0.043749999999999956
+      },
+      "evaluated": false,
+      "createdAt": "2026-06-03T20:32:16.693Z"
+    },
+    {
+      "id": "2026-06-03:8299",
+      "rank": 1199,
+      "sourceDate": "2026-06-03",
+      "code": "8299",
+      "name": "群聯",
+      "market": "上櫃",
+      "close": 2685,
+      "score": 23.2,
+      "prediction": {
+        "direction": "跌",
+        "probability": 15.9,
+        "learningAdjustment": 2.6
+      },
+      "metrics": {
+        "changePct": -4.79,
+        "intradayPct": -5.29,
+        "closePosition": 0,
+        "averageGapPct": -2.08,
+        "liquidityScore": 100,
+        "valuationScore": 30,
+        "institutionRatio": -24.38
+      },
+      "features": {
+        "changePct": -0.479,
+        "intradayPct": -0.66125,
+        "closePosition": -1,
+        "averageGapPct": -0.13866666666666666,
+        "liquidityScore": 1,
+        "valuationScore": -0.4,
+        "institutionRatio": -1,
+        "overheat": 0,
+        "peRisk": 0,
+        "pbRisk": 0.50125
+      },
+      "evaluated": false,
+      "createdAt": "2026-06-03T20:32:16.693Z"
+    },
+    {
+      "id": "2026-06-03:4576",
+      "rank": 1200,
+      "sourceDate": "2026-06-03",
+      "code": "4576",
+      "name": "大銀微系統",
+      "market": "上市",
+      "close": 238,
+      "score": 23.1,
+      "prediction": {
+        "direction": "跌",
+        "probability": 14.7,
+        "learningAdjustment": 2
+      },
+      "metrics": {
+        "changePct": -9.51,
+        "intradayPct": -9.85,
+        "closePosition": 4,
+        "averageGapPct": -4.99,
+        "liquidityScore": 100,
+        "valuationScore": 8,
+        "institutionRatio": null
+      },
+      "features": {
+        "changePct": -0.951,
+        "intradayPct": -1,
+        "closePosition": -0.92,
+        "averageGapPct": -0.33266666666666667,
+        "liquidityScore": 1,
+        "valuationScore": -0.84,
+        "institutionRatio": 0,
+        "overheat": 0,
+        "peRisk": 0.9783333333333334,
+        "pbRisk": 0.36124999999999996
+      },
+      "evaluated": false,
+      "createdAt": "2026-06-03T20:32:16.693Z"
+    },
+    {
+      "id": "2026-06-03:3532",
+      "rank": 1201,
+      "sourceDate": "2026-06-03",
+      "code": "3532",
+      "name": "台勝科",
+      "market": "上市",
+      "close": 315.5,
+      "score": 23,
+      "prediction": {
+        "direction": "跌",
+        "probability": 13.9,
+        "learningAdjustment": 1.6
+      },
+      "metrics": {
+        "changePct": -9.99,
+        "intradayPct": -2.77,
+        "closePosition": 0,
+        "averageGapPct": -5.26,
+        "liquidityScore": 100,
+        "valuationScore": 28,
+        "institutionRatio": null
+      },
+      "features": {
+        "changePct": -0.999,
+        "intradayPct": -0.34625,
+        "closePosition": -1,
+        "averageGapPct": -0.3506666666666666,
+        "liquidityScore": 1,
+        "valuationScore": -0.44,
+        "institutionRatio": 0,
+        "overheat": 0,
+        "peRisk": 1,
+        "pbRisk": 0.13124999999999998
+      },
+      "evaluated": false,
+      "createdAt": "2026-06-03T20:32:16.693Z"
+    },
+    {
+      "id": "2026-06-03:3444",
+      "rank": 1202,
+      "sourceDate": "2026-06-03",
+      "code": "3444",
+      "name": "利機",
+      "market": "上櫃",
+      "close": 101,
+      "score": 23,
+      "prediction": {
+        "direction": "跌",
+        "probability": 15,
+        "learningAdjustment": 2.2
+      },
+      "metrics": {
+        "changePct": -3.81,
+        "intradayPct": -3.35,
+        "closePosition": 0,
+        "averageGapPct": -1.81,
+        "liquidityScore": 100,
+        "valuationScore": 28,
+        "institutionRatio": -29.9
+      },
+      "features": {
+        "changePct": -0.381,
+        "intradayPct": -0.41875,
+        "closePosition": -1,
+        "averageGapPct": -0.12066666666666667,
+        "liquidityScore": 1,
+        "valuationScore": -0.44,
+        "institutionRatio": -1,
+        "overheat": 0,
+        "peRisk": 0.3676666666666667,
+        "pbRisk": 0.057499999999999996
+      },
+      "evaluated": false,
+      "createdAt": "2026-06-03T20:32:16.693Z"
+    },
+    {
+      "id": "2026-06-03:3297",
+      "rank": 1203,
+      "sourceDate": "2026-06-03",
+      "code": "3297",
+      "name": "杭特",
+      "market": "上櫃",
+      "close": 33.6,
+      "score": 22.7,
+      "prediction": {
+        "direction": "跌",
+        "probability": 13.7,
+        "learningAdjustment": 1.6
+      },
+      "metrics": {
+        "changePct": -1.75,
+        "intradayPct": -4,
+        "closePosition": 0,
+        "averageGapPct": -2.69,
+        "liquidityScore": 61,
+        "valuationScore": 46,
+        "institutionRatio": -24.43
+      },
+      "features": {
+        "changePct": -0.175,
+        "intradayPct": -0.5,
+        "closePosition": -1,
+        "averageGapPct": -0.17933333333333332,
+        "liquidityScore": 0.22,
+        "valuationScore": -0.08,
+        "institutionRatio": -1,
+        "overheat": 0,
+        "peRisk": 0.5366666666666667,
+        "pbRisk": 0
+      },
+      "evaluated": false,
+      "createdAt": "2026-06-03T20:32:16.693Z"
+    },
+    {
+      "id": "2026-06-03:3131",
+      "rank": 1204,
+      "sourceDate": "2026-06-03",
+      "code": "3131",
+      "name": "弘塑",
+      "market": "上櫃",
+      "close": 3200,
+      "score": 22.6,
+      "prediction": {
+        "direction": "跌",
+        "probability": 16.6,
+        "learningAdjustment": 3.2
+      },
+      "metrics": {
+        "changePct": -3.18,
+        "intradayPct": -3.76,
+        "closePosition": 0,
+        "averageGapPct": -2,
+        "liquidityScore": 100,
+        "valuationScore": 8,
+        "institutionRatio": -26.8
+      },
+      "features": {
+        "changePct": -0.318,
+        "intradayPct": -0.47,
+        "closePosition": -1,
+        "averageGapPct": -0.13333333333333333,
+        "liquidityScore": 1,
+        "valuationScore": -0.84,
+        "institutionRatio": -1,
+        "overheat": 0,
+        "peRisk": 0.4318333333333333,
+        "pbRisk": 1
+      },
+      "evaluated": false,
+      "createdAt": "2026-06-03T20:32:16.693Z"
+    },
+    {
+      "id": "2026-06-03:6831",
+      "rank": 1205,
+      "sourceDate": "2026-06-03",
+      "code": "6831",
+      "name": "邁科",
+      "market": "上市",
+      "close": 686,
+      "score": 21.7,
+      "prediction": {
+        "direction": "跌",
+        "probability": 14.8,
+        "learningAdjustment": 2.6
+      },
+      "metrics": {
+        "changePct": -9.97,
+        "intradayPct": -9.14,
+        "closePosition": 0,
+        "averageGapPct": -5.25,
+        "liquidityScore": 100,
+        "valuationScore": 8,
+        "institutionRatio": null
+      },
+      "features": {
+        "changePct": -0.9970000000000001,
+        "intradayPct": -1,
+        "closePosition": -1,
+        "averageGapPct": -0.35,
+        "liquidityScore": 1,
+        "valuationScore": -0.84,
+        "institutionRatio": 0,
+        "overheat": 0,
+        "peRisk": 1,
+        "pbRisk": 1
+      },
+      "evaluated": false,
+      "createdAt": "2026-06-03T20:32:16.693Z"
+    },
+    {
+      "id": "2026-06-03:3191",
+      "rank": 1206,
+      "sourceDate": "2026-06-03",
+      "code": "3191",
+      "name": "雲嘉南",
+      "market": "上櫃",
+      "close": 20.85,
+      "score": 21.2,
+      "prediction": {
+        "direction": "跌",
+        "probability": 11.7,
+        "learningAdjustment": 0.9
+      },
+      "metrics": {
+        "changePct": -7.13,
+        "intradayPct": -7.13,
+        "closePosition": 3,
+        "averageGapPct": -1.18,
+        "liquidityScore": 40,
+        "valuationScore": 28,
+        "institutionRatio": 0.81
+      },
+      "features": {
+        "changePct": -0.713,
+        "intradayPct": -0.89125,
+        "closePosition": -0.94,
+        "averageGapPct": -0.07866666666666666,
+        "liquidityScore": -0.2,
+        "valuationScore": -0.44,
+        "institutionRatio": 0.045000000000000005,
+        "overheat": 0,
+        "peRisk": 0.9961666666666666,
+        "pbRisk": 0
+      },
+      "evaluated": false,
+      "createdAt": "2026-06-03T20:32:16.693Z"
+    },
+    {
+      "id": "2026-06-03:4561",
+      "rank": 1207,
+      "sourceDate": "2026-06-03",
+      "code": "4561",
+      "name": "健椿",
+      "market": "上櫃",
+      "close": 51,
+      "score": 21.2,
+      "prediction": {
+        "direction": "跌",
+        "probability": 13.2,
+        "learningAdjustment": 1.9
+      },
+      "metrics": {
+        "changePct": -5.9,
+        "intradayPct": -7.44,
+        "closePosition": 0,
+        "averageGapPct": -1.35,
+        "liquidityScore": 91,
+        "valuationScore": 46,
+        "institutionRatio": -27.15
+      },
+      "features": {
+        "changePct": -0.5900000000000001,
+        "intradayPct": -0.93,
+        "closePosition": -1,
+        "averageGapPct": -0.09000000000000001,
+        "liquidityScore": 0.82,
+        "valuationScore": -0.08,
+        "institutionRatio": -1,
+        "overheat": 0,
+        "peRisk": 0.7448333333333333,
+        "pbRisk": 0
+      },
+      "evaluated": false,
+      "createdAt": "2026-06-03T20:32:16.693Z"
+    },
+    {
+      "id": "2026-06-03:6716",
+      "rank": 1208,
+      "sourceDate": "2026-06-03",
+      "code": "6716",
+      "name": "應廣",
+      "market": "上櫃",
+      "close": 101.5,
+      "score": 21,
+      "prediction": {
+        "direction": "跌",
+        "probability": 13.3,
+        "learningAdjustment": 2.1
+      },
+      "metrics": {
+        "changePct": -4.69,
+        "intradayPct": -5.14,
+        "closePosition": 0,
+        "averageGapPct": -2.61,
+        "liquidityScore": 100,
+        "valuationScore": 50,
+        "institutionRatio": -17.97
+      },
+      "features": {
+        "changePct": -0.46900000000000003,
+        "intradayPct": -0.6425,
+        "closePosition": -1,
+        "averageGapPct": -0.174,
+        "liquidityScore": 1,
+        "valuationScore": 0,
+        "institutionRatio": -0.9983333333333333,
+        "overheat": 0,
+        "peRisk": 0,
+        "pbRisk": 0.012499999999999956
+      },
+      "evaluated": false,
+      "createdAt": "2026-06-03T20:32:16.693Z"
+    },
+    {
+      "id": "2026-06-03:3624",
+      "rank": 1209,
+      "sourceDate": "2026-06-03",
+      "code": "3624",
+      "name": "光頡",
+      "market": "上櫃",
+      "close": 115,
+      "score": 20.9,
+      "prediction": {
+        "direction": "跌",
+        "probability": 13.3,
+        "learningAdjustment": 2.1
+      },
+      "metrics": {
+        "changePct": -5.74,
+        "intradayPct": -5.35,
+        "closePosition": 0,
+        "averageGapPct": -2.37,
+        "liquidityScore": 100,
+        "valuationScore": 28,
+        "institutionRatio": -20.56
+      },
+      "features": {
+        "changePct": -0.5740000000000001,
+        "intradayPct": -0.66875,
+        "closePosition": -1,
+        "averageGapPct": -0.158,
+        "liquidityScore": 1,
+        "valuationScore": -0.44,
+        "institutionRatio": -1,
+        "overheat": 0,
+        "peRisk": 0.34266666666666673,
+        "pbRisk": 0
+      },
+      "evaluated": false,
+      "createdAt": "2026-06-03T20:32:16.693Z"
+    },
+    {
+      "id": "2026-06-03:5321",
+      "rank": 1210,
+      "sourceDate": "2026-06-03",
+      "code": "5321",
+      "name": "美而快",
+      "market": "上櫃",
+      "close": 56.1,
+      "score": 19.1,
+      "prediction": {
+        "direction": "跌",
+        "probability": 11.1,
+        "learningAdjustment": 1.3
+      },
+      "metrics": {
+        "changePct": -7.43,
+        "intradayPct": -15,
+        "closePosition": 0,
+        "averageGapPct": -10.41,
+        "liquidityScore": 75,
+        "valuationScore": 50,
+        "institutionRatio": 0.33
+      },
+      "features": {
+        "changePct": -0.743,
+        "intradayPct": -1,
+        "closePosition": -1,
+        "averageGapPct": -0.6940000000000001,
+        "liquidityScore": 0.5,
+        "valuationScore": 0,
+        "institutionRatio": 0.018333333333333333,
+        "overheat": 0,
+        "peRisk": 0,
+        "pbRisk": 0.08999999999999997
+      },
+      "evaluated": false,
+      "createdAt": "2026-06-03T20:32:16.693Z"
+    },
+    {
+      "id": "2026-06-03:1570",
+      "rank": 1211,
+      "sourceDate": "2026-06-03",
+      "code": "1570",
+      "name": "力肯",
+      "market": "上櫃",
+      "close": 51.8,
+      "score": 17.6,
+      "prediction": {
+        "direction": "跌",
+        "probability": 10.5,
+        "learningAdjustment": 1.5
+      },
+      "metrics": {
+        "changePct": -5.47,
+        "intradayPct": -5.99,
+        "closePosition": 5,
+        "averageGapPct": -2.72,
+        "liquidityScore": 70,
+        "valuationScore": 28,
+        "institutionRatio": -28.89
+      },
+      "features": {
+        "changePct": -0.5469999999999999,
+        "intradayPct": -0.74875,
+        "closePosition": -0.9,
+        "averageGapPct": -0.18133333333333335,
+        "liquidityScore": 0.4,
+        "valuationScore": -0.44,
+        "institutionRatio": -1,
+        "overheat": 0,
+        "peRisk": 1,
+        "pbRisk": 0
+      },
+      "evaluated": false,
+      "createdAt": "2026-06-03T20:32:16.693Z"
     }
   ],
   "history": [
@@ -11696,14 +14816,1214 @@
       "actualDirection": "down",
       "correct": true,
       "evaluatedAt": "2026-06-02T20:20:17.757Z"
+    },
+    {
+      "sourceDate": "2026-06-02",
+      "evaluatedDate": "2026-06-03",
+      "code": "6015",
+      "name": "宏遠證",
+      "market": "上櫃",
+      "predictedDirection": "up",
+      "predictedProbability": 58.8,
+      "previousClose": 20.85,
+      "currentClose": 22.9,
+      "returnPct": 9.83,
+      "actualDirection": "up",
+      "correct": true,
+      "evaluatedAt": "2026-06-03T20:32:16.595Z"
+    },
+    {
+      "sourceDate": "2026-06-02",
+      "evaluatedDate": "2026-06-03",
+      "code": "3322",
+      "name": "建舜電",
+      "market": "上櫃",
+      "predictedDirection": "up",
+      "predictedProbability": 62.8,
+      "previousClose": 14.3,
+      "currentClose": 14.35,
+      "returnPct": 0.35,
+      "actualDirection": "up",
+      "correct": true,
+      "evaluatedAt": "2026-06-03T20:32:16.595Z"
+    },
+    {
+      "sourceDate": "2026-06-02",
+      "evaluatedDate": "2026-06-03",
+      "code": "5864",
+      "name": "致和證",
+      "market": "上櫃",
+      "predictedDirection": "up",
+      "predictedProbability": 54.1,
+      "previousClose": 45.4,
+      "currentClose": 49.9,
+      "returnPct": 9.91,
+      "actualDirection": "up",
+      "correct": true,
+      "evaluatedAt": "2026-06-03T20:32:16.595Z"
+    },
+    {
+      "sourceDate": "2026-06-02",
+      "evaluatedDate": "2026-06-03",
+      "code": "3624",
+      "name": "光頡",
+      "market": "上櫃",
+      "predictedDirection": "up",
+      "predictedProbability": 53.1,
+      "previousClose": 122,
+      "currentClose": 115,
+      "returnPct": -5.74,
+      "actualDirection": "down",
+      "correct": false,
+      "evaluatedAt": "2026-06-03T20:32:16.596Z"
+    },
+    {
+      "sourceDate": "2026-06-02",
+      "evaluatedDate": "2026-06-03",
+      "code": "6016",
+      "name": "康和證",
+      "market": "上櫃",
+      "predictedDirection": "down",
+      "predictedProbability": 48.8,
+      "previousClose": 32.5,
+      "currentClose": 35.75,
+      "returnPct": 10,
+      "actualDirection": "up",
+      "correct": false,
+      "evaluatedAt": "2026-06-03T20:32:16.596Z"
+    },
+    {
+      "sourceDate": "2026-06-02",
+      "evaluatedDate": "2026-06-03",
+      "code": "1569",
+      "name": "濱川",
+      "market": "上櫃",
+      "predictedDirection": "up",
+      "predictedProbability": 51.8,
+      "previousClose": 53.6,
+      "currentClose": 54.3,
+      "returnPct": 1.31,
+      "actualDirection": "up",
+      "correct": true,
+      "evaluatedAt": "2026-06-03T20:32:16.596Z"
+    },
+    {
+      "sourceDate": "2026-06-02",
+      "evaluatedDate": "2026-06-03",
+      "code": "6506",
+      "name": "雙邦",
+      "market": "上櫃",
+      "predictedDirection": "up",
+      "predictedProbability": 61,
+      "previousClose": 20.6,
+      "currentClose": 20.7,
+      "returnPct": 0.49,
+      "actualDirection": "up",
+      "correct": true,
+      "evaluatedAt": "2026-06-03T20:32:16.596Z"
+    },
+    {
+      "sourceDate": "2026-06-02",
+      "evaluatedDate": "2026-06-03",
+      "code": "6021",
+      "name": "美好證",
+      "market": "上櫃",
+      "predictedDirection": "up",
+      "predictedProbability": 55.4,
+      "previousClose": 39.45,
+      "currentClose": 43.3,
+      "returnPct": 9.76,
+      "actualDirection": "up",
+      "correct": true,
+      "evaluatedAt": "2026-06-03T20:32:16.596Z"
+    },
+    {
+      "sourceDate": "2026-06-02",
+      "evaluatedDate": "2026-06-03",
+      "code": "8032",
+      "name": "光菱",
+      "market": "上櫃",
+      "predictedDirection": "up",
+      "predictedProbability": 56.3,
+      "previousClose": 46.65,
+      "currentClose": 46.75,
+      "returnPct": 0.21,
+      "actualDirection": "up",
+      "correct": true,
+      "evaluatedAt": "2026-06-03T20:32:16.596Z"
+    },
+    {
+      "sourceDate": "2026-06-02",
+      "evaluatedDate": "2026-06-03",
+      "code": "2887",
+      "name": "台新新光金",
+      "market": "上市",
+      "predictedDirection": "down",
+      "predictedProbability": 47.1,
+      "previousClose": 24.6,
+      "currentClose": 26.1,
+      "returnPct": 6.1,
+      "actualDirection": "up",
+      "correct": false,
+      "evaluatedAt": "2026-06-03T20:32:16.596Z"
+    },
+    {
+      "sourceDate": "2026-06-02",
+      "evaluatedDate": "2026-06-03",
+      "code": "3293",
+      "name": "鈊象",
+      "market": "上櫃",
+      "predictedDirection": "down",
+      "predictedProbability": 49.2,
+      "previousClose": 799,
+      "currentClose": 789,
+      "returnPct": -1.25,
+      "actualDirection": "down",
+      "correct": true,
+      "evaluatedAt": "2026-06-03T20:32:16.596Z"
+    },
+    {
+      "sourceDate": "2026-06-02",
+      "evaluatedDate": "2026-06-03",
+      "code": "9802",
+      "name": "鈺齊-KY",
+      "market": "上市",
+      "predictedDirection": "down",
+      "predictedProbability": 45.9,
+      "previousClose": 77.7,
+      "currentClose": 80.5,
+      "returnPct": 3.6,
+      "actualDirection": "up",
+      "correct": false,
+      "evaluatedAt": "2026-06-03T20:32:16.596Z"
+    },
+    {
+      "sourceDate": "2026-06-02",
+      "evaluatedDate": "2026-06-03",
+      "code": "5488",
+      "name": "松普",
+      "market": "上櫃",
+      "predictedDirection": "up",
+      "predictedProbability": 50.5,
+      "previousClose": 14.25,
+      "currentClose": 13.9,
+      "returnPct": -2.46,
+      "actualDirection": "down",
+      "correct": false,
+      "evaluatedAt": "2026-06-03T20:32:16.596Z"
+    },
+    {
+      "sourceDate": "2026-06-02",
+      "evaluatedDate": "2026-06-03",
+      "code": "5478",
+      "name": "智冠",
+      "market": "上櫃",
+      "predictedDirection": "down",
+      "predictedProbability": 49.4,
+      "previousClose": 104,
+      "currentClose": 103,
+      "returnPct": -0.96,
+      "actualDirection": "down",
+      "correct": true,
+      "evaluatedAt": "2026-06-03T20:32:16.596Z"
+    },
+    {
+      "sourceDate": "2026-06-02",
+      "evaluatedDate": "2026-06-03",
+      "code": "8044",
+      "name": "網家",
+      "market": "上櫃",
+      "predictedDirection": "down",
+      "predictedProbability": 50,
+      "previousClose": 30.4,
+      "currentClose": 31.5,
+      "returnPct": 3.62,
+      "actualDirection": "up",
+      "correct": false,
+      "evaluatedAt": "2026-06-03T20:32:16.596Z"
+    },
+    {
+      "sourceDate": "2026-06-02",
+      "evaluatedDate": "2026-06-03",
+      "code": "1301",
+      "name": "台塑",
+      "market": "上市",
+      "predictedDirection": "down",
+      "predictedProbability": 47.4,
+      "previousClose": 50,
+      "currentClose": 50.9,
+      "returnPct": 1.8,
+      "actualDirection": "up",
+      "correct": false,
+      "evaluatedAt": "2026-06-03T20:32:16.596Z"
+    },
+    {
+      "sourceDate": "2026-06-02",
+      "evaluatedDate": "2026-06-03",
+      "code": "3357",
+      "name": "臺慶科",
+      "market": "上櫃",
+      "predictedDirection": "down",
+      "predictedProbability": 48.9,
+      "previousClose": 289.5,
+      "currentClose": 282,
+      "returnPct": -2.59,
+      "actualDirection": "down",
+      "correct": true,
+      "evaluatedAt": "2026-06-03T20:32:16.596Z"
+    },
+    {
+      "sourceDate": "2026-06-02",
+      "evaluatedDate": "2026-06-03",
+      "code": "1312",
+      "name": "國喬",
+      "market": "上市",
+      "predictedDirection": "down",
+      "predictedProbability": 47.5,
+      "previousClose": 12.05,
+      "currentClose": 13.25,
+      "returnPct": 9.96,
+      "actualDirection": "up",
+      "correct": false,
+      "evaluatedAt": "2026-06-03T20:32:16.596Z"
+    },
+    {
+      "sourceDate": "2026-06-02",
+      "evaluatedDate": "2026-06-03",
+      "code": "2530",
+      "name": "華建",
+      "market": "上市",
+      "predictedDirection": "up",
+      "predictedProbability": 51.1,
+      "previousClose": 19.7,
+      "currentClose": 18.8,
+      "returnPct": -4.57,
+      "actualDirection": "down",
+      "correct": false,
+      "evaluatedAt": "2026-06-03T20:32:16.596Z"
+    },
+    {
+      "sourceDate": "2026-06-02",
+      "evaluatedDate": "2026-06-03",
+      "code": "4763",
+      "name": "材料*-KY",
+      "market": "上市",
+      "predictedDirection": "down",
+      "predictedProbability": 44.5,
+      "previousClose": 42.6,
+      "currentClose": 42.7,
+      "returnPct": 0.23,
+      "actualDirection": "up",
+      "correct": false,
+      "evaluatedAt": "2026-06-03T20:32:16.596Z"
+    },
+    {
+      "sourceDate": "2026-06-02",
+      "evaluatedDate": "2026-06-03",
+      "code": "2101",
+      "name": "南港",
+      "market": "上市",
+      "predictedDirection": "down",
+      "predictedProbability": 45.5,
+      "previousClose": 32,
+      "currentClose": 32.2,
+      "returnPct": 0.63,
+      "actualDirection": "up",
+      "correct": false,
+      "evaluatedAt": "2026-06-03T20:32:16.596Z"
+    },
+    {
+      "sourceDate": "2026-06-02",
+      "evaluatedDate": "2026-06-03",
+      "code": "2603",
+      "name": "長榮",
+      "market": "上市",
+      "predictedDirection": "down",
+      "predictedProbability": 45.3,
+      "previousClose": 224,
+      "currentClose": 231,
+      "returnPct": 3.13,
+      "actualDirection": "up",
+      "correct": false,
+      "evaluatedAt": "2026-06-03T20:32:16.596Z"
+    },
+    {
+      "sourceDate": "2026-06-02",
+      "evaluatedDate": "2026-06-03",
+      "code": "2606",
+      "name": "裕民",
+      "market": "上市",
+      "predictedDirection": "down",
+      "predictedProbability": 44.4,
+      "previousClose": 71.9,
+      "currentClose": 72,
+      "returnPct": 0.14,
+      "actualDirection": "up",
+      "correct": false,
+      "evaluatedAt": "2026-06-03T20:32:16.596Z"
+    },
+    {
+      "sourceDate": "2026-06-02",
+      "evaluatedDate": "2026-06-03",
+      "code": "6026",
+      "name": "福邦證",
+      "market": "上櫃",
+      "predictedDirection": "down",
+      "predictedProbability": 46,
+      "previousClose": 17.8,
+      "currentClose": 19.3,
+      "returnPct": 8.43,
+      "actualDirection": "up",
+      "correct": false,
+      "evaluatedAt": "2026-06-03T20:32:16.596Z"
+    },
+    {
+      "sourceDate": "2026-06-02",
+      "evaluatedDate": "2026-06-03",
+      "code": "1304",
+      "name": "台聚",
+      "market": "上市",
+      "predictedDirection": "down",
+      "predictedProbability": 46,
+      "previousClose": 13,
+      "currentClose": 13.3,
+      "returnPct": 2.31,
+      "actualDirection": "up",
+      "correct": false,
+      "evaluatedAt": "2026-06-03T20:32:16.596Z"
+    },
+    {
+      "sourceDate": "2026-06-02",
+      "evaluatedDate": "2026-06-03",
+      "code": "3305",
+      "name": "昇貿",
+      "market": "上市",
+      "predictedDirection": "down",
+      "predictedProbability": 47.3,
+      "previousClose": 167.5,
+      "currentClose": 157.5,
+      "returnPct": -5.97,
+      "actualDirection": "down",
+      "correct": true,
+      "evaluatedAt": "2026-06-03T20:32:16.596Z"
+    },
+    {
+      "sourceDate": "2026-06-02",
+      "evaluatedDate": "2026-06-03",
+      "code": "2912",
+      "name": "統一超",
+      "market": "上市",
+      "predictedDirection": "down",
+      "predictedProbability": 46,
+      "previousClose": 227.5,
+      "currentClose": 233,
+      "returnPct": 2.42,
+      "actualDirection": "up",
+      "correct": false,
+      "evaluatedAt": "2026-06-03T20:32:16.596Z"
+    },
+    {
+      "sourceDate": "2026-06-02",
+      "evaluatedDate": "2026-06-03",
+      "code": "2618",
+      "name": "長榮航",
+      "market": "上市",
+      "predictedDirection": "down",
+      "predictedProbability": 44.5,
+      "previousClose": 37.7,
+      "currentClose": 37.25,
+      "returnPct": -1.19,
+      "actualDirection": "down",
+      "correct": true,
+      "evaluatedAt": "2026-06-03T20:32:16.596Z"
+    },
+    {
+      "sourceDate": "2026-06-02",
+      "evaluatedDate": "2026-06-03",
+      "code": "5258",
+      "name": "虹堡",
+      "market": "上市",
+      "predictedDirection": "down",
+      "predictedProbability": 46,
+      "previousClose": 52.5,
+      "currentClose": 52,
+      "returnPct": -0.95,
+      "actualDirection": "down",
+      "correct": true,
+      "evaluatedAt": "2026-06-03T20:32:16.596Z"
+    },
+    {
+      "sourceDate": "2026-06-02",
+      "evaluatedDate": "2026-06-03",
+      "code": "8034",
+      "name": "榮群",
+      "market": "上櫃",
+      "predictedDirection": "up",
+      "predictedProbability": 53.2,
+      "previousClose": 25.05,
+      "currentClose": 24.95,
+      "returnPct": -0.4,
+      "actualDirection": "down",
+      "correct": false,
+      "evaluatedAt": "2026-06-03T20:32:16.596Z"
+    },
+    {
+      "sourceDate": "2026-06-02",
+      "evaluatedDate": "2026-06-03",
+      "code": "6901",
+      "name": "鑽石投資",
+      "market": "上市",
+      "predictedDirection": "up",
+      "predictedProbability": 54.7,
+      "previousClose": 13.15,
+      "currentClose": 13.2,
+      "returnPct": 0.38,
+      "actualDirection": "up",
+      "correct": true,
+      "evaluatedAt": "2026-06-03T20:32:16.596Z"
+    },
+    {
+      "sourceDate": "2026-06-02",
+      "evaluatedDate": "2026-06-03",
+      "code": "2427",
+      "name": "三商電",
+      "market": "上市",
+      "predictedDirection": "down",
+      "predictedProbability": 45.3,
+      "previousClose": 22.05,
+      "currentClose": 24.25,
+      "returnPct": 9.98,
+      "actualDirection": "up",
+      "correct": false,
+      "evaluatedAt": "2026-06-03T20:32:16.596Z"
+    },
+    {
+      "sourceDate": "2026-06-02",
+      "evaluatedDate": "2026-06-03",
+      "code": "6235",
+      "name": "華孚",
+      "market": "上市",
+      "predictedDirection": "down",
+      "predictedProbability": 44,
+      "previousClose": 47.2,
+      "currentClose": 45.7,
+      "returnPct": -3.18,
+      "actualDirection": "down",
+      "correct": true,
+      "evaluatedAt": "2026-06-03T20:32:16.596Z"
+    },
+    {
+      "sourceDate": "2026-06-02",
+      "evaluatedDate": "2026-06-03",
+      "code": "6558",
+      "name": "興能高",
+      "market": "上市",
+      "predictedDirection": "down",
+      "predictedProbability": 45.7,
+      "previousClose": 34.35,
+      "currentClose": 33.1,
+      "returnPct": -3.64,
+      "actualDirection": "down",
+      "correct": true,
+      "evaluatedAt": "2026-06-03T20:32:16.596Z"
+    },
+    {
+      "sourceDate": "2026-06-02",
+      "evaluatedDate": "2026-06-03",
+      "code": "6697",
+      "name": "東捷資訊",
+      "market": "上櫃",
+      "predictedDirection": "up",
+      "predictedProbability": 54.2,
+      "previousClose": 46.3,
+      "currentClose": 44.5,
+      "returnPct": -3.89,
+      "actualDirection": "down",
+      "correct": false,
+      "evaluatedAt": "2026-06-03T20:32:16.596Z"
+    },
+    {
+      "sourceDate": "2026-06-02",
+      "evaluatedDate": "2026-06-03",
+      "code": "6541",
+      "name": "泰福-KY",
+      "market": "上市",
+      "predictedDirection": "down",
+      "predictedProbability": 50,
+      "previousClose": 41.4,
+      "currentClose": 41.85,
+      "returnPct": 1.09,
+      "actualDirection": "up",
+      "correct": false,
+      "evaluatedAt": "2026-06-03T20:32:16.596Z"
+    },
+    {
+      "sourceDate": "2026-06-02",
+      "evaluatedDate": "2026-06-03",
+      "code": "1307",
+      "name": "三芳",
+      "market": "上市",
+      "predictedDirection": "down",
+      "predictedProbability": 45.1,
+      "previousClose": 32.5,
+      "currentClose": 33.15,
+      "returnPct": 2,
+      "actualDirection": "up",
+      "correct": false,
+      "evaluatedAt": "2026-06-03T20:32:16.596Z"
+    },
+    {
+      "sourceDate": "2026-06-02",
+      "evaluatedDate": "2026-06-03",
+      "code": "2611",
+      "name": "志信",
+      "market": "上市",
+      "predictedDirection": "up",
+      "predictedProbability": 53,
+      "previousClose": 13.65,
+      "currentClose": 13.6,
+      "returnPct": -0.37,
+      "actualDirection": "down",
+      "correct": false,
+      "evaluatedAt": "2026-06-03T20:32:16.596Z"
+    },
+    {
+      "sourceDate": "2026-06-02",
+      "evaluatedDate": "2026-06-03",
+      "code": "2886",
+      "name": "兆豐金",
+      "market": "上市",
+      "predictedDirection": "down",
+      "predictedProbability": 42.8,
+      "previousClose": 41.45,
+      "currentClose": 41.7,
+      "returnPct": 0.6,
+      "actualDirection": "up",
+      "correct": false,
+      "evaluatedAt": "2026-06-03T20:32:16.596Z"
+    },
+    {
+      "sourceDate": "2026-06-02",
+      "evaluatedDate": "2026-06-03",
+      "code": "2613",
+      "name": "中櫃",
+      "market": "上市",
+      "predictedDirection": "up",
+      "predictedProbability": 51,
+      "previousClose": 22.8,
+      "currentClose": 22.5,
+      "returnPct": -1.32,
+      "actualDirection": "down",
+      "correct": false,
+      "evaluatedAt": "2026-06-03T20:32:16.596Z"
+    },
+    {
+      "sourceDate": "2026-06-02",
+      "evaluatedDate": "2026-06-03",
+      "code": "4967",
+      "name": "十銓",
+      "market": "上市",
+      "predictedDirection": "down",
+      "predictedProbability": 44.5,
+      "previousClose": 289,
+      "currentClose": 304.5,
+      "returnPct": 5.36,
+      "actualDirection": "up",
+      "correct": false,
+      "evaluatedAt": "2026-06-03T20:32:16.596Z"
+    },
+    {
+      "sourceDate": "2026-06-02",
+      "evaluatedDate": "2026-06-03",
+      "code": "2392",
+      "name": "正崴",
+      "market": "上市",
+      "predictedDirection": "down",
+      "predictedProbability": 45.1,
+      "previousClose": 41.85,
+      "currentClose": 41.75,
+      "returnPct": -0.24,
+      "actualDirection": "down",
+      "correct": true,
+      "evaluatedAt": "2026-06-03T20:32:16.596Z"
+    },
+    {
+      "sourceDate": "2026-06-02",
+      "evaluatedDate": "2026-06-03",
+      "code": "2027",
+      "name": "大成鋼",
+      "market": "上市",
+      "predictedDirection": "down",
+      "predictedProbability": 42.4,
+      "previousClose": 43.2,
+      "currentClose": 43.65,
+      "returnPct": 1.04,
+      "actualDirection": "up",
+      "correct": false,
+      "evaluatedAt": "2026-06-03T20:32:16.596Z"
+    },
+    {
+      "sourceDate": "2026-06-02",
+      "evaluatedDate": "2026-06-03",
+      "code": "8935",
+      "name": "邦泰",
+      "market": "上櫃",
+      "predictedDirection": "up",
+      "predictedProbability": 52.5,
+      "previousClose": 22.25,
+      "currentClose": 22.7,
+      "returnPct": 2.02,
+      "actualDirection": "up",
+      "correct": true,
+      "evaluatedAt": "2026-06-03T20:32:16.596Z"
+    },
+    {
+      "sourceDate": "2026-06-02",
+      "evaluatedDate": "2026-06-03",
+      "code": "2385",
+      "name": "群光",
+      "market": "上市",
+      "predictedDirection": "down",
+      "predictedProbability": 43.3,
+      "previousClose": 141.5,
+      "currentClose": 143.5,
+      "returnPct": 1.41,
+      "actualDirection": "up",
+      "correct": false,
+      "evaluatedAt": "2026-06-03T20:32:16.596Z"
+    },
+    {
+      "sourceDate": "2026-06-02",
+      "evaluatedDate": "2026-06-03",
+      "code": "3317",
+      "name": "尼克森",
+      "market": "上櫃",
+      "predictedDirection": "down",
+      "predictedProbability": 44.6,
+      "previousClose": 82.2,
+      "currentClose": 81.5,
+      "returnPct": -0.85,
+      "actualDirection": "down",
+      "correct": true,
+      "evaluatedAt": "2026-06-03T20:32:16.596Z"
+    },
+    {
+      "sourceDate": "2026-06-02",
+      "evaluatedDate": "2026-06-03",
+      "code": "8114",
+      "name": "振樺電",
+      "market": "上市",
+      "predictedDirection": "down",
+      "predictedProbability": 44,
+      "previousClose": 259.5,
+      "currentClose": 254.5,
+      "returnPct": -1.93,
+      "actualDirection": "down",
+      "correct": true,
+      "evaluatedAt": "2026-06-03T20:32:16.596Z"
+    },
+    {
+      "sourceDate": "2026-06-02",
+      "evaluatedDate": "2026-06-03",
+      "code": "2637",
+      "name": "慧洋-KY",
+      "market": "上市",
+      "predictedDirection": "down",
+      "predictedProbability": 43.3,
+      "previousClose": 78.8,
+      "currentClose": 77,
+      "returnPct": -2.28,
+      "actualDirection": "down",
+      "correct": true,
+      "evaluatedAt": "2026-06-03T20:32:16.596Z"
+    },
+    {
+      "sourceDate": "2026-06-02",
+      "evaluatedDate": "2026-06-03",
+      "code": "6757",
+      "name": "台灣虎航",
+      "market": "上市",
+      "predictedDirection": "down",
+      "predictedProbability": 42.6,
+      "previousClose": 58.9,
+      "currentClose": 56.4,
+      "returnPct": -4.24,
+      "actualDirection": "down",
+      "correct": true,
+      "evaluatedAt": "2026-06-03T20:32:16.596Z"
+    },
+    {
+      "sourceDate": "2026-06-02",
+      "evaluatedDate": "2026-06-03",
+      "code": "4933",
+      "name": "友輝",
+      "market": "上櫃",
+      "predictedDirection": "down",
+      "predictedProbability": 43.9,
+      "previousClose": 77.9,
+      "currentClose": 77.9,
+      "returnPct": 0,
+      "actualDirection": "down",
+      "correct": true,
+      "evaluatedAt": "2026-06-03T20:32:16.596Z"
+    },
+    {
+      "sourceDate": "2026-06-02",
+      "evaluatedDate": "2026-06-03",
+      "code": "6658",
+      "name": "聯策",
+      "market": "上市",
+      "predictedDirection": "down",
+      "predictedProbability": 6.8,
+      "previousClose": 207.5,
+      "currentClose": 202,
+      "returnPct": -2.65,
+      "actualDirection": "down",
+      "correct": true,
+      "evaluatedAt": "2026-06-03T20:32:16.596Z"
+    },
+    {
+      "sourceDate": "2026-06-02",
+      "evaluatedDate": "2026-06-03",
+      "code": "8358",
+      "name": "金居",
+      "market": "上櫃",
+      "predictedDirection": "down",
+      "predictedProbability": 6.2,
+      "previousClose": 627,
+      "currentClose": 615,
+      "returnPct": -1.91,
+      "actualDirection": "down",
+      "correct": true,
+      "evaluatedAt": "2026-06-03T20:32:16.596Z"
+    },
+    {
+      "sourceDate": "2026-06-02",
+      "evaluatedDate": "2026-06-03",
+      "code": "2061",
+      "name": "風青",
+      "market": "上櫃",
+      "predictedDirection": "down",
+      "predictedProbability": 7.8,
+      "previousClose": 38.65,
+      "currentClose": 41.55,
+      "returnPct": 7.5,
+      "actualDirection": "up",
+      "correct": false,
+      "evaluatedAt": "2026-06-03T20:32:16.596Z"
+    },
+    {
+      "sourceDate": "2026-06-02",
+      "evaluatedDate": "2026-06-03",
+      "code": "3191",
+      "name": "雲嘉南",
+      "market": "上櫃",
+      "predictedDirection": "down",
+      "predictedProbability": 9.7,
+      "previousClose": 22.45,
+      "currentClose": 20.85,
+      "returnPct": -7.13,
+      "actualDirection": "down",
+      "correct": true,
+      "evaluatedAt": "2026-06-03T20:32:16.596Z"
+    },
+    {
+      "sourceDate": "2026-06-02",
+      "evaluatedDate": "2026-06-03",
+      "code": "5274",
+      "name": "信驊",
+      "market": "上櫃",
+      "predictedDirection": "down",
+      "predictedProbability": 6.5,
+      "previousClose": 18095,
+      "currentClose": 17980,
+      "returnPct": -0.64,
+      "actualDirection": "down",
+      "correct": true,
+      "evaluatedAt": "2026-06-03T20:32:16.596Z"
+    },
+    {
+      "sourceDate": "2026-06-02",
+      "evaluatedDate": "2026-06-03",
+      "code": "6922",
+      "name": "宸曜",
+      "market": "上櫃",
+      "predictedDirection": "down",
+      "predictedProbability": 6.8,
+      "previousClose": 197.5,
+      "currentClose": 193,
+      "returnPct": -2.28,
+      "actualDirection": "down",
+      "correct": true,
+      "evaluatedAt": "2026-06-03T20:32:16.596Z"
+    },
+    {
+      "sourceDate": "2026-06-02",
+      "evaluatedDate": "2026-06-03",
+      "code": "6224",
+      "name": "聚鼎",
+      "market": "上市",
+      "predictedDirection": "down",
+      "predictedProbability": 6.4,
+      "previousClose": 88.1,
+      "currentClose": 83.9,
+      "returnPct": -4.77,
+      "actualDirection": "down",
+      "correct": true,
+      "evaluatedAt": "2026-06-03T20:32:16.596Z"
+    },
+    {
+      "sourceDate": "2026-06-02",
+      "evaluatedDate": "2026-06-03",
+      "code": "6654",
+      "name": "天正國際",
+      "market": "上櫃",
+      "predictedDirection": "down",
+      "predictedProbability": 6.8,
+      "previousClose": 170,
+      "currentClose": 166,
+      "returnPct": -2.35,
+      "actualDirection": "down",
+      "correct": true,
+      "evaluatedAt": "2026-06-03T20:32:16.596Z"
+    },
+    {
+      "sourceDate": "2026-06-02",
+      "evaluatedDate": "2026-06-03",
+      "code": "7740",
+      "name": "熙特爾-創",
+      "market": "上市",
+      "predictedDirection": "down",
+      "predictedProbability": 7.6,
+      "previousClose": 172,
+      "currentClose": 169,
+      "returnPct": -1.74,
+      "actualDirection": "down",
+      "correct": true,
+      "evaluatedAt": "2026-06-03T20:32:16.596Z"
+    },
+    {
+      "sourceDate": "2026-06-02",
+      "evaluatedDate": "2026-06-03",
+      "code": "5291",
+      "name": "邑昇",
+      "market": "上櫃",
+      "predictedDirection": "down",
+      "predictedProbability": 6.3,
+      "previousClose": 68.5,
+      "currentClose": 68.5,
+      "returnPct": 0,
+      "actualDirection": "down",
+      "correct": true,
+      "evaluatedAt": "2026-06-03T20:32:16.596Z"
+    },
+    {
+      "sourceDate": "2026-06-02",
+      "evaluatedDate": "2026-06-03",
+      "code": "8234",
+      "name": "新漢",
+      "market": "上櫃",
+      "predictedDirection": "down",
+      "predictedProbability": 6.8,
+      "previousClose": 71.1,
+      "currentClose": 70.8,
+      "returnPct": -0.42,
+      "actualDirection": "down",
+      "correct": true,
+      "evaluatedAt": "2026-06-03T20:32:16.596Z"
+    },
+    {
+      "sourceDate": "2026-06-02",
+      "evaluatedDate": "2026-06-03",
+      "code": "6664",
+      "name": "群翊",
+      "market": "上櫃",
+      "predictedDirection": "down",
+      "predictedProbability": 7,
+      "previousClose": 409,
+      "currentClose": 408,
+      "returnPct": -0.24,
+      "actualDirection": "down",
+      "correct": true,
+      "evaluatedAt": "2026-06-03T20:32:16.596Z"
+    },
+    {
+      "sourceDate": "2026-06-02",
+      "evaluatedDate": "2026-06-03",
+      "code": "8111",
+      "name": "立碁",
+      "market": "上櫃",
+      "predictedDirection": "down",
+      "predictedProbability": 5.9,
+      "previousClose": 63.6,
+      "currentClose": 65.2,
+      "returnPct": 2.52,
+      "actualDirection": "up",
+      "correct": false,
+      "evaluatedAt": "2026-06-03T20:32:16.596Z"
+    },
+    {
+      "sourceDate": "2026-06-02",
+      "evaluatedDate": "2026-06-03",
+      "code": "6861",
+      "name": "睿生光電",
+      "market": "上市",
+      "predictedDirection": "down",
+      "predictedProbability": 6.8,
+      "previousClose": 396,
+      "currentClose": 370,
+      "returnPct": -6.57,
+      "actualDirection": "down",
+      "correct": true,
+      "evaluatedAt": "2026-06-03T20:32:16.596Z"
+    },
+    {
+      "sourceDate": "2026-06-02",
+      "evaluatedDate": "2026-06-03",
+      "code": "6190",
+      "name": "萬泰科",
+      "market": "上櫃",
+      "predictedDirection": "down",
+      "predictedProbability": 6.8,
+      "previousClose": 83.3,
+      "currentClose": 83,
+      "returnPct": -0.36,
+      "actualDirection": "down",
+      "correct": true,
+      "evaluatedAt": "2026-06-03T20:32:16.596Z"
+    },
+    {
+      "sourceDate": "2026-06-02",
+      "evaluatedDate": "2026-06-03",
+      "code": "7769",
+      "name": "鴻勁",
+      "market": "上市",
+      "predictedDirection": "down",
+      "predictedProbability": 6.1,
+      "previousClose": 7515,
+      "currentClose": 7175,
+      "returnPct": -4.52,
+      "actualDirection": "down",
+      "correct": true,
+      "evaluatedAt": "2026-06-03T20:32:16.596Z"
+    },
+    {
+      "sourceDate": "2026-06-02",
+      "evaluatedDate": "2026-06-03",
+      "code": "4979",
+      "name": "華星光",
+      "market": "上櫃",
+      "predictedDirection": "down",
+      "predictedProbability": 5.9,
+      "previousClose": 630,
+      "currentClose": 637,
+      "returnPct": 1.11,
+      "actualDirection": "up",
+      "correct": false,
+      "evaluatedAt": "2026-06-03T20:32:16.596Z"
+    },
+    {
+      "sourceDate": "2026-06-02",
+      "evaluatedDate": "2026-06-03",
+      "code": "6829",
+      "name": "千附精密",
+      "market": "上櫃",
+      "predictedDirection": "down",
+      "predictedProbability": 6.6,
+      "previousClose": 225,
+      "currentClose": 220.5,
+      "returnPct": -2,
+      "actualDirection": "down",
+      "correct": true,
+      "evaluatedAt": "2026-06-03T20:32:16.596Z"
+    },
+    {
+      "sourceDate": "2026-06-02",
+      "evaluatedDate": "2026-06-03",
+      "code": "3580",
+      "name": "友威科",
+      "market": "上櫃",
+      "predictedDirection": "down",
+      "predictedProbability": 5.7,
+      "previousClose": 108.5,
+      "currentClose": 108.5,
+      "returnPct": 0,
+      "actualDirection": "down",
+      "correct": true,
+      "evaluatedAt": "2026-06-03T20:32:16.596Z"
+    },
+    {
+      "sourceDate": "2026-06-02",
+      "evaluatedDate": "2026-06-03",
+      "code": "7772",
+      "name": "耀穎",
+      "market": "上櫃",
+      "predictedDirection": "down",
+      "predictedProbability": 7.3,
+      "previousClose": 143,
+      "currentClose": 153.5,
+      "returnPct": 7.34,
+      "actualDirection": "up",
+      "correct": false,
+      "evaluatedAt": "2026-06-03T20:32:16.596Z"
+    },
+    {
+      "sourceDate": "2026-06-02",
+      "evaluatedDate": "2026-06-03",
+      "code": "3581",
+      "name": "博磊",
+      "market": "上櫃",
+      "predictedDirection": "down",
+      "predictedProbability": 5.7,
+      "previousClose": 221.5,
+      "currentClose": 211,
+      "returnPct": -4.74,
+      "actualDirection": "down",
+      "correct": true,
+      "evaluatedAt": "2026-06-03T20:32:16.596Z"
+    },
+    {
+      "sourceDate": "2026-06-02",
+      "evaluatedDate": "2026-06-03",
+      "code": "7728",
+      "name": "光焱科技",
+      "market": "上櫃",
+      "predictedDirection": "down",
+      "predictedProbability": 5.8,
+      "previousClose": 715,
+      "currentClose": 763,
+      "returnPct": 6.71,
+      "actualDirection": "up",
+      "correct": false,
+      "evaluatedAt": "2026-06-03T20:32:16.596Z"
+    },
+    {
+      "sourceDate": "2026-06-02",
+      "evaluatedDate": "2026-06-03",
+      "code": "3693",
+      "name": "營邦",
+      "market": "上櫃",
+      "predictedDirection": "down",
+      "predictedProbability": 5.7,
+      "previousClose": 598,
+      "currentClose": 588,
+      "returnPct": -1.67,
+      "actualDirection": "down",
+      "correct": true,
+      "evaluatedAt": "2026-06-03T20:32:16.596Z"
+    },
+    {
+      "sourceDate": "2026-06-02",
+      "evaluatedDate": "2026-06-03",
+      "code": "7734",
+      "name": "印能科技",
+      "market": "上櫃",
+      "predictedDirection": "down",
+      "predictedProbability": 5.7,
+      "previousClose": 3230,
+      "currentClose": 3240,
+      "returnPct": 0.31,
+      "actualDirection": "up",
+      "correct": false,
+      "evaluatedAt": "2026-06-03T20:32:16.596Z"
+    },
+    {
+      "sourceDate": "2026-06-02",
+      "evaluatedDate": "2026-06-03",
+      "code": "3081",
+      "name": "聯亞",
+      "market": "上櫃",
+      "predictedDirection": "down",
+      "predictedProbability": 5.2,
+      "previousClose": 2575,
+      "currentClose": 2830,
+      "returnPct": 9.9,
+      "actualDirection": "up",
+      "correct": false,
+      "evaluatedAt": "2026-06-03T20:32:16.596Z"
+    },
+    {
+      "sourceDate": "2026-06-02",
+      "evaluatedDate": "2026-06-03",
+      "code": "4542",
+      "name": "科嶠",
+      "market": "上櫃",
+      "predictedDirection": "down",
+      "predictedProbability": 5.3,
+      "previousClose": 236.5,
+      "currentClose": 236.5,
+      "returnPct": 0,
+      "actualDirection": "down",
+      "correct": true,
+      "evaluatedAt": "2026-06-03T20:32:16.596Z"
+    },
+    {
+      "sourceDate": "2026-06-02",
+      "evaluatedDate": "2026-06-03",
+      "code": "7751",
+      "name": "竑騰",
+      "market": "上櫃",
+      "predictedDirection": "down",
+      "predictedProbability": 5,
+      "previousClose": 1670,
+      "currentClose": 1575,
+      "returnPct": -5.69,
+      "actualDirection": "down",
+      "correct": true,
+      "evaluatedAt": "2026-06-03T20:32:16.596Z"
+    },
+    {
+      "sourceDate": "2026-06-02",
+      "evaluatedDate": "2026-06-03",
+      "code": "3163",
+      "name": "波若威",
+      "market": "上櫃",
+      "predictedDirection": "down",
+      "predictedProbability": 4.4,
+      "previousClose": 988,
+      "currentClose": 1085,
+      "returnPct": 9.82,
+      "actualDirection": "up",
+      "correct": false,
+      "evaluatedAt": "2026-06-03T20:32:16.596Z"
+    },
+    {
+      "sourceDate": "2026-06-02",
+      "evaluatedDate": "2026-06-03",
+      "code": "6584",
+      "name": "南俊國際",
+      "market": "上櫃",
+      "predictedDirection": "down",
+      "predictedProbability": 4.3,
+      "previousClose": 658,
+      "currentClose": 660,
+      "returnPct": 0.3,
+      "actualDirection": "up",
+      "correct": false,
+      "evaluatedAt": "2026-06-03T20:32:16.596Z"
+    },
+    {
+      "sourceDate": "2026-06-02",
+      "evaluatedDate": "2026-06-03",
+      "code": "4971",
+      "name": "IET-KY",
+      "market": "上櫃",
+      "predictedDirection": "down",
+      "predictedProbability": 3.8,
+      "previousClose": 711,
+      "currentClose": 716,
+      "returnPct": 0.7,
+      "actualDirection": "up",
+      "correct": false,
+      "evaluatedAt": "2026-06-03T20:32:16.596Z"
     }
   ],
   "stats": {
-    "totalEvaluated": 160,
-    "correct": 83,
-    "accuracy": 51.9,
-    "recentAccuracy": 86.7,
-    "averageReturnPct": 0.2,
-    "lastUpdatedAt": "2026-06-02T20:20:17.757Z"
+    "totalEvaluated": 240,
+    "correct": 126,
+    "accuracy": 52.5,
+    "recentAccuracy": 66.7,
+    "averageReturnPct": 0.37,
+    "lastUpdatedAt": "2026-06-03T20:32:16.596Z"
   }
 }
